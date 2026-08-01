@@ -1,0 +1,33 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={MTurk experiment: Treatment effects on main dependent variables.},
+note{}={* p \num{< 0.1}, ** p \num{< 0.05}, *** p \num{< 0.01}},
+note{ }={Models estimated via OLS. HC2 robust standard errors in parentheses.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-6}{solid, black, 0.05em},
+hline{14}={1-6}{solid, black, 0.05em},
+hline{1}={1-6}{solid, black, 0.08em},
+hline{16}={1-6}{solid, black, 0.08em},
+column{2-6}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Amtrak & Climate & Flat Tax & Veterans & Wall Street \\
+Op-ed: Amtrak & 0.440*** & -0.020 & 0.056 & -0.056 & -0.035 \\
+& (0.085) & (0.095) & (0.108) & (0.082) & (0.079) \\
+Op-ed: Climate & 0.054 & 0.427*** & 0.132 & -0.009 & 0.026 \\
+& (0.079) & (0.098) & (0.110) & (0.082) & (0.080) \\
+Op-ed: Flat Tax & 0.195** & 0.130 & 0.850*** & -0.033 & -0.018 \\
+& (0.078) & (0.097) & (0.109) & (0.082) & (0.079) \\
+Op-ed: Veterans & 0.047 & 0.032 & -0.106 & 0.770*** & -0.124 \\
+& (0.079) & (0.095) & (0.110) & (0.078) & (0.078) \\
+Op-ed: Wall Street & 0.038 & 0.079 & 0.151 & -0.210** & 0.915*** \\
+& (0.078) & (0.095) & (0.107) & (0.084) & (0.082) \\
+Constant & 2.902*** & 2.773*** & 3.738*** & 4.502*** & 2.616*** \\
+& (0.054) & (0.065) & (0.076) & (0.058) & (0.054) \\
+Num.Obs. & 3571 & 3571 & 3571 & 3571 & 3571 \\
+R2 & 0.012 & 0.008 & 0.026 & 0.048 & 0.061 \\
+\end{talltblr}
+\end{table}

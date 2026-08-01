@@ -1,0 +1,42 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Comparison of treatment effects on composite scale dependent variables.},
+note{}={* p \num{< 0.1}, ** p \num{< 0.05}, *** p \num{< 0.01}},
+note{ }={Models estimated via OLS. HC2 robust standard errors in parentheses.},
+note{  }={Dependent variables are constructed via factor analysis and have unit variance.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-5}{solid, black, 0.05em},
+hline{22}={1-5}{solid, black, 0.05em},
+hline{1}={1-5}{solid, black, 0.08em},
+hline{24}={1-5}{solid, black, 0.08em},
+column{2-5}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Amtrak & Flat Tax & Veterans & Wall Street \\
+Op-ed: Amtrak & 0.501*** & 0.005 & 0.051 & -0.034 \\
+& (0.059) & (0.056) & (0.056) & (0.054) \\
+Op-ed: Flat Tax & 0.080 & 0.488*** & 0.048 & -0.023 \\
+& (0.055) & (0.060) & (0.056) & (0.056) \\
+Op-ed: Veterans & 0.044 & -0.026 & 0.646*** & -0.090* \\
+& (0.058) & (0.057) & (0.054) & (0.054) \\
+Op-ed: Wall Street & 0.055 & 0.097* & -0.113** & 0.698*** \\
+& (0.055) & (0.057) & (0.057) & (0.056) \\
+Elite Experiment & 0.137** & 0.103 & 0.060 & -0.027 \\
+& (0.062) & (0.063) & (0.059) & (0.058) \\
+Elite X Amtrak & -0.198** & -0.018 & 0.080 & 0.044 \\
+& (0.094) & (0.090) & (0.086) & (0.083) \\
+Elite X Flat Tax & -0.164* & -0.384*** & -0.048 & -0.016 \\
+& (0.087) & (0.092) & (0.084) & (0.083) \\
+Elite X Veterans & -0.085 & -0.019 & -0.493*** & 0.156* \\
+& (0.090) & (0.090) & (0.083) & (0.083) \\
+Elite X Wall Street & -0.076 & -0.020 & 0.081 & -0.127 \\
+& (0.090) & (0.089) & (0.086) & (0.082) \\
+Constant & -0.125*** & -0.101** & -0.103*** & -0.096** \\
+& (0.039) & (0.039) & (0.040) & (0.038) \\
+Num.Obs. & 5182 & 5182 & 5182 & 5182 \\
+R2 & 0.026 & 0.021 & 0.045 & 0.076 \\
+\end{talltblr}
+\end{table}

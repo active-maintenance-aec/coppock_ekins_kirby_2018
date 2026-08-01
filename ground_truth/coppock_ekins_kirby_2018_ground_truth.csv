@@ -1,0 +1,507 @@
+paper_id,table_figure,claim,value_script,value_paper,match,notes,value_rewrite,match_rewrite
+coppock_ekins_kirby_2018,table_1,Wave 1 / N / Control,622,622,1,NA,622,1
+coppock_ekins_kirby_2018,table_1,Wave 1 / N / Amtrak,597,597,1,NA,597,1
+coppock_ekins_kirby_2018,table_1,Wave 1 / N / Climate,570,570,1,NA,570,1
+coppock_ekins_kirby_2018,table_1,Wave 1 / N / Flat Tax,587,587,1,NA,587,1
+coppock_ekins_kirby_2018,table_1,Wave 1 / N / Veterans,592,592,1,NA,592,1
+coppock_ekins_kirby_2018,table_1,Wave 1 / N / Wall Street,603,603,1,NA,603,1
+coppock_ekins_kirby_2018,table_1,Wave 1 / N / Totals,3571,3571,1,NA,3571,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Distraction / Control,263,263,1,NA,263,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Distraction / Amtrak,240,240,1,NA,240,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Distraction / Climate,252,252,1,NA,252,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Distraction / Flat Tax,243,243,1,NA,243,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Distraction / Veterans,256,256,1,NA,256,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Distraction / Wall Street,243,243,1,NA,243,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Distraction / Totals,1497,1497,1,NA,1497,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / No distraction / Control,253,253,1,NA,253,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / No distraction / Amtrak,247,247,1,NA,247,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / No distraction / Climate,240,240,1,NA,240,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / No distraction / Flat Tax,243,243,1,NA,243,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / No distraction / Veterans,257,257,1,NA,257,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / No distraction / Wall Street,261,261,1,NA,261,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / No distraction / Totals,1501,1501,1,NA,1501,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Responded / Control,516,516,1,NA,516,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Responded / Amtrak,487,487,1,NA,487,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Responded / Climate,492,492,1,NA,492,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Responded / Flat Tax,486,486,1,NA,486,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Responded / Veterans,513,513,1,NA,513,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Responded / Wall Street,504,504,1,NA,504,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Responded / Totals,2998,2998,1,NA,2998,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Did not respond / Control,106,106,1,NA,106,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Did not respond / Amtrak,110,110,1,NA,110,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Did not respond / Climate,78,78,1,NA,78,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Did not respond / Flat Tax,101,101,1,NA,101,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Did not respond / Veterans,79,79,1,NA,79,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Did not respond / Wall Street,99,99,1,NA,99,1
+coppock_ekins_kirby_2018,table_1,Wave 2 / Did not respond / Totals,573,573,1,NA,573,1
+coppock_ekins_kirby_2018,table_1,Wave 3 / Responded / Control,433,433,1,NA,433,1
+coppock_ekins_kirby_2018,table_1,Wave 3 / Responded / Amtrak,412,412,1,NA,412,1
+coppock_ekins_kirby_2018,table_1,Wave 3 / Responded / Climate,386,386,1,NA,386,1
+coppock_ekins_kirby_2018,table_1,Wave 3 / Responded / Flat Tax,386,386,1,NA,386,1
+coppock_ekins_kirby_2018,table_1,Wave 3 / Responded / Veterans,412,412,1,NA,412,1
+coppock_ekins_kirby_2018,table_1,Wave 3 / Responded / Wall Street,422,422,1,NA,422,1
+coppock_ekins_kirby_2018,table_1,Wave 3 / Responded / Totals,2451,2451,1,NA,2451,1
+coppock_ekins_kirby_2018,table_1,Wave 3 / Did not respond / Control,189,189,1,NA,189,1
+coppock_ekins_kirby_2018,table_1,Wave 3 / Did not respond / Amtrak,185,185,1,NA,185,1
+coppock_ekins_kirby_2018,table_1,Wave 3 / Did not respond / Climate,184,184,1,NA,184,1
+coppock_ekins_kirby_2018,table_1,Wave 3 / Did not respond / Flat Tax,201,201,1,NA,201,1
+coppock_ekins_kirby_2018,table_1,Wave 3 / Did not respond / Veterans,180,180,1,NA,180,1
+coppock_ekins_kirby_2018,table_1,Wave 3 / Did not respond / Wall Street,181,181,1,NA,181,1
+coppock_ekins_kirby_2018,table_1,Wave 3 / Did not respond / Totals,1120,1120,1,NA,1120,1
+coppock_ekins_kirby_2018,table_5,Wave 1 / N / Control,448,448,1,NA,448,1
+coppock_ekins_kirby_2018,table_5,Wave 1 / N / Amtrak,407,407,1,NA,407,1
+coppock_ekins_kirby_2018,table_5,Wave 1 / N / Flat Tax,463,463,1,NA,463,1
+coppock_ekins_kirby_2018,table_5,Wave 1 / N / Veterans,438,438,1,NA,438,1
+coppock_ekins_kirby_2018,table_5,Wave 1 / N / Wall Street,425,425,1,NA,425,1
+coppock_ekins_kirby_2018,table_5,Wave 1 / N / Totals,2181,2181,1,NA,2181,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / Distraction / Control,139,139,1,NA,139,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / Distraction / Amtrak,135,135,1,NA,135,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / Distraction / Flat Tax,126,126,1,NA,126,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / Distraction / Veterans,132,132,1,NA,132,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / Distraction / Wall Street,138,138,1,NA,138,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / Distraction / Totals,670,670,1,NA,670,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / No distraction / Control,141,141,1,NA,141,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / No distraction / Amtrak,126,126,1,NA,126,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / No distraction / Flat Tax,141,141,1,NA,141,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / No distraction / Veterans,148,148,1,NA,148,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / No distraction / Wall Street,132,132,1,NA,132,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / No distraction / Totals,688,688,1,NA,688,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / Responded / Control,280,280,1,NA,280,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / Responded / Amtrak,261,261,1,NA,261,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / Responded / Flat Tax,267,267,1,NA,267,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / Responded / Veterans,280,280,1,NA,280,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / Responded / Wall Street,270,270,1,NA,270,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / Responded / Totals,1358,1358,1,NA,1358,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / Did not respond / Control,168,168,1,NA,168,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / Did not respond / Amtrak,146,146,1,NA,146,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / Did not respond / Flat Tax,196,196,1,NA,196,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / Did not respond / Veterans,158,158,1,NA,158,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / Did not respond / Wall Street,155,155,1,NA,155,1
+coppock_ekins_kirby_2018,table_5,Wave 2 / Did not respond / Totals,823,823,1,NA,823,1
+coppock_ekins_kirby_2018,table_3,Amtrak / Op-ed: Amtrak / estimate,0.43978,0.44,1,NA,0.43978,1
+coppock_ekins_kirby_2018,table_3,Amtrak / Op-ed: Amtrak / std.error,0.08503,0.085,1,NA,0.08503,1
+coppock_ekins_kirby_2018,table_3,Amtrak / Op-ed: Climate / estimate,0.05421,0.054,1,NA,0.05421,1
+coppock_ekins_kirby_2018,table_3,Amtrak / Op-ed: Climate / std.error,0.07876,0.079,1,NA,0.07876,1
+coppock_ekins_kirby_2018,table_3,Amtrak / Op-ed: Flat Tax / estimate,0.19517,0.195,1,NA,0.19517,1
+coppock_ekins_kirby_2018,table_3,Amtrak / Op-ed: Flat Tax / std.error,0.078,0.078,1,NA,0.078,1
+coppock_ekins_kirby_2018,table_3,Amtrak / Op-ed: Veterans / estimate,0.0474,0.047,1,NA,0.0474,1
+coppock_ekins_kirby_2018,table_3,Amtrak / Op-ed: Veterans / std.error,0.07914,0.079,1,NA,0.07914,1
+coppock_ekins_kirby_2018,table_3,Amtrak / Op-ed: Wall Street / estimate,0.03837,0.038,1,NA,0.03837,1
+coppock_ekins_kirby_2018,table_3,Amtrak / Op-ed: Wall Street / std.error,0.07758,0.078,1,NA,0.07758,1
+coppock_ekins_kirby_2018,table_3,Amtrak / Constant / estimate,2.90193,2.902,1,NA,2.90193,1
+coppock_ekins_kirby_2018,table_3,Amtrak / Constant / std.error,0.05406,0.054,1,NA,0.05406,1
+coppock_ekins_kirby_2018,table_3,Climate / Op-ed: Amtrak / estimate,-0.01954,-0.02,1,NA,-0.01954,1
+coppock_ekins_kirby_2018,table_3,Climate / Op-ed: Amtrak / std.error,0.09495,0.095,1,NA,0.09495,1
+coppock_ekins_kirby_2018,table_3,Climate / Op-ed: Climate / estimate,0.42669,0.427,1,NA,0.42669,1
+coppock_ekins_kirby_2018,table_3,Climate / Op-ed: Climate / std.error,0.09786,0.098,1,NA,0.09786,1
+coppock_ekins_kirby_2018,table_3,Climate / Op-ed: Flat Tax / estimate,0.12958,0.13,1,NA,0.12958,1
+coppock_ekins_kirby_2018,table_3,Climate / Op-ed: Flat Tax / std.error,0.0969,0.097,1,NA,0.0969,1
+coppock_ekins_kirby_2018,table_3,Climate / Op-ed: Veterans / estimate,0.03243,0.032,1,NA,0.03243,1
+coppock_ekins_kirby_2018,table_3,Climate / Op-ed: Veterans / std.error,0.09549,0.095,1,NA,0.09549,1
+coppock_ekins_kirby_2018,table_3,Climate / Op-ed: Wall Street / estimate,0.07909,0.079,1,NA,0.07909,1
+coppock_ekins_kirby_2018,table_3,Climate / Op-ed: Wall Street / std.error,0.0952,0.095,1,NA,0.0952,1
+coppock_ekins_kirby_2018,table_3,Climate / Constant / estimate,2.77331,2.773,1,NA,2.77331,1
+coppock_ekins_kirby_2018,table_3,Climate / Constant / std.error,0.06534,0.065,1,NA,0.06534,1
+coppock_ekins_kirby_2018,table_3,Flat Tax / Op-ed: Amtrak / estimate,0.05603,0.056,1,NA,0.05603,1
+coppock_ekins_kirby_2018,table_3,Flat Tax / Op-ed: Amtrak / std.error,0.10776,0.108,1,NA,0.10776,1
+coppock_ekins_kirby_2018,table_3,Flat Tax / Op-ed: Climate / estimate,0.13223,0.132,1,NA,0.13223,1
+coppock_ekins_kirby_2018,table_3,Flat Tax / Op-ed: Climate / std.error,0.10992,0.11,1,NA,0.10992,1
+coppock_ekins_kirby_2018,table_3,Flat Tax / Op-ed: Flat Tax / estimate,0.84979,0.85,1,NA,0.84979,1
+coppock_ekins_kirby_2018,table_3,Flat Tax / Op-ed: Flat Tax / std.error,0.10872,0.109,1,NA,0.10872,1
+coppock_ekins_kirby_2018,table_3,Flat Tax / Op-ed: Veterans / estimate,-0.10619,-0.106,1,NA,-0.10619,1
+coppock_ekins_kirby_2018,table_3,Flat Tax / Op-ed: Veterans / std.error,0.10971,0.11,1,NA,0.10971,1
+coppock_ekins_kirby_2018,table_3,Flat Tax / Op-ed: Wall Street / estimate,0.15095,0.151,1,NA,0.15095,1
+coppock_ekins_kirby_2018,table_3,Flat Tax / Op-ed: Wall Street / std.error,0.10681,0.107,1,NA,0.10681,1
+coppock_ekins_kirby_2018,table_3,Flat Tax / Constant / estimate,3.73794,3.738,1,NA,3.73794,1
+coppock_ekins_kirby_2018,table_3,Flat Tax / Constant / std.error,0.07606,0.076,1,NA,0.07606,1
+coppock_ekins_kirby_2018,table_3,Veterans / Op-ed: Amtrak / estimate,-0.05605,-0.056,1,NA,-0.05605,1
+coppock_ekins_kirby_2018,table_3,Veterans / Op-ed: Amtrak / std.error,0.08229,0.082,1,NA,0.08229,1
+coppock_ekins_kirby_2018,table_3,Veterans / Op-ed: Climate / estimate,-0.00863,-0.009,1,NA,-0.00863,1
+coppock_ekins_kirby_2018,table_3,Veterans / Op-ed: Climate / std.error,0.08216,0.082,1,NA,0.08216,1
+coppock_ekins_kirby_2018,table_3,Veterans / Op-ed: Flat Tax / estimate,-0.03312,-0.033,1,NA,-0.03312,1
+coppock_ekins_kirby_2018,table_3,Veterans / Op-ed: Flat Tax / std.error,0.08235,0.082,1,NA,0.08235,1
+coppock_ekins_kirby_2018,table_3,Veterans / Op-ed: Veterans / estimate,0.77035,0.77,1,NA,0.77035,1
+coppock_ekins_kirby_2018,table_3,Veterans / Op-ed: Veterans / std.error,0.07845,0.078,1,NA,0.07845,1
+coppock_ekins_kirby_2018,table_3,Veterans / Op-ed: Wall Street / estimate,-0.20973,-0.21,1,NA,-0.20973,1
+coppock_ekins_kirby_2018,table_3,Veterans / Op-ed: Wall Street / std.error,0.08395,0.084,1,NA,0.08395,1
+coppock_ekins_kirby_2018,table_3,Veterans / Constant / estimate,4.50161,4.502,1,NA,4.50161,1
+coppock_ekins_kirby_2018,table_3,Veterans / Constant / std.error,0.05773,0.058,1,NA,0.05773,1
+coppock_ekins_kirby_2018,table_3,Wall Street / Op-ed: Amtrak / estimate,-0.03452,-0.035,1,NA,-0.03452,1
+coppock_ekins_kirby_2018,table_3,Wall Street / Op-ed: Amtrak / std.error,0.07861,0.079,1,NA,0.07861,1
+coppock_ekins_kirby_2018,table_3,Wall Street / Op-ed: Climate / estimate,0.02635,0.026,1,NA,0.02635,1
+coppock_ekins_kirby_2018,table_3,Wall Street / Op-ed: Climate / std.error,0.08008,0.08,1,NA,0.08008,1
+coppock_ekins_kirby_2018,table_3,Wall Street / Op-ed: Flat Tax / estimate,-0.0178,-0.018,1,NA,-0.0178,1
+coppock_ekins_kirby_2018,table_3,Wall Street / Op-ed: Flat Tax / std.error,0.07928,0.079,1,NA,0.07928,1
+coppock_ekins_kirby_2018,table_3,Wall Street / Op-ed: Veterans / estimate,-0.1242,-0.124,1,NA,-0.1242,1
+coppock_ekins_kirby_2018,table_3,Wall Street / Op-ed: Veterans / std.error,0.07803,0.078,1,NA,0.07803,1
+coppock_ekins_kirby_2018,table_3,Wall Street / Op-ed: Wall Street / estimate,0.91492,0.915,1,NA,0.91492,1
+coppock_ekins_kirby_2018,table_3,Wall Street / Op-ed: Wall Street / std.error,0.0823,0.082,1,NA,0.0823,1
+coppock_ekins_kirby_2018,table_3,Wall Street / Constant / estimate,2.61576,2.616,1,NA,2.61576,1
+coppock_ekins_kirby_2018,table_3,Wall Street / Constant / std.error,0.05426,0.054,1,NA,0.05426,1
+coppock_ekins_kirby_2018,table_3,Amtrak / R2,0.0115,0.012,1,NA,0.0115,1
+coppock_ekins_kirby_2018,table_3,Climate / R2,0.00764,0.008,1,NA,0.00764,1
+coppock_ekins_kirby_2018,table_3,Flat Tax / R2,0.02638,0.026,1,NA,0.02638,1
+coppock_ekins_kirby_2018,table_3,Veterans / R2,0.04796,0.048,1,NA,0.04796,1
+coppock_ekins_kirby_2018,table_3,Wall Street / R2,0.06065,0.061,1,NA,0.06065,1
+coppock_ekins_kirby_2018,table_3,Amtrak / N,3571,3571,1,NA,3571,1
+coppock_ekins_kirby_2018,table_3,Climate / N,3571,3571,1,NA,3571,1
+coppock_ekins_kirby_2018,table_3,Flat Tax / N,3571,3571,1,NA,3571,1
+coppock_ekins_kirby_2018,table_3,Veterans / N,3571,3571,1,NA,3571,1
+coppock_ekins_kirby_2018,table_3,Wall Street / N,3571,3571,1,NA,3571,1
+coppock_ekins_kirby_2018,table_4,Amtrak / Op-ed: Amtrak / estimate,0.50096,0.501,1,NA,0.50096,1
+coppock_ekins_kirby_2018,table_4,Amtrak / Op-ed: Amtrak / std.error,0.05896,0.059,1,NA,0.05896,1
+coppock_ekins_kirby_2018,table_4,Amtrak / Op-ed: Climate / estimate,0.07776,0.078,1,NA,0.07776,1
+coppock_ekins_kirby_2018,table_4,Amtrak / Op-ed: Climate / std.error,0.05634,0.056,1,NA,0.05634,1
+coppock_ekins_kirby_2018,table_4,Amtrak / Op-ed: Flat Tax / estimate,0.08014,0.08,1,NA,0.08014,1
+coppock_ekins_kirby_2018,table_4,Amtrak / Op-ed: Flat Tax / std.error,0.05506,0.055,1,NA,0.05506,1
+coppock_ekins_kirby_2018,table_4,Amtrak / Op-ed: Veterans / estimate,0.04407,0.044,1,NA,0.04407,1
+coppock_ekins_kirby_2018,table_4,Amtrak / Op-ed: Veterans / std.error,0.05785,0.058,1,NA,0.05785,1
+coppock_ekins_kirby_2018,table_4,Amtrak / Op-ed: Wall Street / estimate,0.05468,0.055,1,NA,0.05468,1
+coppock_ekins_kirby_2018,table_4,Amtrak / Op-ed: Wall Street / std.error,0.05527,0.055,1,NA,0.05527,1
+coppock_ekins_kirby_2018,table_4,Amtrak / Constant / estimate,-0.12532,-0.125,1,NA,-0.12532,1
+coppock_ekins_kirby_2018,table_4,Amtrak / Constant / std.error,0.03916,0.039,1,NA,0.03916,1
+coppock_ekins_kirby_2018,table_4,Climate / Op-ed: Amtrak / estimate,0.01828,0.018,1,NA,0.01828,1
+coppock_ekins_kirby_2018,table_4,Climate / Op-ed: Amtrak / std.error,0.05645,0.056,1,NA,0.05645,1
+coppock_ekins_kirby_2018,table_4,Climate / Op-ed: Climate / estimate,0.27576,0.276,1,NA,0.27576,1
+coppock_ekins_kirby_2018,table_4,Climate / Op-ed: Climate / std.error,0.05747,0.057,1,NA,0.05747,1
+coppock_ekins_kirby_2018,table_4,Climate / Op-ed: Flat Tax / estimate,0.11026,0.11,1,NA,0.11026,1
+coppock_ekins_kirby_2018,table_4,Climate / Op-ed: Flat Tax / std.error,0.05592,0.056,1,NA,0.05592,1
+coppock_ekins_kirby_2018,table_4,Climate / Op-ed: Veterans / estimate,0.0034,0.003,1,NA,0.0034,1
+coppock_ekins_kirby_2018,table_4,Climate / Op-ed: Veterans / std.error,0.05688,0.057,1,NA,0.05688,1
+coppock_ekins_kirby_2018,table_4,Climate / Op-ed: Wall Street / estimate,0.06694,0.067,1,NA,0.06694,1
+coppock_ekins_kirby_2018,table_4,Climate / Op-ed: Wall Street / std.error,0.05664,0.057,1,NA,0.05664,1
+coppock_ekins_kirby_2018,table_4,Climate / Constant / estimate,-0.07907,-0.079,1,NA,-0.07907,1
+coppock_ekins_kirby_2018,table_4,Climate / Constant / std.error,0.0388,0.039,1,NA,0.0388,1
+coppock_ekins_kirby_2018,table_4,Flat Tax / Op-ed: Amtrak / estimate,0.00464,0.005,1,NA,0.00464,1
+coppock_ekins_kirby_2018,table_4,Flat Tax / Op-ed: Amtrak / std.error,0.05645,0.056,1,NA,0.05645,1
+coppock_ekins_kirby_2018,table_4,Flat Tax / Op-ed: Climate / estimate,0.045469999999999997,0.045,1,NA,0.045469999999999997,1
+coppock_ekins_kirby_2018,table_4,Flat Tax / Op-ed: Climate / std.error,0.0566,0.057,1,NA,0.0566,1
+coppock_ekins_kirby_2018,table_4,Flat Tax / Op-ed: Flat Tax / estimate,0.48799,0.488,1,NA,0.48799,1
+coppock_ekins_kirby_2018,table_4,Flat Tax / Op-ed: Flat Tax / std.error,0.05986,0.06,1,NA,0.05986,1
+coppock_ekins_kirby_2018,table_4,Flat Tax / Op-ed: Veterans / estimate,-0.02569,-0.026,1,NA,-0.02569,1
+coppock_ekins_kirby_2018,table_4,Flat Tax / Op-ed: Veterans / std.error,0.05722,0.057,1,NA,0.05722,1
+coppock_ekins_kirby_2018,table_4,Flat Tax / Op-ed: Wall Street / estimate,0.09694,0.097,1,NA,0.09694,1
+coppock_ekins_kirby_2018,table_4,Flat Tax / Op-ed: Wall Street / std.error,0.05661,0.057,1,NA,0.05661,1
+coppock_ekins_kirby_2018,table_4,Flat Tax / Constant / estimate,-0.10125,-0.101,1,NA,-0.10125,1
+coppock_ekins_kirby_2018,table_4,Flat Tax / Constant / std.error,0.03941,0.039,1,NA,0.03941,1
+coppock_ekins_kirby_2018,table_4,Veterans / Op-ed: Amtrak / estimate,0.05108,0.051,1,NA,0.05108,1
+coppock_ekins_kirby_2018,table_4,Veterans / Op-ed: Amtrak / std.error,0.05584,0.056,1,NA,0.05584,1
+coppock_ekins_kirby_2018,table_4,Veterans / Op-ed: Climate / estimate,-0.00665,-0.007,1,NA,-0.00665,1
+coppock_ekins_kirby_2018,table_4,Veterans / Op-ed: Climate / std.error,0.05582,0.056,1,NA,0.05582,1
+coppock_ekins_kirby_2018,table_4,Veterans / Op-ed: Flat Tax / estimate,0.04793,0.048,1,NA,0.04793,1
+coppock_ekins_kirby_2018,table_4,Veterans / Op-ed: Flat Tax / std.error,0.05616,0.056,1,NA,0.05616,1
+coppock_ekins_kirby_2018,table_4,Veterans / Op-ed: Veterans / estimate,0.64553,0.646,1,NA,0.64553,1
+coppock_ekins_kirby_2018,table_4,Veterans / Op-ed: Veterans / std.error,0.05387,0.054,1,NA,0.05387,1
+coppock_ekins_kirby_2018,table_4,Veterans / Op-ed: Wall Street / estimate,-0.11347,-0.113,1,NA,-0.11347,1
+coppock_ekins_kirby_2018,table_4,Veterans / Op-ed: Wall Street / std.error,0.056710000000000003,0.057,1,NA,0.056710000000000003,1
+coppock_ekins_kirby_2018,table_4,Veterans / Constant / estimate,-0.10339,-0.103,1,NA,-0.10339,1
+coppock_ekins_kirby_2018,table_4,Veterans / Constant / std.error,0.03953,0.04,1,NA,0.03953,1
+coppock_ekins_kirby_2018,table_4,Wall Street / Op-ed: Amtrak / estimate,-0.03394,-0.034,1,NA,-0.03394,1
+coppock_ekins_kirby_2018,table_4,Wall Street / Op-ed: Amtrak / std.error,0.05397,0.054,1,NA,0.05397,1
+coppock_ekins_kirby_2018,table_4,Wall Street / Op-ed: Climate / estimate,0.00792,0.008,1,NA,0.00792,1
+coppock_ekins_kirby_2018,table_4,Wall Street / Op-ed: Climate / std.error,0.0553,0.055,1,NA,0.0553,1
+coppock_ekins_kirby_2018,table_4,Wall Street / Op-ed: Flat Tax / estimate,-0.02339,-0.023,1,NA,-0.02339,1
+coppock_ekins_kirby_2018,table_4,Wall Street / Op-ed: Flat Tax / std.error,0.05572,0.056,1,NA,0.05572,1
+coppock_ekins_kirby_2018,table_4,Wall Street / Op-ed: Veterans / estimate,-0.08989,-0.09,1,NA,-0.08989,1
+coppock_ekins_kirby_2018,table_4,Wall Street / Op-ed: Veterans / std.error,0.05379,0.054,1,NA,0.05379,1
+coppock_ekins_kirby_2018,table_4,Wall Street / Op-ed: Wall Street / estimate,0.69764,0.698,1,NA,0.69764,1
+coppock_ekins_kirby_2018,table_4,Wall Street / Op-ed: Wall Street / std.error,0.05566,0.056,1,NA,0.05566,1
+coppock_ekins_kirby_2018,table_4,Wall Street / Constant / estimate,-0.0958,-0.096,1,NA,-0.0958,1
+coppock_ekins_kirby_2018,table_4,Wall Street / Constant / std.error,0.03831,0.038,1,NA,0.03831,1
+coppock_ekins_kirby_2018,table_4,Amtrak / R2,0.02856,0.029,1,NA,0.02856,1
+coppock_ekins_kirby_2018,table_4,Climate / R2,0.009,0.009,1,NA,0.009,1
+coppock_ekins_kirby_2018,table_4,Flat Tax / R2,0.0298,0.03,1,NA,0.0298,1
+coppock_ekins_kirby_2018,table_4,Veterans / R2,0.06274,0.063,1,NA,0.06274,1
+coppock_ekins_kirby_2018,table_4,Wall Street / R2,0.07599,0.076,1,NA,0.07599,1
+coppock_ekins_kirby_2018,table_4,Amtrak / N,3571,3571,1,NA,3571,1
+coppock_ekins_kirby_2018,table_4,Climate / N,3571,3571,1,NA,3571,1
+coppock_ekins_kirby_2018,table_4,Flat Tax / N,3571,3571,1,NA,3571,1
+coppock_ekins_kirby_2018,table_4,Veterans / N,3571,3571,1,NA,3571,1
+coppock_ekins_kirby_2018,table_4,Wall Street / N,3571,3571,1,NA,3571,1
+coppock_ekins_kirby_2018,table_6,Amtrak / Op-ed: Amtrak / estimate,0.43844,0.438,1,NA,0.43844,1
+coppock_ekins_kirby_2018,table_6,Amtrak / Op-ed: Amtrak / std.error,0.10954,0.11,1,NA,0.10954,1
+coppock_ekins_kirby_2018,table_6,Amtrak / Op-ed: Flat Tax / estimate,-0.02279,-0.023,1,NA,-0.02279,1
+coppock_ekins_kirby_2018,table_6,Amtrak / Op-ed: Flat Tax / std.error,0.10075,0.101,1,NA,0.10075,1
+coppock_ekins_kirby_2018,table_6,Amtrak / Op-ed: Veterans / estimate,-0.00448,-0.004,1,NA,-0.00448,1
+coppock_ekins_kirby_2018,table_6,Amtrak / Op-ed: Veterans / std.error,0.10326,0.103,1,NA,0.10326,1
+coppock_ekins_kirby_2018,table_6,Amtrak / Op-ed: Wall Street / estimate,0.04231,0.042,1,NA,0.04231,1
+coppock_ekins_kirby_2018,table_6,Amtrak / Op-ed: Wall Street / std.error,0.1086,0.109,1,NA,0.1086,1
+coppock_ekins_kirby_2018,table_6,Amtrak / Constant / estimate,2.30357,2.304,1,NA,2.30357,1
+coppock_ekins_kirby_2018,table_6,Amtrak / Constant / std.error,0.07326,0.073,1,NA,0.07326,1
+coppock_ekins_kirby_2018,table_6,Flat Tax / Op-ed: Amtrak / estimate,-0.0941,-0.094,1,NA,-0.0941,1
+coppock_ekins_kirby_2018,table_6,Flat Tax / Op-ed: Amtrak / std.error,0.14979,0.15,1,NA,0.14979,1
+coppock_ekins_kirby_2018,table_6,Flat Tax / Op-ed: Flat Tax / estimate,0.41108,0.411,1,NA,0.41108,1
+coppock_ekins_kirby_2018,table_6,Flat Tax / Op-ed: Flat Tax / std.error,0.14353,0.144,1,NA,0.14353,1
+coppock_ekins_kirby_2018,table_6,Flat Tax / Op-ed: Veterans / estimate,-0.15575,-0.156,1,NA,-0.15575,1
+coppock_ekins_kirby_2018,table_6,Flat Tax / Op-ed: Veterans / std.error,0.14732,0.147,1,NA,0.14732,1
+coppock_ekins_kirby_2018,table_6,Flat Tax / Op-ed: Wall Street / estimate,0.06658,0.067,1,NA,0.06658,1
+coppock_ekins_kirby_2018,table_6,Flat Tax / Op-ed: Wall Street / std.error,0.14828,0.148,1,NA,0.14828,1
+coppock_ekins_kirby_2018,table_6,Flat Tax / Constant / estimate,3.57813,3.578,1,NA,3.57813,1
+coppock_ekins_kirby_2018,table_6,Flat Tax / Constant / std.error,0.10297,0.103,1,NA,0.10297,1
+coppock_ekins_kirby_2018,table_6,Veterans / Op-ed: Amtrak / estimate,0.06874,0.069,1,NA,0.06874,1
+coppock_ekins_kirby_2018,table_6,Veterans / Op-ed: Amtrak / std.error,0.09278,0.093,1,NA,0.09278,1
+coppock_ekins_kirby_2018,table_6,Veterans / Op-ed: Flat Tax / estimate,-0.05998,-0.06,1,NA,-0.05998,1
+coppock_ekins_kirby_2018,table_6,Veterans / Op-ed: Flat Tax / std.error,0.09081,0.091,1,NA,0.09081,1
+coppock_ekins_kirby_2018,table_6,Veterans / Op-ed: Veterans / estimate,0.04532,0.045,1,NA,0.04532,1
+coppock_ekins_kirby_2018,table_6,Veterans / Op-ed: Veterans / std.error,0.09117,0.091,1,NA,0.09117,1
+coppock_ekins_kirby_2018,table_6,Veterans / Op-ed: Wall Street / estimate,-0.05541,-0.055,1,NA,-0.05541,1
+coppock_ekins_kirby_2018,table_6,Veterans / Op-ed: Wall Street / std.error,0.09343,0.093,1,NA,0.09343,1
+coppock_ekins_kirby_2018,table_6,Veterans / Constant / estimate,4.58482,4.585,1,NA,4.58482,1
+coppock_ekins_kirby_2018,table_6,Veterans / Constant / std.error,0.06379,0.064,1,NA,0.06379,1
+coppock_ekins_kirby_2018,table_6,Wall Street / Op-ed: Amtrak / estimate,0.0712,0.071,1,NA,0.0712,1
+coppock_ekins_kirby_2018,table_6,Wall Street / Op-ed: Amtrak / std.error,0.10299,0.103,1,NA,0.10299,1
+coppock_ekins_kirby_2018,table_6,Wall Street / Op-ed: Flat Tax / estimate,-0.00409,-0.004,1,NA,-0.00409,1
+coppock_ekins_kirby_2018,table_6,Wall Street / Op-ed: Flat Tax / std.error,0.10071,0.101,1,NA,0.10071,1
+coppock_ekins_kirby_2018,table_6,Wall Street / Op-ed: Veterans / estimate,0.11932,0.119,1,NA,0.11932,1
+coppock_ekins_kirby_2018,table_6,Wall Street / Op-ed: Veterans / std.error,0.10146,0.101,1,NA,0.10146,1
+coppock_ekins_kirby_2018,table_6,Wall Street / Op-ed: Wall Street / estimate,0.79131,0.791,1,NA,0.79131,1
+coppock_ekins_kirby_2018,table_6,Wall Street / Op-ed: Wall Street / std.error,0.10536,0.105,1,NA,0.10536,1
+coppock_ekins_kirby_2018,table_6,Wall Street / Constant / estimate,2.92634,2.926,1,NA,2.92634,1
+coppock_ekins_kirby_2018,table_6,Wall Street / Constant / std.error,0.07146,0.071,1,NA,0.07146,1
+coppock_ekins_kirby_2018,table_6,Amtrak / R2,0.01174,0.012,1,NA,0.01174,1
+coppock_ekins_kirby_2018,table_6,Flat Tax / R2,0.00845,0.008,1,NA,0.00845,1
+coppock_ekins_kirby_2018,table_6,Veterans / R2,0.00141,0.001,1,NA,0.00141,1
+coppock_ekins_kirby_2018,table_6,Wall Street / R2,0.03699,0.037,1,NA,0.03699,1
+coppock_ekins_kirby_2018,table_6,Amtrak / N,2181,2181,1,NA,2181,1
+coppock_ekins_kirby_2018,table_6,Flat Tax / N,2181,2181,1,NA,2181,1
+coppock_ekins_kirby_2018,table_6,Veterans / N,2181,2181,1,NA,2181,1
+coppock_ekins_kirby_2018,table_6,Wall Street / N,2181,2181,1,NA,2181,1
+coppock_ekins_kirby_2018,table_7,Amtrak / Op-ed: Amtrak / estimate,0.30325,0.303,1,NA,0.30325,1
+coppock_ekins_kirby_2018,table_7,Amtrak / Op-ed: Amtrak / std.error,0.07311,0.073,1,NA,0.07311,1
+coppock_ekins_kirby_2018,table_7,Amtrak / Op-ed: Flat Tax / estimate,-0.08417,-0.084,1,NA,-0.08417,1
+coppock_ekins_kirby_2018,table_7,Amtrak / Op-ed: Flat Tax / std.error,0.06714,0.067,1,NA,0.06714,1
+coppock_ekins_kirby_2018,table_7,Amtrak / Op-ed: Veterans / estimate,-0.04104,-0.041,1,NA,-0.04104,1
+coppock_ekins_kirby_2018,table_7,Amtrak / Op-ed: Veterans / std.error,0.06852,0.069,1,NA,0.06852,1
+coppock_ekins_kirby_2018,table_7,Amtrak / Op-ed: Wall Street / estimate,-0.02083,-0.021,1,NA,-0.02083,1
+coppock_ekins_kirby_2018,table_7,Amtrak / Op-ed: Wall Street / std.error,0.07116,0.071,1,NA,0.07116,1
+coppock_ekins_kirby_2018,table_7,Amtrak / Constant / estimate,0.01182,0.012,1,NA,0.01182,1
+coppock_ekins_kirby_2018,table_7,Amtrak / Constant / std.error,0.04784,0.048,1,NA,0.04784,1
+coppock_ekins_kirby_2018,table_7,Flat Tax / Op-ed: Amtrak / estimate,-0.01383,-0.014,1,NA,-0.01383,1
+coppock_ekins_kirby_2018,table_7,Flat Tax / Op-ed: Amtrak / std.error,0.07035,0.07,1,NA,0.07035,1
+coppock_ekins_kirby_2018,table_7,Flat Tax / Op-ed: Flat Tax / estimate,0.10425,0.104,1,NA,0.10425,1
+coppock_ekins_kirby_2018,table_7,Flat Tax / Op-ed: Flat Tax / std.error,0.06985,0.07,1,NA,0.06985,1
+coppock_ekins_kirby_2018,table_7,Flat Tax / Op-ed: Veterans / estimate,-0.0444,-0.044,1,NA,-0.0444,1
+coppock_ekins_kirby_2018,table_7,Flat Tax / Op-ed: Veterans / std.error,0.06956,0.07,1,NA,0.06956,1
+coppock_ekins_kirby_2018,table_7,Flat Tax / Op-ed: Wall Street / estimate,0.0773,0.077,1,NA,0.0773,1
+coppock_ekins_kirby_2018,table_7,Flat Tax / Op-ed: Wall Street / std.error,0.06881,0.069,1,NA,0.06881,1
+coppock_ekins_kirby_2018,table_7,Flat Tax / Constant / estimate,0.00162,0.002,1,NA,0.00162,1
+coppock_ekins_kirby_2018,table_7,Flat Tax / Constant / std.error,0.04861,0.049,1,NA,0.04861,1
+coppock_ekins_kirby_2018,table_7,Veterans / Op-ed: Amtrak / estimate,0.13111,0.131,1,NA,0.13111,1
+coppock_ekins_kirby_2018,table_7,Veterans / Op-ed: Amtrak / std.error,0.06515,0.065,1,NA,0.06515,1
+coppock_ekins_kirby_2018,table_7,Veterans / Op-ed: Flat Tax / estimate,-4.8e-4,-5e-4,1,NA,-4.8e-4,1
+coppock_ekins_kirby_2018,table_7,Veterans / Op-ed: Flat Tax / std.error,0.06198,0.062,1,NA,0.06198,1
+coppock_ekins_kirby_2018,table_7,Veterans / Op-ed: Veterans / estimate,0.15257,0.153,1,NA,0.15257,1
+coppock_ekins_kirby_2018,table_7,Veterans / Op-ed: Veterans / std.error,0.06309,0.063,1,NA,0.06309,1
+coppock_ekins_kirby_2018,table_7,Veterans / Op-ed: Wall Street / estimate,-0.03199,-0.032,1,NA,-0.03199,1
+coppock_ekins_kirby_2018,table_7,Veterans / Op-ed: Wall Street / std.error,0.06436,0.064,1,NA,0.06436,1
+coppock_ekins_kirby_2018,table_7,Veterans / Constant / estimate,-0.04341,-0.043,1,NA,-0.04341,1
+coppock_ekins_kirby_2018,table_7,Veterans / Constant / std.error,0.04395,0.044,1,NA,0.04395,1
+coppock_ekins_kirby_2018,table_7,Wall Street / Op-ed: Amtrak / estimate,0.01031,0.01,1,NA,0.01031,1
+coppock_ekins_kirby_2018,table_7,Wall Street / Op-ed: Amtrak / std.error,0.06259,0.063,1,NA,0.06259,1
+coppock_ekins_kirby_2018,table_7,Wall Street / Op-ed: Flat Tax / estimate,-0.03901,-0.039,1,NA,-0.03901,1
+coppock_ekins_kirby_2018,table_7,Wall Street / Op-ed: Flat Tax / std.error,0.06215,0.062,1,NA,0.06215,1
+coppock_ekins_kirby_2018,table_7,Wall Street / Op-ed: Veterans / estimate,0.06575,0.066,1,NA,0.06575,1
+coppock_ekins_kirby_2018,table_7,Wall Street / Op-ed: Veterans / std.error,0.06325,0.063,1,NA,0.06325,1
+coppock_ekins_kirby_2018,table_7,Wall Street / Op-ed: Wall Street / estimate,0.57064,0.571,1,NA,0.57064,1
+coppock_ekins_kirby_2018,table_7,Wall Street / Op-ed: Wall Street / std.error,0.06019,0.06,1,NA,0.06019,1
+coppock_ekins_kirby_2018,table_7,Wall Street / Constant / estimate,-0.12316,-0.123,1,NA,-0.12316,1
+coppock_ekins_kirby_2018,table_7,Wall Street / Constant / std.error,0.04394,0.044,1,NA,0.04394,1
+coppock_ekins_kirby_2018,table_7,Amtrak / R2,0.01645,0.016,1,NA,0.01645,1
+coppock_ekins_kirby_2018,table_7,Flat Tax / R2,0.00301,0.003,1,NA,0.00301,1
+coppock_ekins_kirby_2018,table_7,Veterans / R2,0.00628,0.006,1,NA,0.00628,1
+coppock_ekins_kirby_2018,table_7,Wall Street / R2,0.05703,0.057,1,NA,0.05703,1
+coppock_ekins_kirby_2018,table_7,Amtrak / N,2181,2181,1,NA,2181,1
+coppock_ekins_kirby_2018,table_7,Flat Tax / N,2181,2181,1,NA,2181,1
+coppock_ekins_kirby_2018,table_7,Veterans / N,2181,2181,1,NA,2181,1
+coppock_ekins_kirby_2018,table_7,Wall Street / N,2181,2181,1,NA,2181,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Op-ed: Amtrak / estimate,0.50096,0.501,1,NA,0.50096,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Op-ed: Amtrak / std.error,0.05896,0.059,1,NA,0.05896,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Op-ed: Flat Tax / estimate,0.08014,0.08,1,NA,0.08014,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Op-ed: Flat Tax / std.error,0.05506,0.055,1,NA,0.05506,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Op-ed: Veterans / estimate,0.04407,0.044,1,NA,0.04407,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Op-ed: Veterans / std.error,0.05785,0.058,1,NA,0.05785,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Op-ed: Wall Street / estimate,0.05468,0.055,1,NA,0.05468,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Op-ed: Wall Street / std.error,0.05527,0.055,1,NA,0.05527,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Elite Experiment / estimate,0.13714,0.137,1,NA,0.13714,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Elite Experiment / std.error,0.06183,0.062,1,NA,0.06183,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Elite X Amtrak / estimate,-0.19772,-0.198,1,NA,-0.19772,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Elite X Amtrak / std.error,0.09392,0.094,1,NA,0.09392,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Elite X Flat Tax / estimate,-0.16431,-0.164,1,NA,-0.16431,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Elite X Flat Tax / std.error,0.08682,0.087,1,NA,0.08682,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Elite X Veterans / estimate,-0.0851,-0.085,1,NA,-0.0851,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Elite X Veterans / std.error,0.08968,0.09,1,NA,0.08968,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Elite X Wall Street / estimate,-0.07551,-0.076,1,NA,-0.07551,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Elite X Wall Street / std.error,0.0901,0.09,1,NA,0.0901,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Constant / estimate,-0.12532,-0.125,1,NA,-0.12532,1
+coppock_ekins_kirby_2018,table_8,Amtrak / Constant / std.error,0.03916,0.039,1,NA,0.03916,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Op-ed: Amtrak / estimate,0.00464,0.005,1,NA,0.00464,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Op-ed: Amtrak / std.error,0.05645,0.056,1,NA,0.05645,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Op-ed: Flat Tax / estimate,0.48799,0.488,1,NA,0.48799,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Op-ed: Flat Tax / std.error,0.05986,0.06,1,NA,0.05986,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Op-ed: Veterans / estimate,-0.02569,-0.026,1,NA,-0.02569,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Op-ed: Veterans / std.error,0.05722,0.057,1,NA,0.05722,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Op-ed: Wall Street / estimate,0.09694,0.097,1,NA,0.09694,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Op-ed: Wall Street / std.error,0.05661,0.057,1,NA,0.05661,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Elite Experiment / estimate,0.10287,0.103,1,NA,0.10287,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Elite Experiment / std.error,0.06258,0.063,1,NA,0.06258,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Elite X Amtrak / estimate,-0.01847,-0.018,1,NA,-0.01847,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Elite X Amtrak / std.error,0.0902,0.09,1,NA,0.0902,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Elite X Flat Tax / estimate,-0.38374,-0.384,1,NA,-0.38374,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Elite X Flat Tax / std.error,0.092,0.092,1,NA,0.092,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Elite X Veterans / estimate,-0.01871,-0.019,1,NA,-0.01871,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Elite X Veterans / std.error,0.09007,0.09,1,NA,0.09007,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Elite X Wall Street / estimate,-0.01964,-0.02,1,NA,-0.01964,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Elite X Wall Street / std.error,0.0891,0.089,1,NA,0.0891,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Constant / estimate,-0.10125,-0.101,1,NA,-0.10125,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / Constant / std.error,0.03941,0.039,1,NA,0.03941,1
+coppock_ekins_kirby_2018,table_8,Veterans / Op-ed: Amtrak / estimate,0.05108,0.051,1,NA,0.05108,1
+coppock_ekins_kirby_2018,table_8,Veterans / Op-ed: Amtrak / std.error,0.05584,0.056,1,NA,0.05584,1
+coppock_ekins_kirby_2018,table_8,Veterans / Op-ed: Flat Tax / estimate,0.04793,0.048,1,NA,0.04793,1
+coppock_ekins_kirby_2018,table_8,Veterans / Op-ed: Flat Tax / std.error,0.05616,0.056,1,NA,0.05616,1
+coppock_ekins_kirby_2018,table_8,Veterans / Op-ed: Veterans / estimate,0.64553,0.646,1,NA,0.64553,1
+coppock_ekins_kirby_2018,table_8,Veterans / Op-ed: Veterans / std.error,0.05387,0.054,1,NA,0.05387,1
+coppock_ekins_kirby_2018,table_8,Veterans / Op-ed: Wall Street / estimate,-0.11347,-0.113,1,NA,-0.11347,1
+coppock_ekins_kirby_2018,table_8,Veterans / Op-ed: Wall Street / std.error,0.056710000000000003,0.057,1,NA,0.056710000000000003,1
+coppock_ekins_kirby_2018,table_8,Veterans / Elite Experiment / estimate,0.05998,0.06,1,NA,0.05998,1
+coppock_ekins_kirby_2018,table_8,Veterans / Elite Experiment / std.error,0.05911,0.059,1,NA,0.05911,1
+coppock_ekins_kirby_2018,table_8,Veterans / Elite X Amtrak / estimate,0.08003,0.08,1,NA,0.08003,1
+coppock_ekins_kirby_2018,table_8,Veterans / Elite X Amtrak / std.error,0.0858,0.086,1,NA,0.0858,1
+coppock_ekins_kirby_2018,table_8,Veterans / Elite X Flat Tax / estimate,-0.04841,-0.048,1,NA,-0.04841,1
+coppock_ekins_kirby_2018,table_8,Veterans / Elite X Flat Tax / std.error,0.08364,0.084,1,NA,0.08364,1
+coppock_ekins_kirby_2018,table_8,Veterans / Elite X Veterans / estimate,-0.49296,-0.493,1,NA,-0.49296,1
+coppock_ekins_kirby_2018,table_8,Veterans / Elite X Veterans / std.error,0.08296,0.083,1,NA,0.08296,1
+coppock_ekins_kirby_2018,table_8,Veterans / Elite X Wall Street / estimate,0.08148,0.081,1,NA,0.08148,1
+coppock_ekins_kirby_2018,table_8,Veterans / Elite X Wall Street / std.error,0.08578,0.086,1,NA,0.08578,1
+coppock_ekins_kirby_2018,table_8,Veterans / Constant / estimate,-0.10339,-0.103,1,NA,-0.10339,1
+coppock_ekins_kirby_2018,table_8,Veterans / Constant / std.error,0.03953,0.04,1,NA,0.03953,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Op-ed: Amtrak / estimate,-0.03394,-0.034,1,NA,-0.03394,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Op-ed: Amtrak / std.error,0.05397,0.054,1,NA,0.05397,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Op-ed: Flat Tax / estimate,-0.02339,-0.023,1,NA,-0.02339,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Op-ed: Flat Tax / std.error,0.05572,0.056,1,NA,0.05572,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Op-ed: Veterans / estimate,-0.08989,-0.09,1,NA,-0.08989,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Op-ed: Veterans / std.error,0.05379,0.054,1,NA,0.05379,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Op-ed: Wall Street / estimate,0.69764,0.698,1,NA,0.69764,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Op-ed: Wall Street / std.error,0.05566,0.056,1,NA,0.05566,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Elite Experiment / estimate,-0.02736,-0.027,1,NA,-0.02736,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Elite Experiment / std.error,0.0583,0.058,1,NA,0.0583,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Elite X Amtrak / estimate,0.04424,0.044,1,NA,0.04424,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Elite X Amtrak / std.error,0.08265,0.083,1,NA,0.08265,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Elite X Flat Tax / estimate,-0.01561,-0.016,1,NA,-0.01561,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Elite X Flat Tax / std.error,0.08347,0.083,1,NA,0.08347,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Elite X Veterans / estimate,0.15564,0.156,1,NA,0.15564,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Elite X Veterans / std.error,0.08303,0.083,1,NA,0.08303,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Elite X Wall Street / estimate,-0.127,-0.127,1,NA,-0.127,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Elite X Wall Street / std.error,0.08198,0.082,1,NA,0.08198,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Constant / estimate,-0.0958,-0.096,1,NA,-0.0958,1
+coppock_ekins_kirby_2018,table_8,Wall Street / Constant / std.error,0.03831,0.038,1,NA,0.03831,1
+coppock_ekins_kirby_2018,table_8,Amtrak / R2,0.02587,0.026,1,NA,0.02587,1
+coppock_ekins_kirby_2018,table_8,Amtrak / N,5182,5182,1,NA,5182,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / R2,0.02104,0.021,1,NA,0.02104,1
+coppock_ekins_kirby_2018,table_8,Flat Tax / N,5182,5182,1,NA,5182,1
+coppock_ekins_kirby_2018,table_8,Veterans / R2,0.04509,0.045,1,NA,0.04509,1
+coppock_ekins_kirby_2018,table_8,Veterans / N,5182,5182,1,NA,5182,1
+coppock_ekins_kirby_2018,table_8,Wall Street / R2,0.07562,0.076,1,NA,0.07562,1
+coppock_ekins_kirby_2018,table_8,Wall Street / N,5182,5182,1,NA,5182,1
+coppock_ekins_kirby_2018,table_9,MTurk / Amtrak / Main DV / F test p,0.04171,0.045,0,Archive returns the HC2 F test under current estimatr; the published value is the classical F test the same code produced in 2018. The rewrite reports both and value_rewrite is p_classical.,0.04496,1
+coppock_ekins_kirby_2018,table_9,MTurk / Amtrak / Scale DV / F test p,0.01961,0.029,0,Archive returns the HC2 F test under current estimatr; the published value is the classical F test the same code produced in 2018. The rewrite reports both and value_rewrite is p_classical.,0.02936,1
+coppock_ekins_kirby_2018,table_9,MTurk / Climate / Main DV / F test p,0.88325,0.845,0,Archive returns the HC2 F test under current estimatr; the published value is the classical F test the same code produced in 2018. The rewrite reports both and value_rewrite is p_classical.,0.84524,1
+coppock_ekins_kirby_2018,table_9,MTurk / Climate / Scale DV / F test p,0.36227,0.243,0,Archive returns the HC2 F test under current estimatr; the published value is the classical F test the same code produced in 2018. The rewrite reports both and value_rewrite is p_classical.,0.24333,1
+coppock_ekins_kirby_2018,table_9,MTurk / Flat Tax / Main DV / F test p,0.00934,0.009,1,Archive returns the HC2 F test under current estimatr; the published value is the classical F test the same code produced in 2018. The rewrite reports both and value_rewrite is p_classical.,0.0091,1
+coppock_ekins_kirby_2018,table_9,MTurk / Flat Tax / Scale DV / F test p,3.7e-4,0.001,0,Archive returns the HC2 F test under current estimatr; the published value is the classical F test the same code produced in 2018. The rewrite reports both and value_rewrite is p_classical.,5.7e-4,1
+coppock_ekins_kirby_2018,table_9,MTurk / Veterans / Main DV / F test p,0.87586,0.878,0,Archive returns the HC2 F test under current estimatr; the published value is the classical F test the same code produced in 2018. The rewrite reports both and value_rewrite is p_classical.,0.87849,1
+coppock_ekins_kirby_2018,table_9,MTurk / Veterans / Scale DV / F test p,0.61452,0.562,0,Archive returns the HC2 F test under current estimatr; the published value is the classical F test the same code produced in 2018. The rewrite reports both and value_rewrite is p_classical.,0.56173,1
+coppock_ekins_kirby_2018,table_9,MTurk / Wall Street / Main DV / F test p,0.34112,0.31,0,Archive returns the HC2 F test under current estimatr; the published value is the classical F test the same code produced in 2018. The rewrite reports both and value_rewrite is p_classical.,0.31027,1
+coppock_ekins_kirby_2018,table_9,MTurk / Wall Street / Scale DV / F test p,0.37365,0.371,0,Archive returns the HC2 F test under current estimatr; the published value is the classical F test the same code produced in 2018. The rewrite reports both and value_rewrite is p_classical.,0.37086,1
+coppock_ekins_kirby_2018,table_9,Elite / Amtrak / Main DV / F test p,0.48662,0.436,0,Archive returns the HC2 F test under current estimatr; the published value is the classical F test the same code produced in 2018. The rewrite reports both and value_rewrite is p_classical.,0.43578,1
+coppock_ekins_kirby_2018,table_9,Elite / Amtrak / Scale DV / F test p,0.38321,0.342,0,Archive returns the HC2 F test under current estimatr; the published value is the classical F test the same code produced in 2018. The rewrite reports both and value_rewrite is p_classical.,0.34233,1
+coppock_ekins_kirby_2018,table_9,Elite / Flat Tax / Main DV / F test p,0.18665,0.146,0,Archive returns the HC2 F test under current estimatr; the published value is the classical F test the same code produced in 2018. The rewrite reports both and value_rewrite is p_classical.,0.14637,1
+coppock_ekins_kirby_2018,table_9,Elite / Flat Tax / Scale DV / F test p,0.28396,0.293,0,Archive returns the HC2 F test under current estimatr; the published value is the classical F test the same code produced in 2018. The rewrite reports both and value_rewrite is p_classical.,0.29256,1
+coppock_ekins_kirby_2018,table_9,Elite / Veterans / Main DV / F test p,0.43136,0.434,0,Archive returns the HC2 F test under current estimatr; the published value is the classical F test the same code produced in 2018. The rewrite reports both and value_rewrite is p_classical.,0.43373,1
+coppock_ekins_kirby_2018,table_9,Elite / Veterans / Scale DV / F test p,0.31961,0.291,0,Archive returns the HC2 F test under current estimatr; the published value is the classical F test the same code produced in 2018. The rewrite reports both and value_rewrite is p_classical.,0.29089,1
+coppock_ekins_kirby_2018,table_9,Elite / Wall Street / Main DV / F test p,0.37184,0.316,0,Archive returns the HC2 F test under current estimatr; the published value is the classical F test the same code produced in 2018. The rewrite reports both and value_rewrite is p_classical.,0.31611,1
+coppock_ekins_kirby_2018,table_9,Elite / Wall Street / Scale DV / F test p,0.28259,0.265,0,Archive returns the HC2 F test under current estimatr; the published value is the classical F test the same code produced in 2018. The rewrite reports both and value_rewrite is p_classical.,0.26479,1
+coppock_ekins_kirby_2018,table_11,Elite / Amtrak / 25th / estimate,0.04498,0.04,1,NA,0.04498,1
+coppock_ekins_kirby_2018,table_11,Elite / Amtrak / 25th / std.error,0.02677,0.03,1,NA,0.02677,1
+coppock_ekins_kirby_2018,table_11,MTurk / Amtrak / 25th / estimate,0.11526,0.12,1,NA,0.11526,1
+coppock_ekins_kirby_2018,table_11,MTurk / Amtrak / 25th / std.error,0.0222,0.02,1,NA,0.0222,1
+coppock_ekins_kirby_2018,table_11,Elite / Amtrak / 50th / estimate,0.09524,0.1,1,NA,0.09524,1
+coppock_ekins_kirby_2018,table_11,Elite / Amtrak / 50th / std.error,0.03412,0.03,1,NA,0.03412,1
+coppock_ekins_kirby_2018,table_11,MTurk / Amtrak / 50th / estimate,0.14503,0.15,1,NA,0.14503,1
+coppock_ekins_kirby_2018,table_11,MTurk / Amtrak / 50th / std.error,0.02802,0.03,1,NA,0.02802,1
+coppock_ekins_kirby_2018,table_11,Elite / Amtrak / 75th / estimate,0.08799,0.09,1,NA,0.08799,1
+coppock_ekins_kirby_2018,table_11,Elite / Amtrak / 75th / std.error,0.03274,0.03,1,NA,0.03274,1
+coppock_ekins_kirby_2018,table_11,MTurk / Amtrak / 75th / estimate,0.22665,0.23,1,NA,0.22665,1
+coppock_ekins_kirby_2018,table_11,MTurk / Amtrak / 75th / std.error,0.02688,0.03,1,NA,0.02688,1
+coppock_ekins_kirby_2018,table_11,MTurk / Climate / 25th / estimate,0.10168,0.1,1,NA,0.10168,1
+coppock_ekins_kirby_2018,table_11,MTurk / Climate / 25th / std.error,0.02293,0.02,1,NA,0.02293,1
+coppock_ekins_kirby_2018,table_11,MTurk / Climate / 50th / estimate,0.10877,0.11,1,NA,0.10877,1
+coppock_ekins_kirby_2018,table_11,MTurk / Climate / 50th / std.error,0.02866,0.03,1,NA,0.02866,1
+coppock_ekins_kirby_2018,table_11,MTurk / Climate / 75th / estimate,0.10358,0.1,1,NA,0.10358,1
+coppock_ekins_kirby_2018,table_11,MTurk / Climate / 75th / std.error,0.02655,0.03,1,NA,0.02655,1
+coppock_ekins_kirby_2018,table_11,Elite / Flat Tax / 25th / estimate,0.01696,0.02,1,NA,0.01696,1
+coppock_ekins_kirby_2018,table_11,Elite / Flat Tax / 25th / std.error,0.02866,0.03,1,NA,0.02866,1
+coppock_ekins_kirby_2018,table_11,MTurk / Flat Tax / 25th / estimate,0.08395,0.08,1,NA,0.08395,1
+coppock_ekins_kirby_2018,table_11,MTurk / Flat Tax / 25th / std.error,0.02317,0.02,1,NA,0.02317,1
+coppock_ekins_kirby_2018,table_11,Elite / Flat Tax / 50th / estimate,0.02188,0.02,1,NA,0.02188,1
+coppock_ekins_kirby_2018,table_11,Elite / Flat Tax / 50th / std.error,0.03308,0.03,1,NA,0.03308,1
+coppock_ekins_kirby_2018,table_11,MTurk / Flat Tax / 50th / estimate,0.19686,0.2,1,NA,0.19686,1
+coppock_ekins_kirby_2018,table_11,MTurk / Flat Tax / 50th / std.error,0.0276,0.03,1,NA,0.0276,1
+coppock_ekins_kirby_2018,table_11,Elite / Flat Tax / 75th / estimate,0.05683,0.06,1,NA,0.05683,1
+coppock_ekins_kirby_2018,table_11,Elite / Flat Tax / 75th / std.error,0.03138,0.03,1,NA,0.03138,1
+coppock_ekins_kirby_2018,table_11,MTurk / Flat Tax / 75th / estimate,0.1819,0.18,1,NA,0.1819,1
+coppock_ekins_kirby_2018,table_11,MTurk / Flat Tax / 75th / std.error,0.02686,0.03,1,NA,0.02686,1
+coppock_ekins_kirby_2018,table_11,Elite / Veterans / 25th / estimate,0.01763,0.02,1,NA,0.01763,1
+coppock_ekins_kirby_2018,table_11,Elite / Veterans / 25th / std.error,0.0278,0.03,1,NA,0.0278,1
+coppock_ekins_kirby_2018,table_11,MTurk / Veterans / 25th / estimate,0.16803,0.17,1,NA,0.16803,1
+coppock_ekins_kirby_2018,table_11,MTurk / Veterans / 25th / std.error,0.02076,0.02,1,NA,0.02076,1
+coppock_ekins_kirby_2018,table_11,Elite / Veterans / 50th / estimate,0.07783,0.08,1,NA,0.07783,1
+coppock_ekins_kirby_2018,table_11,Elite / Veterans / 50th / std.error,0.03338,0.03,1,NA,0.03338,1
+coppock_ekins_kirby_2018,table_11,MTurk / Veterans / 50th / estimate,0.27534,0.28,1,NA,0.27534,1
+coppock_ekins_kirby_2018,table_11,MTurk / Veterans / 50th / std.error,0.02641,0.03,1,NA,0.02641,1
+coppock_ekins_kirby_2018,table_11,Elite / Veterans / 75th / estimate,0.09323,0.09,1,NA,0.09323,1
+coppock_ekins_kirby_2018,table_11,Elite / Veterans / 75th / std.error,0.03149,0.03,1,NA,0.03149,1
+coppock_ekins_kirby_2018,table_11,MTurk / Veterans / 75th / estimate,0.29303,0.29,1,NA,0.29303,1
+coppock_ekins_kirby_2018,table_11,MTurk / Veterans / 75th / std.error,0.02686,0.03,1,NA,0.02686,1
+coppock_ekins_kirby_2018,table_11,Elite / Wall Street / 25th / estimate,0.13591,0.14,1,NA,0.13591,1
+coppock_ekins_kirby_2018,table_11,Elite / Wall Street / 25th / std.error,0.02429,0.02,1,NA,0.02429,1
+coppock_ekins_kirby_2018,table_11,MTurk / Wall Street / 25th / estimate,0.15793,0.16,1,NA,0.15793,1
+coppock_ekins_kirby_2018,table_11,MTurk / Wall Street / 25th / std.error,0.02104,0.02,1,NA,0.02104,1
+coppock_ekins_kirby_2018,table_11,Elite / Wall Street / 50th / estimate,0.25626,0.26,1,NA,0.25626,1
+coppock_ekins_kirby_2018,table_11,Elite / Wall Street / 50th / std.error,0.03116,0.03,1,NA,0.03116,1
+coppock_ekins_kirby_2018,table_11,MTurk / Wall Street / 50th / estimate,0.27607,0.28,1,NA,0.27607,1
+coppock_ekins_kirby_2018,table_11,MTurk / Wall Street / 50th / std.error,0.02632,0.03,1,NA,0.02632,1
+coppock_ekins_kirby_2018,table_11,Elite / Wall Street / 75th / estimate,0.21256,0.21,1,NA,0.21256,1
+coppock_ekins_kirby_2018,table_11,Elite / Wall Street / 75th / std.error,0.03132,0.03,1,NA,0.03132,1
+coppock_ekins_kirby_2018,table_11,MTurk / Wall Street / 75th / estimate,0.26988,0.27,1,NA,0.26988,1
+coppock_ekins_kirby_2018,table_11,MTurk / Wall Street / 75th / std.error,0.02676,0.03,1,NA,0.02676,1
+coppock_ekins_kirby_2018,table_11,Elite / Precision weighted average / 25th / estimate,0.06009,0.06,1,NA,0.06009,1
+coppock_ekins_kirby_2018,table_11,Elite / Precision weighted average / 25th / std.error,0.01336,0.01,1,NA,0.01336,1
+coppock_ekins_kirby_2018,table_11,MTurk / Precision weighted average / 25th / estimate,0.12824,0.13,1,NA,0.12824,1
+coppock_ekins_kirby_2018,table_11,MTurk / Precision weighted average / 25th / std.error,0.00982,0.01,1,NA,0.00982,1
+coppock_ekins_kirby_2018,table_11,Elite / Precision weighted average / 50th / estimate,0.11772,0.12,1,NA,0.11772,1
+coppock_ekins_kirby_2018,table_11,Elite / Precision weighted average / 50th / std.error,0.01644,0.02,1,NA,0.01644,1
+coppock_ekins_kirby_2018,table_11,MTurk / Precision weighted average / 50th / estimate,0.20488,0.2,1,NA,0.20488,1
+coppock_ekins_kirby_2018,table_11,MTurk / Precision weighted average / 50th / std.error,0.01223,0.01,1,NA,0.01223,1
+coppock_ekins_kirby_2018,table_11,Elite / Precision weighted average / 75th / estimate,0.11329,0.11,1,NA,0.11329,1
+coppock_ekins_kirby_2018,table_11,Elite / Precision weighted average / 75th / std.error,0.01586,0.02,1,NA,0.01586,1
+coppock_ekins_kirby_2018,table_11,MTurk / Precision weighted average / 75th / estimate,0.21457,0.21,1,NA,0.21457,1
+coppock_ekins_kirby_2018,table_11,MTurk / Precision weighted average / 75th / std.error,0.01198,0.01,1,NA,0.01198,1
+coppock_ekins_kirby_2018,text,MTurk subjects enrolled (p. 66),3571,3567,0,"Article says 3,567; Table 1 and the data both give 3,571. Text typo, off by 4.",3571,0
+coppock_ekins_kirby_2018,text,"MTurk Wave 2 recontact rate, percent (p. 66)",83.95407448893867,84,1,NA,83.95407448893867,1
+coppock_ekins_kirby_2018,text,"MTurk Wave 3 recontact rate, percent (p. 66)",68.6362363483618,69,1,NA,68.6362363483618,1
+coppock_ekins_kirby_2018,text,MTurk Wave 2 chi-square p (p. 66),0.10200031748990086,0.1,1,NA,0.10200031748990086,1
+coppock_ekins_kirby_2018,text,MTurk Wave 3 chi-square p (p. 66),0.6146575003261024,0.61,1,NA,0.6146575003261024,1
+coppock_ekins_kirby_2018,text,Elite subjects who completed the survey (p. 72),2181,2169,0,"Article says 2,169; Table 5 and the data both give 2,181. Same class of text typo as the MTurk count.",2181,0
+coppock_ekins_kirby_2018,text,Elite complete responses in Wave 2 (p. 72),1358,1349,0,"Article says 1,349; Table 5 and the data both give 1,358.",1358,0
+coppock_ekins_kirby_2018,text,"Democrat precision-weighted average, MTurk main DVs (p. 77)",0.5778457839649647,0.58,1,NA,0.5778457839649647,1
+coppock_ekins_kirby_2018,text,Democrat precision-weighted average SE (p. 77),0.04598071200569682,0.05,1,NA,0.04598071200569682,1
+coppock_ekins_kirby_2018,text,"Republican precision-weighted average, MTurk main DVs (p. 77)",0.8769025748765603,0.88,1,NA,0.8769025748765603,1
+coppock_ekins_kirby_2018,text,Republican precision-weighted average SE (p. 77),0.08098856093702683,0.08,1,NA,0.08098856093702683,1
+coppock_ekins_kirby_2018,text,Republican minus Democrat difference (p. 77),0.29905679091159565,0.3,1,NA,0.29905679091159565,1
+coppock_ekins_kirby_2018,text,SE of the Republican minus Democrat difference (p. 77),0.09313094479925207,0.09,1,NA,0.09313094479925207,1
+coppock_ekins_kirby_2018,text,"Shortest MTurk trimmed mean reading time, minutes (p. 69)",1.814706570783982,2,1,"Article says subjects spent an average of two to four minutes reading. The shortest arm (Wall Street) averages 1.81 minutes, which rounds to 2.",1.814706570783982,1
+coppock_ekins_kirby_2018,text,"Longest MTurk trimmed mean reading time, minutes (p. 69)",4.015699255952382,4,1,NA,4.015699255952382,1
+coppock_ekins_kirby_2018,text,"MTurk minus elite trimmed reading time, seconds, amtrak arm (p. 72)",26.408489819096303,NA,NA,Article says the elite sample spent 25 to 45 seconds less. Three of the four arms fall in or near that range; on the veterans op-ed elites spent 31 seconds MORE. The archive's opeds_compliance.R types in only the amtrak and flat tax differences.,26.408489819096303,NA
+coppock_ekins_kirby_2018,text,"MTurk minus elite trimmed reading time, seconds, paul arm (p. 72)",45.60294196202415,NA,NA,Article says the elite sample spent 25 to 45 seconds less. Three of the four arms fall in or near that range; on the veterans op-ed elites spent 31 seconds MORE. The archive's opeds_compliance.R types in only the amtrak and flat tax differences.,45.60294196202415,NA
+coppock_ekins_kirby_2018,text,"MTurk minus elite trimmed reading time, seconds, veterans arm (p. 72)",-30.713373491568717,NA,NA,Article says the elite sample spent 25 to 45 seconds less. Three of the four arms fall in or near that range; on the veterans op-ed elites spent 31 seconds MORE. The archive's opeds_compliance.R types in only the amtrak and flat tax differences.,-30.713373491568717,NA
+coppock_ekins_kirby_2018,text,"MTurk minus elite trimmed reading time, seconds, wallstreet arm (p. 72)",28.47551894727873,NA,NA,Article says the elite sample spent 25 to 45 seconds less. Three of the four arms fall in or near that range; on the veterans op-ed elites spent 31 seconds MORE. The archive's opeds_compliance.R types in only the amtrak and flat tax differences.,28.47551894727873,NA

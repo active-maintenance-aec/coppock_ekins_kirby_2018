@@ -1,0 +1,31 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Elite experiment: Treatment effects on main dependent variables.},
+note{}={* p \num{< 0.1}, ** p \num{< 0.05}, *** p \num{< 0.01}},
+note{ }={Models estimated via OLS. HC2 robust standard errors in parentheses.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-5}{solid, black, 0.05em},
+hline{12}={1-5}{solid, black, 0.05em},
+hline{1}={1-5}{solid, black, 0.08em},
+hline{14}={1-5}{solid, black, 0.08em},
+column{2-5}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Amtrak & Flat Tax & Veterans & Wall Street \\
+Op-ed: Amtrak & 0.438*** & -0.094 & 0.069 & 0.071 \\
+& (0.110) & (0.150) & (0.093) & (0.103) \\
+Op-ed: Flat Tax & -0.023 & 0.411*** & -0.060 & -0.004 \\
+& (0.101) & (0.144) & (0.091) & (0.101) \\
+Op-ed: Veterans & -0.004 & -0.156 & 0.045 & 0.119 \\
+& (0.103) & (0.147) & (0.091) & (0.101) \\
+Op-ed: Wall Street & 0.042 & 0.067 & -0.055 & 0.791*** \\
+& (0.109) & (0.148) & (0.093) & (0.105) \\
+Constant & 2.304*** & 3.578*** & 4.585*** & 2.926*** \\
+& (0.073) & (0.103) & (0.064) & (0.071) \\
+Num.Obs. & 2181 & 2181 & 2181 & 2181 \\
+R2 & 0.012 & 0.008 & 0.001 & 0.037 \\
+\end{talltblr}
+\end{table}

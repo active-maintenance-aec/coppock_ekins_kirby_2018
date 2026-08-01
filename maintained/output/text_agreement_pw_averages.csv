@@ -1,0 +1,7 @@
+sample,issue,split,estimate,std.error
+Elite,Precision weighted average,25,0.06009018616880438,0.013361097263044621
+Elite,Precision weighted average,50,0.1177166678464073,0.0164391636028045
+Elite,Precision weighted average,75,0.11329473758332786,0.01585944469018351
+MTurk,Precision weighted average,25,0.12824147335387184,0.009817285904771364
+MTurk,Precision weighted average,50,0.20488126371688523,0.012233870634626838
+MTurk,Precision weighted average,75,0.214565929814374,0.01197609928630943

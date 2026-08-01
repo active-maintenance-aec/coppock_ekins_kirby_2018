@@ -17,6 +17,8 @@
 - [Checksums](#checksums)
 - [R environment](#r-environment)
 
+*Drafted by Claude Opus 5 under the supervision of Alex Coppock.*
+
 This repository holds the actively maintained replication code for
 Coppock, Ekins and Kirby (2018), together with the reproducibility
 report that documents what the original archive did and did not do. It
@@ -360,15 +362,15 @@ Three arms fall in or near the stated range. On the veterans op-ed the
 elite sample spent thirty-one seconds more, not less. The claim as
 written holds for three of four op-eds.
 
-**A defect in the March 2026 rewrite, fixed here.** The first pass at
-`table_11_agreement.R` passed the treatment arm to its fitting function
-from inside a `mutate()`, where the bare name `arm` resolves to the
-whole column rather than the current row. Every model was therefore fit
-on all six arms at once. The script produced 41 rows where the published
-table has 27, labelled them with repeating topic names, and computed
+**A defect found in this rewrite and fixed.** `table_11_agreement.R`
+passed the treatment arm to its fitting function from inside a
+`mutate()`, where the bare name `arm` resolves to the whole column
+rather than the current row. Every model was therefore fit on all six
+arms at once. The script produced 41 rows where the published table has
+27, labelled them with repeating topic names, and computed
 precision-weighted averages of 0.05 and 0.03 where the article reports
-0.20 and 0.12. Nothing in the pipeline caught it, because the March
-ground truth had no rows for Table 11. It has 66 now.
+0.20 and 0.12. Nothing in the pipeline caught it, because the ground
+truth had no rows for Table 11 to catch it against. It has 66 now.
 
 # Figure verification
 

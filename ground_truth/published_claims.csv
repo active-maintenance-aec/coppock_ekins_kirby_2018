@@ -1,0 +1,700 @@
+claim_id,location,claim_type,value_paper,needs_block
+t1_wave_1_n_control,Table 1 (p. 67),pipeline,622,TRUE
+t1_wave_1_n_amtrak,Table 1 (p. 67),pipeline,597,TRUE
+t1_wave_1_n_climate,Table 1 (p. 67),pipeline,570,TRUE
+t1_wave_1_n_flat_tax,Table 1 (p. 67),pipeline,587,TRUE
+t1_wave_1_n_veterans,Table 1 (p. 67),pipeline,592,TRUE
+t1_wave_1_n_wall_street,Table 1 (p. 67),pipeline,603,TRUE
+t1_wave_1_n_totals,Table 1 (p. 67),pipeline,3571,TRUE
+t1_wave_2_distraction_control,Table 1 (p. 67),pipeline,263,TRUE
+t1_wave_2_distraction_amtrak,Table 1 (p. 67),pipeline,240,TRUE
+t1_wave_2_distraction_climate,Table 1 (p. 67),pipeline,252,TRUE
+t1_wave_2_distraction_flat_tax,Table 1 (p. 67),pipeline,243,TRUE
+t1_wave_2_distraction_veterans,Table 1 (p. 67),pipeline,256,TRUE
+t1_wave_2_distraction_wall_street,Table 1 (p. 67),pipeline,243,TRUE
+t1_wave_2_distraction_totals,Table 1 (p. 67),pipeline,1497,TRUE
+t1_wave_2_no_distraction_control,Table 1 (p. 67),pipeline,253,TRUE
+t1_wave_2_no_distraction_amtrak,Table 1 (p. 67),pipeline,247,TRUE
+t1_wave_2_no_distraction_climate,Table 1 (p. 67),pipeline,240,TRUE
+t1_wave_2_no_distraction_flat_tax,Table 1 (p. 67),pipeline,243,TRUE
+t1_wave_2_no_distraction_veterans,Table 1 (p. 67),pipeline,257,TRUE
+t1_wave_2_no_distraction_wall_street,Table 1 (p. 67),pipeline,261,TRUE
+t1_wave_2_no_distraction_totals,Table 1 (p. 67),pipeline,1501,TRUE
+t1_wave_2_responded_control,Table 1 (p. 67),pipeline,516,TRUE
+t1_wave_2_responded_amtrak,Table 1 (p. 67),pipeline,487,TRUE
+t1_wave_2_responded_climate,Table 1 (p. 67),pipeline,492,TRUE
+t1_wave_2_responded_flat_tax,Table 1 (p. 67),pipeline,486,TRUE
+t1_wave_2_responded_veterans,Table 1 (p. 67),pipeline,513,TRUE
+t1_wave_2_responded_wall_street,Table 1 (p. 67),pipeline,504,TRUE
+t1_wave_2_responded_totals,Table 1 (p. 67),pipeline,2998,TRUE
+t1_wave_2_did_not_respond_control,Table 1 (p. 67),pipeline,106,TRUE
+t1_wave_2_did_not_respond_amtrak,Table 1 (p. 67),pipeline,110,TRUE
+t1_wave_2_did_not_respond_climate,Table 1 (p. 67),pipeline,78,TRUE
+t1_wave_2_did_not_respond_flat_tax,Table 1 (p. 67),pipeline,101,TRUE
+t1_wave_2_did_not_respond_veterans,Table 1 (p. 67),pipeline,79,TRUE
+t1_wave_2_did_not_respond_wall_street,Table 1 (p. 67),pipeline,99,TRUE
+t1_wave_2_did_not_respond_totals,Table 1 (p. 67),pipeline,573,TRUE
+t1_wave_3_responded_control,Table 1 (p. 67),pipeline,433,TRUE
+t1_wave_3_responded_amtrak,Table 1 (p. 67),pipeline,412,TRUE
+t1_wave_3_responded_climate,Table 1 (p. 67),pipeline,386,TRUE
+t1_wave_3_responded_flat_tax,Table 1 (p. 67),pipeline,386,TRUE
+t1_wave_3_responded_veterans,Table 1 (p. 67),pipeline,412,TRUE
+t1_wave_3_responded_wall_street,Table 1 (p. 67),pipeline,422,TRUE
+t1_wave_3_responded_totals,Table 1 (p. 67),pipeline,2451,TRUE
+t1_wave_3_did_not_respond_control,Table 1 (p. 67),pipeline,189,TRUE
+t1_wave_3_did_not_respond_amtrak,Table 1 (p. 67),pipeline,185,TRUE
+t1_wave_3_did_not_respond_climate,Table 1 (p. 67),pipeline,184,TRUE
+t1_wave_3_did_not_respond_flat_tax,Table 1 (p. 67),pipeline,201,TRUE
+t1_wave_3_did_not_respond_veterans,Table 1 (p. 67),pipeline,180,TRUE
+t1_wave_3_did_not_respond_wall_street,Table 1 (p. 67),pipeline,181,TRUE
+t1_wave_3_did_not_respond_totals,Table 1 (p. 67),pipeline,1120,TRUE
+t5_wave_1_n_control,Table 5 (p. 72),pipeline,448,TRUE
+t5_wave_1_n_amtrak,Table 5 (p. 72),pipeline,407,TRUE
+t5_wave_1_n_flat_tax,Table 5 (p. 72),pipeline,463,TRUE
+t5_wave_1_n_veterans,Table 5 (p. 72),pipeline,438,TRUE
+t5_wave_1_n_wall_street,Table 5 (p. 72),pipeline,425,TRUE
+t5_wave_1_n_totals,Table 5 (p. 72),pipeline,2181,TRUE
+t5_wave_2_distraction_control,Table 5 (p. 72),pipeline,139,TRUE
+t5_wave_2_distraction_amtrak,Table 5 (p. 72),pipeline,135,TRUE
+t5_wave_2_distraction_flat_tax,Table 5 (p. 72),pipeline,126,TRUE
+t5_wave_2_distraction_veterans,Table 5 (p. 72),pipeline,132,TRUE
+t5_wave_2_distraction_wall_street,Table 5 (p. 72),pipeline,138,TRUE
+t5_wave_2_distraction_totals,Table 5 (p. 72),pipeline,670,TRUE
+t5_wave_2_no_distraction_control,Table 5 (p. 72),pipeline,141,TRUE
+t5_wave_2_no_distraction_amtrak,Table 5 (p. 72),pipeline,126,TRUE
+t5_wave_2_no_distraction_flat_tax,Table 5 (p. 72),pipeline,141,TRUE
+t5_wave_2_no_distraction_veterans,Table 5 (p. 72),pipeline,148,TRUE
+t5_wave_2_no_distraction_wall_street,Table 5 (p. 72),pipeline,132,TRUE
+t5_wave_2_no_distraction_totals,Table 5 (p. 72),pipeline,688,TRUE
+t5_wave_2_responded_control,Table 5 (p. 72),pipeline,280,TRUE
+t5_wave_2_responded_amtrak,Table 5 (p. 72),pipeline,261,TRUE
+t5_wave_2_responded_flat_tax,Table 5 (p. 72),pipeline,267,TRUE
+t5_wave_2_responded_veterans,Table 5 (p. 72),pipeline,280,TRUE
+t5_wave_2_responded_wall_street,Table 5 (p. 72),pipeline,270,TRUE
+t5_wave_2_responded_totals,Table 5 (p. 72),pipeline,1358,TRUE
+t5_wave_2_did_not_respond_control,Table 5 (p. 72),pipeline,168,TRUE
+t5_wave_2_did_not_respond_amtrak,Table 5 (p. 72),pipeline,146,TRUE
+t5_wave_2_did_not_respond_flat_tax,Table 5 (p. 72),pipeline,196,TRUE
+t5_wave_2_did_not_respond_veterans,Table 5 (p. 72),pipeline,158,TRUE
+t5_wave_2_did_not_respond_wall_street,Table 5 (p. 72),pipeline,155,TRUE
+t5_wave_2_did_not_respond_totals,Table 5 (p. 72),pipeline,823,TRUE
+t3_amtrak_op_ed_amtrak_estimate,Table 3 (p. 70),pipeline,0.440,TRUE
+t3_amtrak_op_ed_amtrak_std_error,Table 3 (p. 70),pipeline,0.085,TRUE
+t3_amtrak_op_ed_climate_estimate,Table 3 (p. 70),pipeline,0.054,TRUE
+t3_amtrak_op_ed_climate_std_error,Table 3 (p. 70),pipeline,0.079,TRUE
+t3_amtrak_op_ed_flat_tax_estimate,Table 3 (p. 70),pipeline,0.195,TRUE
+t3_amtrak_op_ed_flat_tax_std_error,Table 3 (p. 70),pipeline,0.078,TRUE
+t3_amtrak_op_ed_veterans_estimate,Table 3 (p. 70),pipeline,0.047,TRUE
+t3_amtrak_op_ed_veterans_std_error,Table 3 (p. 70),pipeline,0.079,TRUE
+t3_amtrak_op_ed_wall_street_estimate,Table 3 (p. 70),pipeline,0.038,TRUE
+t3_amtrak_op_ed_wall_street_std_error,Table 3 (p. 70),pipeline,0.078,TRUE
+t3_amtrak_constant_estimate,Table 3 (p. 70),pipeline,2.902,TRUE
+t3_amtrak_constant_std_error,Table 3 (p. 70),pipeline,0.054,TRUE
+t3_climate_op_ed_amtrak_estimate,Table 3 (p. 70),pipeline,-0.020,TRUE
+t3_climate_op_ed_amtrak_std_error,Table 3 (p. 70),pipeline,0.095,TRUE
+t3_climate_op_ed_climate_estimate,Table 3 (p. 70),pipeline,0.427,TRUE
+t3_climate_op_ed_climate_std_error,Table 3 (p. 70),pipeline,0.098,TRUE
+t3_climate_op_ed_flat_tax_estimate,Table 3 (p. 70),pipeline,0.130,TRUE
+t3_climate_op_ed_flat_tax_std_error,Table 3 (p. 70),pipeline,0.097,TRUE
+t3_climate_op_ed_veterans_estimate,Table 3 (p. 70),pipeline,0.032,TRUE
+t3_climate_op_ed_veterans_std_error,Table 3 (p. 70),pipeline,0.095,TRUE
+t3_climate_op_ed_wall_street_estimate,Table 3 (p. 70),pipeline,0.079,TRUE
+t3_climate_op_ed_wall_street_std_error,Table 3 (p. 70),pipeline,0.095,TRUE
+t3_climate_constant_estimate,Table 3 (p. 70),pipeline,2.773,TRUE
+t3_climate_constant_std_error,Table 3 (p. 70),pipeline,0.065,TRUE
+t3_flat_tax_op_ed_amtrak_estimate,Table 3 (p. 70),pipeline,0.056,TRUE
+t3_flat_tax_op_ed_amtrak_std_error,Table 3 (p. 70),pipeline,0.108,TRUE
+t3_flat_tax_op_ed_climate_estimate,Table 3 (p. 70),pipeline,0.132,TRUE
+t3_flat_tax_op_ed_climate_std_error,Table 3 (p. 70),pipeline,0.110,TRUE
+t3_flat_tax_op_ed_flat_tax_estimate,Table 3 (p. 70),pipeline,0.850,TRUE
+t3_flat_tax_op_ed_flat_tax_std_error,Table 3 (p. 70),pipeline,0.109,TRUE
+t3_flat_tax_op_ed_veterans_estimate,Table 3 (p. 70),pipeline,-0.106,TRUE
+t3_flat_tax_op_ed_veterans_std_error,Table 3 (p. 70),pipeline,0.110,TRUE
+t3_flat_tax_op_ed_wall_street_estimate,Table 3 (p. 70),pipeline,0.151,TRUE
+t3_flat_tax_op_ed_wall_street_std_error,Table 3 (p. 70),pipeline,0.107,TRUE
+t3_flat_tax_constant_estimate,Table 3 (p. 70),pipeline,3.738,TRUE
+t3_flat_tax_constant_std_error,Table 3 (p. 70),pipeline,0.076,TRUE
+t3_veterans_op_ed_amtrak_estimate,Table 3 (p. 70),pipeline,-0.056,TRUE
+t3_veterans_op_ed_amtrak_std_error,Table 3 (p. 70),pipeline,0.082,TRUE
+t3_veterans_op_ed_climate_estimate,Table 3 (p. 70),pipeline,-0.009,TRUE
+t3_veterans_op_ed_climate_std_error,Table 3 (p. 70),pipeline,0.082,TRUE
+t3_veterans_op_ed_flat_tax_estimate,Table 3 (p. 70),pipeline,-0.033,TRUE
+t3_veterans_op_ed_flat_tax_std_error,Table 3 (p. 70),pipeline,0.082,TRUE
+t3_veterans_op_ed_veterans_estimate,Table 3 (p. 70),pipeline,0.770,TRUE
+t3_veterans_op_ed_veterans_std_error,Table 3 (p. 70),pipeline,0.078,TRUE
+t3_veterans_op_ed_wall_street_estimate,Table 3 (p. 70),pipeline,-0.210,TRUE
+t3_veterans_op_ed_wall_street_std_error,Table 3 (p. 70),pipeline,0.084,TRUE
+t3_veterans_constant_estimate,Table 3 (p. 70),pipeline,4.502,TRUE
+t3_veterans_constant_std_error,Table 3 (p. 70),pipeline,0.058,TRUE
+t3_wall_street_op_ed_amtrak_estimate,Table 3 (p. 70),pipeline,-0.035,TRUE
+t3_wall_street_op_ed_amtrak_std_error,Table 3 (p. 70),pipeline,0.079,TRUE
+t3_wall_street_op_ed_climate_estimate,Table 3 (p. 70),pipeline,0.026,TRUE
+t3_wall_street_op_ed_climate_std_error,Table 3 (p. 70),pipeline,0.080,TRUE
+t3_wall_street_op_ed_flat_tax_estimate,Table 3 (p. 70),pipeline,-0.018,TRUE
+t3_wall_street_op_ed_flat_tax_std_error,Table 3 (p. 70),pipeline,0.079,TRUE
+t3_wall_street_op_ed_veterans_estimate,Table 3 (p. 70),pipeline,-0.124,TRUE
+t3_wall_street_op_ed_veterans_std_error,Table 3 (p. 70),pipeline,0.078,TRUE
+t3_wall_street_op_ed_wall_street_estimate,Table 3 (p. 70),pipeline,0.915,TRUE
+t3_wall_street_op_ed_wall_street_std_error,Table 3 (p. 70),pipeline,0.082,TRUE
+t3_wall_street_constant_estimate,Table 3 (p. 70),pipeline,2.616,TRUE
+t3_wall_street_constant_std_error,Table 3 (p. 70),pipeline,0.054,TRUE
+t3_amtrak_r2,Table 3 (p. 70),pipeline,0.012,TRUE
+t3_climate_r2,Table 3 (p. 70),pipeline,0.008,TRUE
+t3_flat_tax_r2,Table 3 (p. 70),pipeline,0.026,TRUE
+t3_veterans_r2,Table 3 (p. 70),pipeline,0.048,TRUE
+t3_wall_street_r2,Table 3 (p. 70),pipeline,0.061,TRUE
+t3_amtrak_n,Table 3 (p. 70),pipeline,3571,TRUE
+t3_climate_n,Table 3 (p. 70),pipeline,3571,TRUE
+t3_flat_tax_n,Table 3 (p. 70),pipeline,3571,TRUE
+t3_veterans_n,Table 3 (p. 70),pipeline,3571,TRUE
+t3_wall_street_n,Table 3 (p. 70),pipeline,3571,TRUE
+t4_amtrak_op_ed_amtrak_estimate,Table 4 (p. 71),pipeline,0.501,TRUE
+t4_amtrak_op_ed_amtrak_std_error,Table 4 (p. 71),pipeline,0.059,TRUE
+t4_amtrak_op_ed_climate_estimate,Table 4 (p. 71),pipeline,0.078,TRUE
+t4_amtrak_op_ed_climate_std_error,Table 4 (p. 71),pipeline,0.056,TRUE
+t4_amtrak_op_ed_flat_tax_estimate,Table 4 (p. 71),pipeline,0.080,TRUE
+t4_amtrak_op_ed_flat_tax_std_error,Table 4 (p. 71),pipeline,0.055,TRUE
+t4_amtrak_op_ed_veterans_estimate,Table 4 (p. 71),pipeline,0.044,TRUE
+t4_amtrak_op_ed_veterans_std_error,Table 4 (p. 71),pipeline,0.058,TRUE
+t4_amtrak_op_ed_wall_street_estimate,Table 4 (p. 71),pipeline,0.055,TRUE
+t4_amtrak_op_ed_wall_street_std_error,Table 4 (p. 71),pipeline,0.055,TRUE
+t4_amtrak_constant_estimate,Table 4 (p. 71),pipeline,-0.125,TRUE
+t4_amtrak_constant_std_error,Table 4 (p. 71),pipeline,0.039,TRUE
+t4_climate_op_ed_amtrak_estimate,Table 4 (p. 71),pipeline,0.018,TRUE
+t4_climate_op_ed_amtrak_std_error,Table 4 (p. 71),pipeline,0.056,TRUE
+t4_climate_op_ed_climate_estimate,Table 4 (p. 71),pipeline,0.276,TRUE
+t4_climate_op_ed_climate_std_error,Table 4 (p. 71),pipeline,0.057,TRUE
+t4_climate_op_ed_flat_tax_estimate,Table 4 (p. 71),pipeline,0.110,TRUE
+t4_climate_op_ed_flat_tax_std_error,Table 4 (p. 71),pipeline,0.056,TRUE
+t4_climate_op_ed_veterans_estimate,Table 4 (p. 71),pipeline,0.003,TRUE
+t4_climate_op_ed_veterans_std_error,Table 4 (p. 71),pipeline,0.057,TRUE
+t4_climate_op_ed_wall_street_estimate,Table 4 (p. 71),pipeline,0.067,TRUE
+t4_climate_op_ed_wall_street_std_error,Table 4 (p. 71),pipeline,0.057,TRUE
+t4_climate_constant_estimate,Table 4 (p. 71),pipeline,-0.079,TRUE
+t4_climate_constant_std_error,Table 4 (p. 71),pipeline,0.039,TRUE
+t4_flat_tax_op_ed_amtrak_estimate,Table 4 (p. 71),pipeline,0.005,TRUE
+t4_flat_tax_op_ed_amtrak_std_error,Table 4 (p. 71),pipeline,0.056,TRUE
+t4_flat_tax_op_ed_climate_estimate,Table 4 (p. 71),pipeline,0.045,TRUE
+t4_flat_tax_op_ed_climate_std_error,Table 4 (p. 71),pipeline,0.057,TRUE
+t4_flat_tax_op_ed_flat_tax_estimate,Table 4 (p. 71),pipeline,0.488,TRUE
+t4_flat_tax_op_ed_flat_tax_std_error,Table 4 (p. 71),pipeline,0.060,TRUE
+t4_flat_tax_op_ed_veterans_estimate,Table 4 (p. 71),pipeline,-0.026,TRUE
+t4_flat_tax_op_ed_veterans_std_error,Table 4 (p. 71),pipeline,0.057,TRUE
+t4_flat_tax_op_ed_wall_street_estimate,Table 4 (p. 71),pipeline,0.097,TRUE
+t4_flat_tax_op_ed_wall_street_std_error,Table 4 (p. 71),pipeline,0.057,TRUE
+t4_flat_tax_constant_estimate,Table 4 (p. 71),pipeline,-0.101,TRUE
+t4_flat_tax_constant_std_error,Table 4 (p. 71),pipeline,0.039,TRUE
+t4_veterans_op_ed_amtrak_estimate,Table 4 (p. 71),pipeline,0.051,TRUE
+t4_veterans_op_ed_amtrak_std_error,Table 4 (p. 71),pipeline,0.056,TRUE
+t4_veterans_op_ed_climate_estimate,Table 4 (p. 71),pipeline,-0.007,TRUE
+t4_veterans_op_ed_climate_std_error,Table 4 (p. 71),pipeline,0.056,TRUE
+t4_veterans_op_ed_flat_tax_estimate,Table 4 (p. 71),pipeline,0.048,TRUE
+t4_veterans_op_ed_flat_tax_std_error,Table 4 (p. 71),pipeline,0.056,TRUE
+t4_veterans_op_ed_veterans_estimate,Table 4 (p. 71),pipeline,0.646,TRUE
+t4_veterans_op_ed_veterans_std_error,Table 4 (p. 71),pipeline,0.054,TRUE
+t4_veterans_op_ed_wall_street_estimate,Table 4 (p. 71),pipeline,-0.113,TRUE
+t4_veterans_op_ed_wall_street_std_error,Table 4 (p. 71),pipeline,0.057,TRUE
+t4_veterans_constant_estimate,Table 4 (p. 71),pipeline,-0.103,TRUE
+t4_veterans_constant_std_error,Table 4 (p. 71),pipeline,0.040,TRUE
+t4_wall_street_op_ed_amtrak_estimate,Table 4 (p. 71),pipeline,-0.034,TRUE
+t4_wall_street_op_ed_amtrak_std_error,Table 4 (p. 71),pipeline,0.054,TRUE
+t4_wall_street_op_ed_climate_estimate,Table 4 (p. 71),pipeline,0.008,TRUE
+t4_wall_street_op_ed_climate_std_error,Table 4 (p. 71),pipeline,0.055,TRUE
+t4_wall_street_op_ed_flat_tax_estimate,Table 4 (p. 71),pipeline,-0.023,TRUE
+t4_wall_street_op_ed_flat_tax_std_error,Table 4 (p. 71),pipeline,0.056,TRUE
+t4_wall_street_op_ed_veterans_estimate,Table 4 (p. 71),pipeline,-0.090,TRUE
+t4_wall_street_op_ed_veterans_std_error,Table 4 (p. 71),pipeline,0.054,TRUE
+t4_wall_street_op_ed_wall_street_estimate,Table 4 (p. 71),pipeline,0.698,TRUE
+t4_wall_street_op_ed_wall_street_std_error,Table 4 (p. 71),pipeline,0.056,TRUE
+t4_wall_street_constant_estimate,Table 4 (p. 71),pipeline,-0.096,TRUE
+t4_wall_street_constant_std_error,Table 4 (p. 71),pipeline,0.038,TRUE
+t4_amtrak_r2,Table 4 (p. 71),pipeline,0.029,TRUE
+t4_climate_r2,Table 4 (p. 71),pipeline,0.009,TRUE
+t4_flat_tax_r2,Table 4 (p. 71),pipeline,0.030,TRUE
+t4_veterans_r2,Table 4 (p. 71),pipeline,0.063,TRUE
+t4_wall_street_r2,Table 4 (p. 71),pipeline,0.076,TRUE
+t4_amtrak_n,Table 4 (p. 71),pipeline,3571,TRUE
+t4_climate_n,Table 4 (p. 71),pipeline,3571,TRUE
+t4_flat_tax_n,Table 4 (p. 71),pipeline,3571,TRUE
+t4_veterans_n,Table 4 (p. 71),pipeline,3571,TRUE
+t4_wall_street_n,Table 4 (p. 71),pipeline,3571,TRUE
+t6_amtrak_op_ed_amtrak_estimate,Table 6 (p. 73),pipeline,0.438,TRUE
+t6_amtrak_op_ed_amtrak_std_error,Table 6 (p. 73),pipeline,0.110,TRUE
+t6_amtrak_op_ed_flat_tax_estimate,Table 6 (p. 73),pipeline,-0.023,TRUE
+t6_amtrak_op_ed_flat_tax_std_error,Table 6 (p. 73),pipeline,0.101,TRUE
+t6_amtrak_op_ed_veterans_estimate,Table 6 (p. 73),pipeline,-0.004,TRUE
+t6_amtrak_op_ed_veterans_std_error,Table 6 (p. 73),pipeline,0.103,TRUE
+t6_amtrak_op_ed_wall_street_estimate,Table 6 (p. 73),pipeline,0.042,TRUE
+t6_amtrak_op_ed_wall_street_std_error,Table 6 (p. 73),pipeline,0.109,TRUE
+t6_amtrak_constant_estimate,Table 6 (p. 73),pipeline,2.304,TRUE
+t6_amtrak_constant_std_error,Table 6 (p. 73),pipeline,0.073,TRUE
+t6_flat_tax_op_ed_amtrak_estimate,Table 6 (p. 73),pipeline,-0.094,TRUE
+t6_flat_tax_op_ed_amtrak_std_error,Table 6 (p. 73),pipeline,0.150,TRUE
+t6_flat_tax_op_ed_flat_tax_estimate,Table 6 (p. 73),pipeline,0.411,TRUE
+t6_flat_tax_op_ed_flat_tax_std_error,Table 6 (p. 73),pipeline,0.144,TRUE
+t6_flat_tax_op_ed_veterans_estimate,Table 6 (p. 73),pipeline,-0.156,TRUE
+t6_flat_tax_op_ed_veterans_std_error,Table 6 (p. 73),pipeline,0.147,TRUE
+t6_flat_tax_op_ed_wall_street_estimate,Table 6 (p. 73),pipeline,0.067,TRUE
+t6_flat_tax_op_ed_wall_street_std_error,Table 6 (p. 73),pipeline,0.148,TRUE
+t6_flat_tax_constant_estimate,Table 6 (p. 73),pipeline,3.578,TRUE
+t6_flat_tax_constant_std_error,Table 6 (p. 73),pipeline,0.103,TRUE
+t6_veterans_op_ed_amtrak_estimate,Table 6 (p. 73),pipeline,0.069,TRUE
+t6_veterans_op_ed_amtrak_std_error,Table 6 (p. 73),pipeline,0.093,TRUE
+t6_veterans_op_ed_flat_tax_estimate,Table 6 (p. 73),pipeline,-0.060,TRUE
+t6_veterans_op_ed_flat_tax_std_error,Table 6 (p. 73),pipeline,0.091,TRUE
+t6_veterans_op_ed_veterans_estimate,Table 6 (p. 73),pipeline,0.045,TRUE
+t6_veterans_op_ed_veterans_std_error,Table 6 (p. 73),pipeline,0.091,TRUE
+t6_veterans_op_ed_wall_street_estimate,Table 6 (p. 73),pipeline,-0.055,TRUE
+t6_veterans_op_ed_wall_street_std_error,Table 6 (p. 73),pipeline,0.093,TRUE
+t6_veterans_constant_estimate,Table 6 (p. 73),pipeline,4.585,TRUE
+t6_veterans_constant_std_error,Table 6 (p. 73),pipeline,0.064,TRUE
+t6_wall_street_op_ed_amtrak_estimate,Table 6 (p. 73),pipeline,0.071,TRUE
+t6_wall_street_op_ed_amtrak_std_error,Table 6 (p. 73),pipeline,0.103,TRUE
+t6_wall_street_op_ed_flat_tax_estimate,Table 6 (p. 73),pipeline,-0.004,TRUE
+t6_wall_street_op_ed_flat_tax_std_error,Table 6 (p. 73),pipeline,0.101,TRUE
+t6_wall_street_op_ed_veterans_estimate,Table 6 (p. 73),pipeline,0.119,TRUE
+t6_wall_street_op_ed_veterans_std_error,Table 6 (p. 73),pipeline,0.101,TRUE
+t6_wall_street_op_ed_wall_street_estimate,Table 6 (p. 73),pipeline,0.791,TRUE
+t6_wall_street_op_ed_wall_street_std_error,Table 6 (p. 73),pipeline,0.105,TRUE
+t6_wall_street_constant_estimate,Table 6 (p. 73),pipeline,2.926,TRUE
+t6_wall_street_constant_std_error,Table 6 (p. 73),pipeline,0.071,TRUE
+t6_amtrak_r2,Table 6 (p. 73),pipeline,0.012,TRUE
+t6_flat_tax_r2,Table 6 (p. 73),pipeline,0.008,TRUE
+t6_veterans_r2,Table 6 (p. 73),pipeline,0.001,TRUE
+t6_wall_street_r2,Table 6 (p. 73),pipeline,0.037,TRUE
+t6_amtrak_n,Table 6 (p. 73),pipeline,2181,TRUE
+t6_flat_tax_n,Table 6 (p. 73),pipeline,2181,TRUE
+t6_veterans_n,Table 6 (p. 73),pipeline,2181,TRUE
+t6_wall_street_n,Table 6 (p. 73),pipeline,2181,TRUE
+t7_amtrak_op_ed_amtrak_estimate,Table 7 (p. 74),pipeline,0.303,TRUE
+t7_amtrak_op_ed_amtrak_std_error,Table 7 (p. 74),pipeline,0.073,TRUE
+t7_amtrak_op_ed_flat_tax_estimate,Table 7 (p. 74),pipeline,-0.084,TRUE
+t7_amtrak_op_ed_flat_tax_std_error,Table 7 (p. 74),pipeline,0.067,TRUE
+t7_amtrak_op_ed_veterans_estimate,Table 7 (p. 74),pipeline,-0.041,TRUE
+t7_amtrak_op_ed_veterans_std_error,Table 7 (p. 74),pipeline,0.069,TRUE
+t7_amtrak_op_ed_wall_street_estimate,Table 7 (p. 74),pipeline,-0.021,TRUE
+t7_amtrak_op_ed_wall_street_std_error,Table 7 (p. 74),pipeline,0.071,TRUE
+t7_amtrak_constant_estimate,Table 7 (p. 74),pipeline,0.012,TRUE
+t7_amtrak_constant_std_error,Table 7 (p. 74),pipeline,0.048,TRUE
+t7_flat_tax_op_ed_amtrak_estimate,Table 7 (p. 74),pipeline,-0.014,TRUE
+t7_flat_tax_op_ed_amtrak_std_error,Table 7 (p. 74),pipeline,0.070,TRUE
+t7_flat_tax_op_ed_flat_tax_estimate,Table 7 (p. 74),pipeline,0.104,TRUE
+t7_flat_tax_op_ed_flat_tax_std_error,Table 7 (p. 74),pipeline,0.070,TRUE
+t7_flat_tax_op_ed_veterans_estimate,Table 7 (p. 74),pipeline,-0.044,TRUE
+t7_flat_tax_op_ed_veterans_std_error,Table 7 (p. 74),pipeline,0.070,TRUE
+t7_flat_tax_op_ed_wall_street_estimate,Table 7 (p. 74),pipeline,0.077,TRUE
+t7_flat_tax_op_ed_wall_street_std_error,Table 7 (p. 74),pipeline,0.069,TRUE
+t7_flat_tax_constant_estimate,Table 7 (p. 74),pipeline,0.002,TRUE
+t7_flat_tax_constant_std_error,Table 7 (p. 74),pipeline,0.049,TRUE
+t7_veterans_op_ed_amtrak_estimate,Table 7 (p. 74),pipeline,0.131,TRUE
+t7_veterans_op_ed_amtrak_std_error,Table 7 (p. 74),pipeline,0.065,TRUE
+t7_veterans_op_ed_flat_tax_estimate,Table 7 (p. 74),pipeline,-0.0005,TRUE
+t7_veterans_op_ed_flat_tax_std_error,Table 7 (p. 74),pipeline,0.062,TRUE
+t7_veterans_op_ed_veterans_estimate,Table 7 (p. 74),pipeline,0.153,TRUE
+t7_veterans_op_ed_veterans_std_error,Table 7 (p. 74),pipeline,0.063,TRUE
+t7_veterans_op_ed_wall_street_estimate,Table 7 (p. 74),pipeline,-0.032,TRUE
+t7_veterans_op_ed_wall_street_std_error,Table 7 (p. 74),pipeline,0.064,TRUE
+t7_veterans_constant_estimate,Table 7 (p. 74),pipeline,-0.043,TRUE
+t7_veterans_constant_std_error,Table 7 (p. 74),pipeline,0.044,TRUE
+t7_wall_street_op_ed_amtrak_estimate,Table 7 (p. 74),pipeline,0.010,TRUE
+t7_wall_street_op_ed_amtrak_std_error,Table 7 (p. 74),pipeline,0.063,TRUE
+t7_wall_street_op_ed_flat_tax_estimate,Table 7 (p. 74),pipeline,-0.039,TRUE
+t7_wall_street_op_ed_flat_tax_std_error,Table 7 (p. 74),pipeline,0.062,TRUE
+t7_wall_street_op_ed_veterans_estimate,Table 7 (p. 74),pipeline,0.066,TRUE
+t7_wall_street_op_ed_veterans_std_error,Table 7 (p. 74),pipeline,0.063,TRUE
+t7_wall_street_op_ed_wall_street_estimate,Table 7 (p. 74),pipeline,0.571,TRUE
+t7_wall_street_op_ed_wall_street_std_error,Table 7 (p. 74),pipeline,0.060,TRUE
+t7_wall_street_constant_estimate,Table 7 (p. 74),pipeline,-0.123,TRUE
+t7_wall_street_constant_std_error,Table 7 (p. 74),pipeline,0.044,TRUE
+t7_amtrak_r2,Table 7 (p. 74),pipeline,0.016,TRUE
+t7_flat_tax_r2,Table 7 (p. 74),pipeline,0.003,TRUE
+t7_veterans_r2,Table 7 (p. 74),pipeline,0.006,TRUE
+t7_wall_street_r2,Table 7 (p. 74),pipeline,0.057,TRUE
+t7_amtrak_n,Table 7 (p. 74),pipeline,2181,TRUE
+t7_flat_tax_n,Table 7 (p. 74),pipeline,2181,TRUE
+t7_veterans_n,Table 7 (p. 74),pipeline,2181,TRUE
+t7_wall_street_n,Table 7 (p. 74),pipeline,2181,TRUE
+t8_amtrak_op_ed_amtrak_estimate,Table 8 (p. 75),pipeline,0.501,TRUE
+t8_amtrak_op_ed_amtrak_std_error,Table 8 (p. 75),pipeline,0.059,TRUE
+t8_amtrak_op_ed_flat_tax_estimate,Table 8 (p. 75),pipeline,0.080,TRUE
+t8_amtrak_op_ed_flat_tax_std_error,Table 8 (p. 75),pipeline,0.055,TRUE
+t8_amtrak_op_ed_veterans_estimate,Table 8 (p. 75),pipeline,0.044,TRUE
+t8_amtrak_op_ed_veterans_std_error,Table 8 (p. 75),pipeline,0.058,TRUE
+t8_amtrak_op_ed_wall_street_estimate,Table 8 (p. 75),pipeline,0.055,TRUE
+t8_amtrak_op_ed_wall_street_std_error,Table 8 (p. 75),pipeline,0.055,TRUE
+t8_amtrak_elite_experiment_estimate,Table 8 (p. 75),pipeline,0.137,TRUE
+t8_amtrak_elite_experiment_std_error,Table 8 (p. 75),pipeline,0.062,TRUE
+t8_amtrak_elite_x_amtrak_estimate,Table 8 (p. 75),pipeline,-0.198,TRUE
+t8_amtrak_elite_x_amtrak_std_error,Table 8 (p. 75),pipeline,0.094,TRUE
+t8_amtrak_elite_x_flat_tax_estimate,Table 8 (p. 75),pipeline,-0.164,TRUE
+t8_amtrak_elite_x_flat_tax_std_error,Table 8 (p. 75),pipeline,0.087,TRUE
+t8_amtrak_elite_x_veterans_estimate,Table 8 (p. 75),pipeline,-0.085,TRUE
+t8_amtrak_elite_x_veterans_std_error,Table 8 (p. 75),pipeline,0.090,TRUE
+t8_amtrak_elite_x_wall_street_estimate,Table 8 (p. 75),pipeline,-0.076,TRUE
+t8_amtrak_elite_x_wall_street_std_error,Table 8 (p. 75),pipeline,0.090,TRUE
+t8_amtrak_constant_estimate,Table 8 (p. 75),pipeline,-0.125,TRUE
+t8_amtrak_constant_std_error,Table 8 (p. 75),pipeline,0.039,TRUE
+t8_flat_tax_op_ed_amtrak_estimate,Table 8 (p. 75),pipeline,0.005,TRUE
+t8_flat_tax_op_ed_amtrak_std_error,Table 8 (p. 75),pipeline,0.056,TRUE
+t8_flat_tax_op_ed_flat_tax_estimate,Table 8 (p. 75),pipeline,0.488,TRUE
+t8_flat_tax_op_ed_flat_tax_std_error,Table 8 (p. 75),pipeline,0.060,TRUE
+t8_flat_tax_op_ed_veterans_estimate,Table 8 (p. 75),pipeline,-0.026,TRUE
+t8_flat_tax_op_ed_veterans_std_error,Table 8 (p. 75),pipeline,0.057,TRUE
+t8_flat_tax_op_ed_wall_street_estimate,Table 8 (p. 75),pipeline,0.097,TRUE
+t8_flat_tax_op_ed_wall_street_std_error,Table 8 (p. 75),pipeline,0.057,TRUE
+t8_flat_tax_elite_experiment_estimate,Table 8 (p. 75),pipeline,0.103,TRUE
+t8_flat_tax_elite_experiment_std_error,Table 8 (p. 75),pipeline,0.063,TRUE
+t8_flat_tax_elite_x_amtrak_estimate,Table 8 (p. 75),pipeline,-0.018,TRUE
+t8_flat_tax_elite_x_amtrak_std_error,Table 8 (p. 75),pipeline,0.090,TRUE
+t8_flat_tax_elite_x_flat_tax_estimate,Table 8 (p. 75),pipeline,-0.384,TRUE
+t8_flat_tax_elite_x_flat_tax_std_error,Table 8 (p. 75),pipeline,0.092,TRUE
+t8_flat_tax_elite_x_veterans_estimate,Table 8 (p. 75),pipeline,-0.019,TRUE
+t8_flat_tax_elite_x_veterans_std_error,Table 8 (p. 75),pipeline,0.090,TRUE
+t8_flat_tax_elite_x_wall_street_estimate,Table 8 (p. 75),pipeline,-0.020,TRUE
+t8_flat_tax_elite_x_wall_street_std_error,Table 8 (p. 75),pipeline,0.089,TRUE
+t8_flat_tax_constant_estimate,Table 8 (p. 75),pipeline,-0.101,TRUE
+t8_flat_tax_constant_std_error,Table 8 (p. 75),pipeline,0.039,TRUE
+t8_veterans_op_ed_amtrak_estimate,Table 8 (p. 75),pipeline,0.051,TRUE
+t8_veterans_op_ed_amtrak_std_error,Table 8 (p. 75),pipeline,0.056,TRUE
+t8_veterans_op_ed_flat_tax_estimate,Table 8 (p. 75),pipeline,0.048,TRUE
+t8_veterans_op_ed_flat_tax_std_error,Table 8 (p. 75),pipeline,0.056,TRUE
+t8_veterans_op_ed_veterans_estimate,Table 8 (p. 75),pipeline,0.646,TRUE
+t8_veterans_op_ed_veterans_std_error,Table 8 (p. 75),pipeline,0.054,TRUE
+t8_veterans_op_ed_wall_street_estimate,Table 8 (p. 75),pipeline,-0.113,TRUE
+t8_veterans_op_ed_wall_street_std_error,Table 8 (p. 75),pipeline,0.057,TRUE
+t8_veterans_elite_experiment_estimate,Table 8 (p. 75),pipeline,0.060,TRUE
+t8_veterans_elite_experiment_std_error,Table 8 (p. 75),pipeline,0.059,TRUE
+t8_veterans_elite_x_amtrak_estimate,Table 8 (p. 75),pipeline,0.080,TRUE
+t8_veterans_elite_x_amtrak_std_error,Table 8 (p. 75),pipeline,0.086,TRUE
+t8_veterans_elite_x_flat_tax_estimate,Table 8 (p. 75),pipeline,-0.048,TRUE
+t8_veterans_elite_x_flat_tax_std_error,Table 8 (p. 75),pipeline,0.084,TRUE
+t8_veterans_elite_x_veterans_estimate,Table 8 (p. 75),pipeline,-0.493,TRUE
+t8_veterans_elite_x_veterans_std_error,Table 8 (p. 75),pipeline,0.083,TRUE
+t8_veterans_elite_x_wall_street_estimate,Table 8 (p. 75),pipeline,0.081,TRUE
+t8_veterans_elite_x_wall_street_std_error,Table 8 (p. 75),pipeline,0.086,TRUE
+t8_veterans_constant_estimate,Table 8 (p. 75),pipeline,-0.103,TRUE
+t8_veterans_constant_std_error,Table 8 (p. 75),pipeline,0.040,TRUE
+t8_wall_street_op_ed_amtrak_estimate,Table 8 (p. 75),pipeline,-0.034,TRUE
+t8_wall_street_op_ed_amtrak_std_error,Table 8 (p. 75),pipeline,0.054,TRUE
+t8_wall_street_op_ed_flat_tax_estimate,Table 8 (p. 75),pipeline,-0.023,TRUE
+t8_wall_street_op_ed_flat_tax_std_error,Table 8 (p. 75),pipeline,0.056,TRUE
+t8_wall_street_op_ed_veterans_estimate,Table 8 (p. 75),pipeline,-0.090,TRUE
+t8_wall_street_op_ed_veterans_std_error,Table 8 (p. 75),pipeline,0.054,TRUE
+t8_wall_street_op_ed_wall_street_estimate,Table 8 (p. 75),pipeline,0.698,TRUE
+t8_wall_street_op_ed_wall_street_std_error,Table 8 (p. 75),pipeline,0.056,TRUE
+t8_wall_street_elite_experiment_estimate,Table 8 (p. 75),pipeline,-0.027,TRUE
+t8_wall_street_elite_experiment_std_error,Table 8 (p. 75),pipeline,0.058,TRUE
+t8_wall_street_elite_x_amtrak_estimate,Table 8 (p. 75),pipeline,0.044,TRUE
+t8_wall_street_elite_x_amtrak_std_error,Table 8 (p. 75),pipeline,0.083,TRUE
+t8_wall_street_elite_x_flat_tax_estimate,Table 8 (p. 75),pipeline,-0.016,TRUE
+t8_wall_street_elite_x_flat_tax_std_error,Table 8 (p. 75),pipeline,0.083,TRUE
+t8_wall_street_elite_x_veterans_estimate,Table 8 (p. 75),pipeline,0.156,TRUE
+t8_wall_street_elite_x_veterans_std_error,Table 8 (p. 75),pipeline,0.083,TRUE
+t8_wall_street_elite_x_wall_street_estimate,Table 8 (p. 75),pipeline,-0.127,TRUE
+t8_wall_street_elite_x_wall_street_std_error,Table 8 (p. 75),pipeline,0.082,TRUE
+t8_wall_street_constant_estimate,Table 8 (p. 75),pipeline,-0.096,TRUE
+t8_wall_street_constant_std_error,Table 8 (p. 75),pipeline,0.038,TRUE
+t8_amtrak_r2,Table 8 (p. 75),pipeline,0.026,TRUE
+t8_flat_tax_r2,Table 8 (p. 75),pipeline,0.021,TRUE
+t8_veterans_r2,Table 8 (p. 75),pipeline,0.045,TRUE
+t8_wall_street_r2,Table 8 (p. 75),pipeline,0.076,TRUE
+t8_amtrak_n,Table 8 (p. 75),pipeline,5182,TRUE
+t8_flat_tax_n,Table 8 (p. 75),pipeline,5182,TRUE
+t8_veterans_n,Table 8 (p. 75),pipeline,5182,TRUE
+t8_wall_street_n,Table 8 (p. 75),pipeline,5182,TRUE
+t9_mturk_amtrak_main_dv_f_test_p,Table 9 (p. 77),pipeline,0.045,TRUE
+t9_mturk_climate_main_dv_f_test_p,Table 9 (p. 77),pipeline,0.845,TRUE
+t9_mturk_flat_tax_main_dv_f_test_p,Table 9 (p. 77),pipeline,0.009,TRUE
+t9_mturk_veterans_main_dv_f_test_p,Table 9 (p. 77),pipeline,0.878,TRUE
+t9_mturk_wall_street_main_dv_f_test_p,Table 9 (p. 77),pipeline,0.310,TRUE
+t9_mturk_amtrak_scale_dv_f_test_p,Table 9 (p. 77),pipeline,0.029,TRUE
+t9_mturk_climate_scale_dv_f_test_p,Table 9 (p. 77),pipeline,0.243,TRUE
+t9_mturk_flat_tax_scale_dv_f_test_p,Table 9 (p. 77),pipeline,0.001,TRUE
+t9_mturk_veterans_scale_dv_f_test_p,Table 9 (p. 77),pipeline,0.562,TRUE
+t9_mturk_wall_street_scale_dv_f_test_p,Table 9 (p. 77),pipeline,0.371,TRUE
+t9_elite_amtrak_main_dv_f_test_p,Table 9 (p. 77),pipeline,0.436,TRUE
+t9_elite_flat_tax_main_dv_f_test_p,Table 9 (p. 77),pipeline,0.146,TRUE
+t9_elite_veterans_main_dv_f_test_p,Table 9 (p. 77),pipeline,0.434,TRUE
+t9_elite_wall_street_main_dv_f_test_p,Table 9 (p. 77),pipeline,0.316,TRUE
+t9_elite_amtrak_scale_dv_f_test_p,Table 9 (p. 77),pipeline,0.342,TRUE
+t9_elite_flat_tax_scale_dv_f_test_p,Table 9 (p. 77),pipeline,0.293,TRUE
+t9_elite_veterans_scale_dv_f_test_p,Table 9 (p. 77),pipeline,0.291,TRUE
+t9_elite_wall_street_scale_dv_f_test_p,Table 9 (p. 77),pipeline,0.265,TRUE
+t11_elite_amtrak_25th_estimate,Table 11 (p. 81),pipeline,0.04,TRUE
+t11_elite_amtrak_25th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_mturk_amtrak_25th_estimate,Table 11 (p. 81),pipeline,0.12,TRUE
+t11_mturk_amtrak_25th_std_error,Table 11 (p. 81),pipeline,0.02,TRUE
+t11_elite_amtrak_50th_estimate,Table 11 (p. 81),pipeline,0.10,TRUE
+t11_elite_amtrak_50th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_mturk_amtrak_50th_estimate,Table 11 (p. 81),pipeline,0.15,TRUE
+t11_mturk_amtrak_50th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_elite_amtrak_75th_estimate,Table 11 (p. 81),pipeline,0.09,TRUE
+t11_elite_amtrak_75th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_mturk_amtrak_75th_estimate,Table 11 (p. 81),pipeline,0.23,TRUE
+t11_mturk_amtrak_75th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_mturk_climate_25th_estimate,Table 11 (p. 81),pipeline,0.10,TRUE
+t11_mturk_climate_25th_std_error,Table 11 (p. 81),pipeline,0.02,TRUE
+t11_mturk_climate_50th_estimate,Table 11 (p. 81),pipeline,0.11,TRUE
+t11_mturk_climate_50th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_mturk_climate_75th_estimate,Table 11 (p. 81),pipeline,0.10,TRUE
+t11_mturk_climate_75th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_elite_flat_tax_25th_estimate,Table 11 (p. 81),pipeline,0.02,TRUE
+t11_elite_flat_tax_25th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_mturk_flat_tax_25th_estimate,Table 11 (p. 81),pipeline,0.08,TRUE
+t11_mturk_flat_tax_25th_std_error,Table 11 (p. 81),pipeline,0.02,TRUE
+t11_elite_flat_tax_50th_estimate,Table 11 (p. 81),pipeline,0.02,TRUE
+t11_elite_flat_tax_50th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_mturk_flat_tax_50th_estimate,Table 11 (p. 81),pipeline,0.20,TRUE
+t11_mturk_flat_tax_50th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_elite_flat_tax_75th_estimate,Table 11 (p. 81),pipeline,0.06,TRUE
+t11_elite_flat_tax_75th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_mturk_flat_tax_75th_estimate,Table 11 (p. 81),pipeline,0.18,TRUE
+t11_mturk_flat_tax_75th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_elite_veterans_25th_estimate,Table 11 (p. 81),pipeline,0.02,TRUE
+t11_elite_veterans_25th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_mturk_veterans_25th_estimate,Table 11 (p. 81),pipeline,0.17,TRUE
+t11_mturk_veterans_25th_std_error,Table 11 (p. 81),pipeline,0.02,TRUE
+t11_elite_veterans_50th_estimate,Table 11 (p. 81),pipeline,0.08,TRUE
+t11_elite_veterans_50th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_mturk_veterans_50th_estimate,Table 11 (p. 81),pipeline,0.28,TRUE
+t11_mturk_veterans_50th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_elite_veterans_75th_estimate,Table 11 (p. 81),pipeline,0.09,TRUE
+t11_elite_veterans_75th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_mturk_veterans_75th_estimate,Table 11 (p. 81),pipeline,0.29,TRUE
+t11_mturk_veterans_75th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_elite_wall_street_25th_estimate,Table 11 (p. 81),pipeline,0.14,TRUE
+t11_elite_wall_street_25th_std_error,Table 11 (p. 81),pipeline,0.02,TRUE
+t11_mturk_wall_street_25th_estimate,Table 11 (p. 81),pipeline,0.16,TRUE
+t11_mturk_wall_street_25th_std_error,Table 11 (p. 81),pipeline,0.02,TRUE
+t11_elite_wall_street_50th_estimate,Table 11 (p. 81),pipeline,0.26,TRUE
+t11_elite_wall_street_50th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_mturk_wall_street_50th_estimate,Table 11 (p. 81),pipeline,0.28,TRUE
+t11_mturk_wall_street_50th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_elite_wall_street_75th_estimate,Table 11 (p. 81),pipeline,0.21,TRUE
+t11_elite_wall_street_75th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_mturk_wall_street_75th_estimate,Table 11 (p. 81),pipeline,0.27,TRUE
+t11_mturk_wall_street_75th_std_error,Table 11 (p. 81),pipeline,0.03,TRUE
+t11_elite_precision_weighted_average_25th_estimate,Table 11 (p. 81),pipeline,0.06,TRUE
+t11_elite_precision_weighted_average_25th_std_error,Table 11 (p. 81),pipeline,0.01,TRUE
+t11_mturk_precision_weighted_average_25th_estimate,Table 11 (p. 81),pipeline,0.13,TRUE
+t11_mturk_precision_weighted_average_25th_std_error,Table 11 (p. 81),pipeline,0.01,TRUE
+t11_elite_precision_weighted_average_50th_estimate,Table 11 (p. 81),pipeline,0.12,TRUE
+t11_elite_precision_weighted_average_50th_std_error,Table 11 (p. 81),pipeline,0.02,TRUE
+t11_mturk_precision_weighted_average_50th_estimate,Table 11 (p. 81),pipeline,0.20,TRUE
+t11_mturk_precision_weighted_average_50th_std_error,Table 11 (p. 81),pipeline,0.01,TRUE
+t11_elite_precision_weighted_average_75th_estimate,Table 11 (p. 81),pipeline,0.11,TRUE
+t11_elite_precision_weighted_average_75th_std_error,Table 11 (p. 81),pipeline,0.02,TRUE
+t11_mturk_precision_weighted_average_75th_estimate,Table 11 (p. 81),pipeline,0.21,TRUE
+t11_mturk_precision_weighted_average_75th_std_error,Table 11 (p. 81),pipeline,0.01,TRUE
+t10_new_york_times_circulation,Table 10 (p. 80),definitional,2134150,FALSE
+t10_new_york_times_opinion_share,Table 10 (p. 80),definitional,95,FALSE
+t10_new_york_times_opeds_read,Table 10 (p. 80),definitional,0.25,FALSE
+t10_new_york_times_unique_readers,Table 10 (p. 80),definitional,506861,FALSE
+t10_wall_street_journal_circulation,Table 10 (p. 80),definitional,2276207,FALSE
+t10_wall_street_journal_opinion_share,Table 10 (p. 80),definitional,97,FALSE
+t10_wall_street_journal_opeds_read,Table 10 (p. 80),definitional,0.25,FALSE
+t10_wall_street_journal_unique_readers,Table 10 (p. 80),definitional,551980,FALSE
+t10_usa_today_circulation,Table 10 (p. 80),definitional,4139380,FALSE
+t10_usa_today_opinion_share,Table 10 (p. 80),definitional,50,FALSE
+t10_usa_today_opeds_read,Table 10 (p. 80),definitional,0.25,FALSE
+t10_usa_today_unique_readers,Table 10 (p. 80),definitional,517423,FALSE
+t10_newsweek_circulation,Table 10 (p. 80),definitional,433333,FALSE
+t10_newsweek_opinion_share,Table 10 (p. 80),definitional,50,FALSE
+t10_newsweek_opeds_read,Table 10 (p. 80),definitional,0.25,FALSE
+t10_newsweek_unique_readers,Table 10 (p. 80),definitional,54167,FALSE
+t10_average_unique_readers,Table 10 (p. 80),definitional,407608,FALSE
+t2_no_numeric_content,Table 2 (p. 68),structural,,FALSE
+fig1_n_estimates,Figure 1 (p. 76),pipeline,,TRUE
+fig1_axis_break_low,Figure 1 (p. 76),structural,0.0,FALSE
+fig1_axis_break_high,Figure 1 (p. 76),structural,1.5,FALSE
+fig2_n_group_means,Figure 2 (p. 79),pipeline,,TRUE
+fig2_axis_day_0,Figure 2 (p. 79),structural,0,FALSE
+fig2_axis_day_10,Figure 2 (p. 79),structural,10,FALSE
+fig2_axis_day_30,Figure 2 (p. 79),structural,30,FALSE
+ab_n_experiments,Abstract (p. 59),structural,2,FALSE
+ab_n_opeds,Abstract (p. 59),structural,5,FALSE
+ab_target_shift,Abstract (p. 59),descriptive,0.5,TRUE
+ab_scale_points,Abstract (p. 59),definitional,7,FALSE
+ab_persistence_months,Abstract (p. 59),structural,1,FALSE
+ab_nontarget_small,Abstract (p. 59),descriptive,,TRUE
+ab_parties_similar,Abstract (p. 59),descriptive,,TRUE
+in_oped_debut_day,Introduction (p. 60),transcribed,21,FALSE
+in_oped_debut_year,Introduction (p. 60),transcribed,1970,FALSE
+in_years_since_debut,Introduction (p. 60),structural,40,FALSE
+in_opeds_per_day_low,Introduction (p. 60),transcribed,2,FALSE
+in_opeds_per_day_high,Introduction (p. 60),transcribed,3,FALSE
+in_form_decade,Introduction (p. 60),transcribed,1970,FALSE
+fn1_chicago_year,Footnote 1 (p. 60),transcribed,1912,FALSE
+fn1_post_decade,Footnote 1 (p. 60),transcribed,1930,FALSE
+fn1_lat_decade,Footnote 1 (p. 60),transcribed,1950,FALSE
+in_cato_year,Introduction (p. 61),transcribed,2015,FALSE
+in_cato_opeds,Introduction (p. 61),transcribed,944,FALSE
+in_cato_top_opeds,Introduction (p. 61),transcribed,73,FALSE
+in_cato_top_papers,Introduction (p. 61),transcribed,10,FALSE
+in_brookings_opeds,Introduction (p. 61),transcribed,116,FALSE
+in_brookings_year,Introduction (p. 61),transcribed,2015,FALSE
+in_aei_opeds,Introduction (p. 61),transcribed,3385,FALSE
+fn3_start_year,Footnote 3 (p. 61),structural,2015,FALSE
+fn3_end_year,Footnote 3 (p. 61),structural,2015,FALSE
+in_ghostwrite_low,Introduction (p. 62),definitional,5000,FALSE
+in_ghostwrite_high,Introduction (p. 62),definitional,25000,FALSE
+in_n_experiments,Introduction (p. 62),structural,2,FALSE
+in_n_followups_mturk,Introduction (p. 62),structural,2,FALSE
+in_n_followups_elite,Introduction (p. 62),structural,1,FALSE
+in_n_results,Introduction (p. 62),structural,3,FALSE
+lit_jerit_outcomes,Previous Literature (p. 64),transcribed,17,FALSE
+lit_jerit_significant,Previous Literature (p. 64),transcribed,1,FALSE
+lit_n_hypotheses,Previous Literature (p. 65),structural,5,FALSE
+s1_enrolled,Study 1: Mechanical Turk (p. 66),pipeline,3567,TRUE
+s1_n_waves,Study 1: Mechanical Turk (p. 66),structural,3,FALSE
+s1_payment_per_wave,Study 1: Mechanical Turk (p. 66),definitional,1.00,FALSE
+s1_n_treatment_opeds,Study 1: Mechanical Turk (p. 66),structural,5,FALSE
+s1_w2_delay_days,Study 1: Mechanical Turk (p. 66),definitional,10,FALSE
+s1_w3_delay_days,Study 1: Mechanical Turk (p. 66),definitional,30,FALSE
+s1_recontact_w2,Study 1: Mechanical Turk (p. 66),pipeline,84,TRUE
+s1_recontact_w3,Study 1: Mechanical Turk (p. 66),pipeline,69,TRUE
+s1_chisq_w2_p,Study 1: Mechanical Turk (p. 66),pipeline,0.10,TRUE
+s1_chisq_w3_p,Study 1: Mechanical Turk (p. 66),pipeline,0.61,TRUE
+s1_n_analysis_approaches,Study 1: Mechanical Turk (p. 66),structural,2,FALSE
+s1_cato_authored,Study 1: Treatments (p. 67),structural,4,FALSE
+s1_paul_authored,Study 1: Treatments (p. 67),structural,5,FALSE
+s1_flat_tax_rate,Study 1: Treatments (p. 67),transcribed,14,FALSE
+s1_flat_tax_threshold,Study 1: Treatments (p. 68),transcribed,50000,FALSE
+s1_reading_minutes_low,Study 1: Treatments (p. 68),pipeline,2,TRUE
+s1_reading_minutes_high,Study 1: Treatments (p. 68),pipeline,4,TRUE
+s1_questions_per_issue_low,Study 1: Outcome Measures (p. 68),definitional,4,FALSE
+s1_questions_per_issue_high,Study 1: Outcome Measures (p. 68),definitional,5,FALSE
+s1_n_presentations,Study 1: Outcome Measures (p. 68),structural,3,FALSE
+s1_main_dv_scale_points,Study 1: Outcome Measures (p. 68),definitional,7,FALSE
+s1_n_factors,Study 1: Outcome Measures (p. 69),definitional,2,FALSE
+s1_control_agreement_share,Study 1: Outcome Measures (p. 69),definitional,50,FALSE
+s1_robustness_split_low,Study 1: Outcome Measures (p. 69),definitional,25,FALSE
+s1_robustness_split_high,Study 1: Outcome Measures (p. 69),definitional,75,FALSE
+dv_amtrak_scale_points,Study 1: Outcome Measures (p. 69),definitional,7,FALSE
+dv_amtrak_scale_low,Study 1: Outcome Measures (p. 69),definitional,1,FALSE
+dv_amtrak_scale_high,Study 1: Outcome Measures (p. 69),definitional,7,FALSE
+dv_climate_scale_points,Study 1: Outcome Measures (p. 69),definitional,7,FALSE
+dv_climate_scale_low,Study 1: Outcome Measures (p. 69),definitional,1,FALSE
+dv_climate_scale_high,Study 1: Outcome Measures (p. 69),definitional,7,FALSE
+dv_flat_scale_points,Study 1: Outcome Measures (p. 69),definitional,7,FALSE
+dv_flat_scale_low,Study 1: Outcome Measures (p. 69),definitional,1,FALSE
+dv_flat_scale_high,Study 1: Outcome Measures (p. 69),definitional,7,FALSE
+dv_flat_threshold,Study 1: Outcome Measures (p. 69),definitional,50000,FALSE
+dv_vets_scale_points,Study 1: Outcome Measures (p. 69),definitional,7,FALSE
+dv_vets_scale_low,Study 1: Outcome Measures (p. 69),definitional,1,FALSE
+dv_vets_scale_high,Study 1: Outcome Measures (p. 69),definitional,7,FALSE
+dv_wall_scale_points,Study 1: Outcome Measures (p. 69),definitional,7,FALSE
+dv_wall_scale_low,Study 1: Outcome Measures (p. 69),definitional,1,FALSE
+dv_wall_scale_high,Study 1: Outcome Measures (p. 69),definitional,7,FALSE
+s1_all_dvs,Study 1: Results (p. 70),structural,21,FALSE
+s1_n_treatments,Study 1: Results (p. 70),structural,5,FALSE
+s1_main_target_min,Study 1: Results (p. 70),pipeline,0.427,TRUE
+s1_main_scale_low,Study 1: Results (p. 70),definitional,1,FALSE
+s1_main_scale_high,Study 1: Results (p. 70),definitional,7,FALSE
+s1_main_target_max,Study 1: Results (p. 70),pipeline,0.915,TRUE
+s1_main_target_sig_p,Study 1: Results (p. 70),descriptive,0.001,TRUE
+s1_nontarget_cells,Study 1: Results (p. 70),structural,20,TRUE
+s1_nontarget_sig_count,Study 1: Results (p. 70),descriptive,2,TRUE
+s1_scale_target_min,Study 1: Results (p. 70),pipeline,0.276,TRUE
+s1_scale_target_range_low,Study 1: Results (p. 70),descriptive,0.5,TRUE
+s1_scale_target_range_high,Study 1: Results (p. 70),descriptive,0.7,TRUE
+s1_scale_cross_issue_small,Study 1: Results (p. 70),descriptive,,TRUE
+s2_email_list,Study 2: Elites (p. 71),definitional,32498,FALSE
+s2_full_design_arms,Study 2: Elites (p. 72),structural,6,FALSE
+s2_reminders_wave1,Study 2: Elites (p. 72),structural,2,FALSE
+s2_completed,Study 2: Elites (p. 72),pipeline,2169,TRUE
+s2_followup_delay_days,Study 2: Elites (p. 72),definitional,10,FALSE
+s2_reminders_wave2,Study 2: Elites (p. 72),structural,2,FALSE
+s2_w2_complete,Study 2: Elites (p. 72),pipeline,1349,TRUE
+s2_reading_gap_low,Study 2: Elites (p. 72),descriptive,25,TRUE
+s2_reading_gap_high,Study 2: Elites (p. 72),descriptive,45,TRUE
+s2_n_opeds,Study 2: Results (p. 73),structural,4,FALSE
+s2_main_sig_count,Study 2: Results (p. 73),descriptive,3,TRUE
+s2_main_total_count,Study 2: Results (p. 73),structural,4,FALSE
+s2_main_sig_p,Study 2: Results (p. 73),descriptive,0.001,TRUE
+s2_main_target_min,Study 2: Results (p. 73),pipeline,0.411,TRUE
+s2_main_scale_low,Study 2: Results (p. 73),definitional,1,FALSE
+s2_main_scale_high,Study 2: Results (p. 73),definitional,7,FALSE
+s2_main_target_max,Study 2: Results (p. 73),pipeline,0.791,TRUE
+s2_main_no_cross_issue,Study 2: Results (p. 73),descriptive,0,TRUE
+s2_scale_sig_count,Study 2: Results (p. 73),descriptive,3,TRUE
+s2_scale_total_count,Study 2: Results (p. 73),structural,4,FALSE
+s2_scale_sig_p_strong,Study 2: Results (p. 73),descriptive,0.001,TRUE
+s2_scale_sig_p_weak,Study 2: Results (p. 73),descriptive,0.05,TRUE
+s2_all_dvs,Study 2: Results (p. 73),structural,16,FALSE
+s2_scale_target_min,Study 2: Results (p. 74),pipeline,0.104,TRUE
+s2_scale_target_max,Study 2: Results (p. 74),pipeline,0.571,TRUE
+s2_nontarget_cells,Study 2: Results (p. 74),structural,16,TRUE
+s2_nontarget_sig_count,Study 2: Results (p. 74),descriptive,1,TRUE
+s12_all_smaller_for_elites,Heterogeneous Effects by Experimental Sample (p. 74),descriptive,4,TRUE
+s12_amtrak_interaction,Heterogeneous Effects by Experimental Sample (p. 74),pipeline,0.198,TRUE
+s12_sig_interactions,Heterogeneous Effects by Experimental Sample (p. 74),descriptive,,TRUE
+s12_wall_interaction_null,Heterogeneous Effects by Experimental Sample (p. 75),descriptive,,TRUE
+s12_flat_tax_rep_over_dem,Heterogeneous Effects by Partisanship (p. 77),descriptive,,TRUE
+s12_dem_pw_average,Heterogeneous Effects by Partisanship (p. 77),pipeline,0.58,TRUE
+s12_dem_pw_average_se,Heterogeneous Effects by Partisanship (p. 77),pipeline,0.05,TRUE
+s12_rep_pw_average,Heterogeneous Effects by Partisanship (p. 77),pipeline,0.88,TRUE
+s12_rep_pw_average_se,Heterogeneous Effects by Partisanship (p. 77),pipeline,0.08,TRUE
+s12_rep_dem_difference,Heterogeneous Effects by Partisanship (p. 77),pipeline,0.3,TRUE
+s12_rep_dem_difference_se,Heterogeneous Effects by Partisanship (p. 77),pipeline,0.09,TRUE
+s12_n_party_groups,Heterogeneous Effects by Partisanship (p. 77),structural,3,FALSE
+s12_table9_exceptions,Heterogeneous Effects by Partisanship (p. 77),descriptive,,TRUE
+lt_wave2_days,Long Term Effects (p. 78),definitional,10,FALSE
+lt_wave3_days,Long Term Effects (p. 78),definitional,30,FALSE
+lt_decay_share,Long Term Effects (p. 78),descriptive,50,TRUE
+lt_still_significant,Long Term Effects (p. 78),descriptive,,TRUE
+lt_little_later_decay,Long Term Effects (p. 78),descriptive,,TRUE
+lt_n_waves_measured,Long Term Effects (p. 78),structural,3,FALSE
+lt_hockey_stick_30,Long Term Effects (p. 78),structural,30,FALSE
+lt_hockey_stick_10,Long Term Effects (p. 78),structural,10,FALSE
+lt_n_mechanisms,Long Term Effects (p. 78),structural,2,FALSE
+cost_n_arguments,Cost Per Mind Changed (p. 78),structural,3,FALSE
+cost_ghostwrite_low,Cost Per Mind Changed (p. 80),definitional,5000,FALSE
+cost_ghostwrite_high,Cost Per Mind Changed (p. 80),definitional,25000,FALSE
+cost_advertisement,Cost Per Mind Changed (p. 80),definitional,50000,FALSE
+cost_assumed_opinion_share,Cost Per Mind Changed (p. 80),definitional,50,FALSE
+cost_readers_per_oped,Cost Per Mind Changed (p. 80),definitional,4,FALSE
+cost_opeds_per_day_low,Cost Per Mind Changed (p. 80),definitional,3,FALSE
+cost_opeds_per_day_high,Cost Per Mind Changed (p. 80),definitional,6,FALSE
+cost_newsweek_readers,Cost Per Mind Changed (p. 81),definitional,50000,FALSE
+cost_assumed_audience,Cost Per Mind Changed (p. 81),definitional,400000,FALSE
+cost_n_issue_areas,Cost Per Mind Changed (p. 81),structural,5,FALSE
+cost_split_25,Cost Per Mind Changed (p. 81),definitional,25,FALSE
+cost_split_50,Cost Per Mind Changed (p. 81),definitional,50,FALSE
+cost_split_75,Cost Per Mind Changed (p. 81),definitional,75,FALSE
+cost_mturk_pw_average,Cost Per Mind Changed (p. 81),pipeline,20,TRUE
+cost_control_agreement,Cost Per Mind Changed (p. 81),definitional,50,FALSE
+cost_treated_agreement,Cost Per Mind Changed (p. 81),pipeline,70,TRUE
+cost_elite_pw_average,Cost Per Mind Changed (p. 81),pipeline,12,TRUE
+cost_rosy_cost,Cost Per Mind Changed (p. 81),definitional,5000,FALSE
+cost_rosy_reach,Cost Per Mind Changed (p. 81),definitional,400000,FALSE
+cost_rosy_share,Cost Per Mind Changed (p. 81),definitional,20,FALSE
+cost_rosy_cents,Cost Per Mind Changed (p. 82),definitional,6,TRUE
+cost_conservative_multiple,Cost Per Mind Changed (p. 82),definitional,10,FALSE
+cost_conservative_cost,Cost Per Mind Changed (p. 82),definitional,50000,FALSE
+cost_conservative_reach,Cost Per Mind Changed (p. 82),definitional,200000,FALSE
+cost_conservative_share,Cost Per Mind Changed (p. 82),definitional,10,FALSE
+cost_conservative_dollars,Cost Per Mind Changed (p. 82),definitional,2.50,TRUE
+cost_range_cents,Cost Per Mind Changed (p. 82),definitional,50,FALSE
+cost_range_dollars,Cost Per Mind Changed (p. 82),definitional,3,FALSE
+disc_years_since_debut,Discussion (p. 82),structural,40,FALSE
+disc_effect_low,Discussion (p. 82),descriptive,0.30,TRUE
+disc_effect_high,Discussion (p. 82),descriptive,0.50,TRUE
+disc_persistence_months,Discussion (p. 82),structural,1,FALSE
+disc_wave_pair_early_a,Discussion (p. 83),structural,1,FALSE
+disc_wave_pair_early_b,Discussion (p. 83),structural,2,FALSE
+disc_wave_pair_late_a,Discussion (p. 83),structural,2,FALSE
+disc_wave_pair_late_b,Discussion (p. 83),structural,3,FALSE
+disc_wave_stable_a,Discussion (p. 83),structural,2,FALSE
+disc_wave_stable_b,Discussion (p. 83),structural,3,FALSE
+disc_cost_range_cents,Discussion (p. 83),definitional,50,FALSE
+disc_cost_range_dollars,Discussion (p. 83),definitional,3,FALSE
+disc_questions_low,Discussion (p. 83),definitional,4,FALSE
+disc_questions_high,Discussion (p. 83),definitional,5,FALSE
+disc_n_populations,Discussion (p. 83),structural,2,FALSE
+disc_two_sided,Discussion (p. 83),structural,2,FALSE
+disc_aggregate_shift_low,Discussion (p. 83),definitional,10,FALSE
+disc_aggregate_shift_high,Discussion (p. 83),definitional,20,FALSE
+disc_us_adult_share,Discussion (p. 84),definitional,0.2,FALSE
+disc_changed_share,Discussion (p. 84),definitional,10,FALSE
+disc_aggregate_shift,Discussion (p. 84),definitional,0.02,FALSE

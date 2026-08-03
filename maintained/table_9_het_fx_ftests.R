@@ -40,7 +40,7 @@ table_9 <- specs |>
                      party_ftest(dv, arm, dat, se_type = "HC2"))
   ) |>
   select(sample, issue, dv_type, dv, p_classical, p_hc2) |>
-  arrange(desc(sample), issue, dv_type)
+  arrange(desc(sample), issue, dv_type, .locale = "en")
 
 write_csv(table_9, here::here("maintained", "output", "table_9_het_fx_ftests.csv"))
 

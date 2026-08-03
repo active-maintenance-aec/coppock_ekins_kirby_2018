@@ -22,7 +22,7 @@ reading_by_arm <- bind_rows(
     trimmed_minutes = mean(time_spent_reading, na.rm = TRUE, trim = 0.01) / 60,
     .by = c(sample, Z)
   ) |>
-  arrange(sample, Z)
+  arrange(sample, Z, .locale = "en")
 
 write_csv(reading_by_arm, here::here("maintained", "output", "text_reading_time.csv"))
 

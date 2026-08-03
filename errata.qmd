@@ -1,0 +1,132 @@
+---
+title: "Errata"
+subtitle: "On Coppock, Ekins and Kirby (2018), *Quarterly Journal of Political Science* 13(1)"
+format:
+  pdf:
+    output-file: coppock_ekins_kirby_2018_errata.pdf
+    geometry: margin=1.25in
+    fontsize: 11pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(here)
+library(tidyverse)
+here::i_am("errata.qmd")
+
+# Every number inside a corrected sentence below is computed here, from the deposited
+# data, at the time this document is rendered. That includes the numbers that were not
+# wrong: a token carried over from the published sentence is inherited on trust, and
+# rendering the whole sentence from the pipeline is what verifies it.
+out <- function(f) read_csv(here("maintained", "output", f), show_col_types = FALSE)
+
+recontact <- out("text_recontact_rates.csv")
+gaps <- out("text_reading_time_differences.csv")
+t3 <- out("table_3_mturk_main_dv.csv")
+t6 <- out("table_6_elite_main_dv.csv")
+t7 <- out("table_7_elite_scale_dv.csv")
+
+count_of <- function(label) {
+  value <- recontact$value[recontact$claim == label]
+  stopifnot(length(value) == 1)
+  format(round(value), big.mark = ",")
+}
+
+on_target <- function(tbl) {
+  filter(tbl, op_ed != "Constant", str_remove(op_ed, "^Op-ed: ") == dv)
+}
+off_target <- function(tbl) {
+  filter(tbl, op_ed != "Constant", str_remove(op_ed, "^Op-ed: ") != dv)
+}
+
+# One decimal on the seconds scale throughout, and the article's own en dash for a minus
+# sign, so a corrected sentence reads like the published one.
+secs <- function(x) str_replace(sprintf("%.1f", x), "^-", "–")
+
+oped_names <- c(amtrak = "Amtrak", paul = "flat tax", veterans = "veterans",
+                wallstreet = "Wall Street")
+gap_named <- gaps |>
+  mutate(label = unname(oped_names[Z])) |>
+  arrange(desc(mturk_minus_elite_seconds))
+mean_gap <- mean(gaps$mturk_minus_elite_seconds)
+reversed <- filter(gap_named, mturk_minus_elite_seconds < 0)
+
+# The three elite main-DV effects the article names, and the strongest conventional
+# threshold all three clear. The threshold is a comparison target rather than an input:
+# nothing here is estimated from it.
+named_elite <- on_target(t6) |> filter(dv %in% c("Amtrak", "Flat Tax", "Wall Street"))
+thresholds <- c(0.001, 0.01, 0.05, 0.1)
+strongest <- min(thresholds[map_lgl(thresholds, \(p) all(named_elite$p.value < p))])
+flat_tax_p <- named_elite$p.value[named_elite$dv == "Flat Tax"]
+
+t7_off <- nrow(off_target(t7))
+t7_total <- nrow(on_target(t7)) + t7_off
+t3_off <- nrow(off_target(t3))
+t3_total <- nrow(on_target(t3)) + t3_off
+```
+
+This note lists six corrections to "The Long-lasting Effects of Newspaper Op-Eds on Public Opinion," published in the *Quarterly Journal of Political Science* 13(1), doi [10.1561/100.00016112](https://doi.org/10.1561/100.00016112). **None of them changes a conclusion of the paper.** Every one is a sentence in the body text that disagrees with a table the same article prints, and in each case the table is right and the sentence is not. The tables themselves, and the findings they carry, are unaffected.
+
+Every number in a corrected sentence below is computed from the deposited replication archive ([10.7910/DVN/3KBCJF](https://doi.org/10.7910/DVN/3KBCJF)) at the time this document is rendered, including the numbers that were not wrong. The code and output supporting each correction are at [github.com/active-maintenance-aec/coppock_ekins_kirby_2018](https://github.com/active-maintenance-aec/coppock_ekins_kirby_2018).
+
+**Bold marks what changed.** The first three entries are substantive: a comparison that reverses direction on one of four op-eds, a significance level overstated by an order of magnitude, and a miscount of the cells of a table. The last three are undercounted sample sizes, each of which the adjacent table gives correctly.
+
+## 1. The elite sample did not read for 25 to 45 seconds less
+
+> On average, our elite sample spent 25–45 seconds less time reading our treatment articles than the MTurk sample.
+
+Corrected:
+
+> On average, our elite sample spent **`r secs(mean_gap)`** seconds less time reading our treatment articles than the MTurk sample.
+
+Across the four op-eds both samples saw, the elite deficit in trimmed mean reading time is `r secs(gap_named$mturk_minus_elite_seconds[1])` seconds on the `r gap_named$label[1]` piece, `r secs(gap_named$mturk_minus_elite_seconds[2])` seconds on the `r gap_named$label[2]` piece and `r secs(gap_named$mturk_minus_elite_seconds[3])` seconds on the `r gap_named$label[3]` piece, and on the `r reversed$label` piece the elite sample spent `r secs(abs(reversed$mturk_minus_elite_seconds))` seconds **more**, not less. The published range brackets the two arms the deposit's `opeds_compliance.R` computes, the Amtrak and flat tax pieces; the two it does not compute are the ones that break the range.
+
+## 2. The elite main-effect significance level
+
+> Turning first to main dependent variables, we found statistically significant treatment effects for three of the four treatments (Amtrak, Flat Tax, Wall Street) at p < 0.001, but did not for the Veterans op-ed treatment.
+
+Corrected:
+
+> Turning first to main dependent variables, we found statistically significant treatment effects for three of the four treatments (Amtrak, Flat Tax, Wall Street) at p < **`r format(strongest, scientific = FALSE)`**, but did not for the Veterans op-ed treatment.
+
+The flat tax effect on its main dependent variable has p = `r sprintf("%.4f", flat_tax_p)`. Table 6 prints it as `0.411***` under a legend whose strongest level is p < 0.01, so the table and the sentence disagree about the same estimate. The Amtrak and Wall Street effects are significant at 0.001; the flat tax effect is not.
+
+## 3. Table 7 has twelve non-target cells, not sixteen
+
+> Of the 16 treatment effects on non-target issues, only one is statistically significant (Amtrak op-ed on Veterans outcome).
+
+Corrected:
+
+> Of the **`r t7_off`** treatment effects on non-target issues, only one is statistically significant (Amtrak op-ed on Veterans outcome).
+
+Table 7 estimates four op-ed effects on each of four composite scales, so it holds `r t7_total` coefficients, of which four are on target and `r t7_off` are not. The parallel sentence about Table 3 counts correctly: five op-eds by five outcomes is `r t3_total` coefficients and `r t3_off` non-target ones.
+
+## 4. The number of elite subjects who completed the survey
+
+> This procedure yielded 2,169 subjects who completed our survey.
+
+Corrected:
+
+> This procedure yielded **`r count_of("Elite subjects enrolled")`** subjects who completed our survey.
+
+Table 5, at the top of the same page, gives `r count_of("Elite subjects enrolled")` as its own total, and that is the number of rows in the deposited elite data. Tables 6 and 7 report the same figure as their N.
+
+## 5. The number of elite subjects who responded in Wave 2
+
+> As in the MTurk study, we asked subjects to participate in a follow-up survey after 10 days; after two reminders, we obtained 1,349 complete responses.
+
+Corrected:
+
+> As in the MTurk study, we asked subjects to participate in a follow-up survey after 10 days; after two reminders, we obtained **`r count_of("Elite responded in Wave 2")`** complete responses.
+
+Table 5's Responded row totals `r count_of("Elite responded in Wave 2")`.
+
+## 6. The number of subjects enrolled on Mechanical Turk
+
+> We enrolled 3,567 subjects on Amazon's Mechanical Turk (MTurk) in a three-wave panel survey.
+
+Corrected:
+
+> We enrolled **`r count_of("MTurk subjects enrolled")`** subjects on Amazon's Mechanical Turk (MTurk) in a three-wave panel survey.
+
+Table 1 gives `r count_of("MTurk subjects enrolled")` as its own total, and every column of Tables 3 and 4 reports the same figure as its N.

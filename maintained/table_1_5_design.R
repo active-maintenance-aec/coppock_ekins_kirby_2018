@@ -40,7 +40,7 @@ table_1 <- bind_rows(
 ) |>
   mutate(row = factor(row, levels = c("N", "Distraction", "No distraction",
                                       "Responded", "Did not respond"))) |>
-  arrange(wave, row) |>
+  arrange(wave, row, .locale = "en") |>
   rename_with(\(x) mturk_labels, all_of(mturk_arms)) |>
   rename(Totals = totals)
 
@@ -70,7 +70,7 @@ table_5 <- bind_rows(
 ) |>
   mutate(row = factor(row, levels = c("N", "Distraction", "No distraction",
                                       "Responded", "Did not respond"))) |>
-  arrange(wave, row) |>
+  arrange(wave, row, .locale = "en") |>
   rename_with(\(x) elite_labels, all_of(elite_arms)) |>
   rename(Totals = totals)
 

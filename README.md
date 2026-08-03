@@ -1,6 +1,6 @@
 # Active Maintenance Report: coppock_ekins_kirby_2018
 
-2026-08-01
+2026-08-03
 
 - [Summary](#summary)
   - [Does the deposited archive run?](#does-the-deposited-archive-run)
@@ -11,6 +11,7 @@
 - [The Table 9 drift](#the-table-9-drift)
 - [Errata](#errata)
 - [Ground truth summary](#ground-truth-summary)
+  - [The coverage gate](#the-coverage-gate)
 - [Maintained rewrite](#maintained-rewrite)
 - [Figure verification](#figure-verification)
 - [Rewrite verification](#rewrite-verification)
@@ -44,8 +45,10 @@ in version control even though the bytes themselves are not.
 script per published table or figure, writing to `output/`, which is
 committed so a reader can compare a fresh run against it without
 downloading anything. `ground_truth/` ties every published number to the
-code that produces it. `original/` is created by the download script and
-is deliberately absent from the repository. This file is the
+code that produces it, and gates the pipeline on the tie holding.
+`errata.qmd` corrects the sentences in the article that its own tables
+contradict. `original/` is created by the download script and is
+deliberately absent from the repository. This file is the
 reproducibility report, also available as a PDF in `report/`.
 
 **License.** CC0 1.0 Universal, matching the terms of the deposit this
@@ -62,7 +65,7 @@ That fetches the deposit, verifies its 20 files, and produces every
 table and figure into `maintained/output/`. Required packages:
 tidyverse, estimatr, lmtest, modelsummary, knitr, kableExtra, here.
 Paths resolve through `here`, so nothing depends on the working
-directory. The full run takes about thirty seconds. A successful run
+directory. The full run takes well under a minute. A successful run
 overwrites `maintained/output/`, which is committed: **`git diff` on
 that folder is the reproduction check.**
 
@@ -104,15 +107,20 @@ errors, and the tables next to them are right.
 
 ## Does the maintained rewrite reproduce the paper?
 
-Yes, on everything the article states. All 499 of the 502 verifiable
-ground truth claims match the published values to reported precision,
-including the Table 9 p-values, which the rewrite reproduces by
-reporting the classical F test alongside the HC2 one rather than by
-choosing between them silently. The 3 claims recorded as failures are
-the text-versus-table discrepancies above, where the rewrite agrees with
-the article’s tables and disagrees with its prose. 4 further quantities
-are computed and committed but never printed in the article, so they are
-marked unverifiable rather than matched.
+Yes, on every published table cell, and on the prose except where the
+prose disagrees with the tables. Every one of the 487 cells of Tables 1,
+3, 4, 5, 6, 7, 8, 9 and 11 reproduces to the precision the article
+prints, including all eighteen Table 9 p-values, which the rewrite
+reaches by reporting the classical F test alongside the HC2 one rather
+than by choosing between them silently.
+
+9 claims are recorded as failures and every one of them is in the prose.
+Seven are errors in the article, gathered as six corrections in
+`coppock_ekins_kirby_2018_errata.pdf`; the other two are one Discussion
+sentence whose referent is ambiguous, recorded as unresolved rather than
+guessed at. 9 further quantities are claims about shape that the article
+states without a number, so they carry the evidence rather than a
+verdict.
 
 # Paper overview
 
@@ -251,31 +259,77 @@ renders uses the classical column, because that is the published table.
 for the same reason: an analysis choice this consequential should not
 sit in a default.
 
+Every ground truth row in this repository carrying
+`defect_locus = environment` is a cell of this table, and there are 17
+of them. Nothing else in the article moved when the packages did.
+
 # Errata
 
-None. The rewrite changes no analytical decision. The three ground truth
-rows recorded as `match_rewrite = 0` are places where the article’s
-prose disagrees with the article’s own tables, listed below, and no
-correction to the code would resolve them.
+The rewrite changes no analytical decision, so there is nothing to
+correct in the code. What there is to correct is in the article: seven
+ground truth rows carry `defect_locus = paper_internal`, meaning a
+sentence in the body text disagrees with a table the same article
+prints. In every case the table is right.
 
-| Claim | In the text | In the data | Note |
-|:---|---:|---:|:---|
-| MTurk subjects enrolled (p. 66) | 3567 | 3571 | Article says 3,567; Table 1 and the data both give 3,571. Text typo, off by 4. |
-| Elite subjects who completed the survey (p. 72) | 2169 | 2181 | Article says 2,169; Table 5 and the data both give 2,181. Same class of text typo as the MTurk count. |
-| Elite complete responses in Wave 2 (p. 72) | 1349 | 1358 | Article says 1,349; Table 5 and the data both give 1,358. |
+| Claim | In the text | In the data |
+|:---|:---|:---|
+| MTurk subjects enrolled (p. 66) | 3567 | 3571 |
+| Elite subjects who completed the survey (p. 72) | 2169 | 2181 |
+| Elite complete responses in Wave 2 (p. 72) | 1349 | 1358 |
+| Largest elite reading-time deficit across the four shared op-eds, seconds (p. 72) | 45 | 45.6 |
+| Smallest elite reading-time deficit across the four shared op-eds, seconds (p. 72) | 25 | -30.71 |
+| All three named elite on-target main-DV effects significant at p \< 0.001 (p. 73) | 0.001 | 0 |
+| Off-diagonal cells in Table 7 (p. 74) | 16 | 12 |
 
-Text-versus-table discrepancies in the published article.
+Sentences in the article that its own tables contradict.
 
-The MTurk discrepancy was already known; the two elite ones are new. All
-three run the same way: the prose undercounts, the table is right, and
-the analyses use the table’s number.
+One of those rows is a significance level rather than a quantity, so its
+computed entry is an indicator: the article names p \< 0.001, and the 0
+records that the three effects it names do not all clear that level.
+
+Those seven rows are six sentences, since the two reading-time rows are
+the two ends of one published range. They are set out as six numbered
+corrections in `errata.qmd`, rendered to
+`coppock_ekins_kirby_2018_errata.pdf` at the repository root, where each
+entry quotes the published sentence, gives the corrected sentence with
+the changed token in bold, and computes every number in the corrected
+sentence from the deposit at render time. Three of the six are counts of
+subjects that the prose undercounts. The other three are new here: a
+reading-time comparison that reverses direction on one of the four
+op-eds, a significance level stated as p \< 0.001 for an effect the
+article’s own table stars at p \< 0.01, and a miscount of the non-target
+cells of Table 7 as sixteen when the table has twelve.
+
+Two further rows carry `defect_locus = unresolved`. The Discussion says
+the treatment effects run “between 0.30 and 0.50 standard deviations”,
+and the nine on-target composite-scale effects run from 0.104 to 0.698
+with sample means of 0.522 and 0.283, so no reading of the sentence
+fits. It is not in the errata because the sentence does not say which
+average it means, and a correction would have to invent one.
 
 # Ground truth summary
 
-`ground_truth/coppock_ekins_kirby_2018_ground_truth.csv` records 506
-published quantities. `value_paper` was read from the article PDF and
-from nowhere else. `value_script` is what the deposited scripts return
-today; `value_rewrite` is what `maintained/output/` contains.
+Two files, and they do different jobs.
+
+`ground_truth/published_claims.csv` is the extraction: 699 rows, one for
+every numeric token the published article prints, each with an
+identifier, the section or float it sits in, its class and the string
+the article printed. Table cells were read off 150 dpi renders of the
+published pages rather than off a text layer, because reading a
+six-column regression row one column to the left is how this paper
+produced a phantom typeset erratum once already. Spelled-out numbers
+were swept for separately, since no token scan sees “five hypotheses” or
+“four or five questions”. 546 of the 699 rows are quantities the
+pipeline is expected to reproduce; the rest are design assumptions,
+scale endpoints, citation years and figures transcribed from other
+people’s reports, and they are verified where they are used rather than
+here.
+
+`ground_truth/coppock_ekins_kirby_2018_ground_truth.csv` is the
+comparison: 548 rows, keyed to the extraction by identifier.
+`value_paper` was read from the article and from nowhere else.
+`value_script` is what the deposited scripts return today;
+`value_rewrite` is what `maintained/output/` contains.
 
 | Table or claim | Claims | Archive matches | Archive fails | Rewrite matches | Rewrite fails | Unverifiable |
 |:---|---:|---:|---:|---:|---:|---:|
@@ -288,23 +342,54 @@ today; `value_rewrite` is what `maintained/output/` contains.
 | table_8 | 88 | 88 | 0 | 88 | 0 | 0 |
 | table_9 | 18 | 1 | 17 | 18 | 0 | 0 |
 | table_11 | 66 | 66 | 0 | 66 | 0 | 0 |
-| text | 19 | 12 | 3 | 12 | 3 | 4 |
+| text | 61 | 12 | 3 | 43 | 9 | 9 |
 
 Ground truth coverage by published table.
 
 Coverage is every estimate, standard error, constant, R-squared and N
-printed in Tables 1, 3, 4, 5, 6, 7, 8, 9 and 11, plus the in-text
-quantities on pp. 66, 69, 72 and 77. Table 2 lists the op-eds and Table
-10 is a hand-assembled circulation table built from figures the archive
-does not contain, so neither is reproducible from the deposit and
-neither is claimed here. Figures 1 and 2 print no numbers; their
-underlying estimates are written to CSV so they can be diffed, but there
-is nothing in them to check against the page.
+printed in Tables 1, 3, 4, 5, 6, 7, 8, 9 and 11, which is all 487 of
+their cells, plus every quantity the body text states. Table 2 lists the
+op-eds and prints no number at all. Table 10 is a hand-assembled
+circulation table built from an auditing bureau’s figures, two
+publishers’ internal surveys and a readership share the article assumes,
+none of which is in the deposit or could be; it is extracted and
+classified but not claimed. Figures 1 and 2 print no numbers on their
+faces, and each still asserts a countable quantity: 54 party-specific
+estimates and 130 group means respectively, both checked.
+
+## The coverage gate
+
+`ground_truth/build_ground_truth.R` runs last in `run_all.R` and stops
+the pipeline on six checks: that the two ground truth files agree on
+what the article says, that every claim identifier is real and unique,
+that every published float is covered and by what fraction of its cells,
+that a verdict and a defect locus travel together, that
+`maintained/in_text_claims.R` printed exactly the 546 claims it should
+have, and that its numbers agree with the ground truth’s, value by
+value.
+
+The last of those is the one that pays. `in_text_claims.R` reaches each
+number from `maintained/output/` by a path of its own and never reads
+the ground truth, so a committed comparison value that has drifted away
+from the scripts cannot survive a run. It caught one on its first
+execution: Table 3’s Amtrak R-squared had been stored as 0.0115, which
+prints 0.011 against a published 0.012, while the pipeline’s 0.01150090
+prints 0.012 and matches. The stored value had been rounded to five
+significant figures, which is enough to land a number exactly on a
+rounding boundary. Every `value_rewrite` is now carried at full
+precision.
+
+The gate is a gate and not a generator: this repository’s `value_script`
+and `value_rewrite` columns are committed data rather than the output of
+a script that runs the deposit and reads back `maintained/output/`. What
+the gate does instead is make every one of them auditable against a live
+recomputation on each run.
 
 # Maintained rewrite
 
 Eleven scripts and a `helpers.R`, one per published float, plus three
-for the in-text quantities.
+for the in-text quantities and one that reads every published number
+back beside the sentence that states it.
 
 | Script | Produces |
 |:---|:---|
@@ -320,6 +405,7 @@ for the in-text quantities.
 | text_recontact_rates.R | Enrolment, recontact and chi-square claims, pp. 66 and 72 |
 | text_partisan_pw_averages.R | By-party averages and the Republican-Democrat difference, p. 77 |
 | text_reading_time.R | Reading-time claims, pp. 69 and 72 |
+| in_text_claims.R | Every published number, printed beside the sentence or cell that states it |
 
 Scripts in maintained/.
 
@@ -359,8 +445,9 @@ share, rather than the two the archive typed in, the differences are:
 Trimmed mean reading time by arm, MTurk minus elite.
 
 Three arms fall in or near the stated range. On the veterans op-ed the
-elite sample spent thirty-one seconds more, not less. The claim as
-written holds for three of four op-eds.
+elite sample spent thirty-one seconds more, not less, and the average
+across the four is 17.4 seconds rather than 25 to 45. This is entry 1 of
+the errata.
 
 **A defect found in this rewrite and fixed.** `table_11_agreement.R`
 passed the treatment arm to its fitting function from inside a
@@ -375,8 +462,8 @@ truth had no rows for Table 11 to catch it against. It has 66 now.
 # Figure verification
 
 Neither published figure prints a number, so verification is visual
-against the article plus a numeric diff of the estimates behind each
-panel.
+against the article, plus a numeric diff of the estimates behind each
+panel and a count of what each figure plots.
 
 <img src="maintained/output/figure_1_het_fx_by_party.png"
 style="width:100.0%" />

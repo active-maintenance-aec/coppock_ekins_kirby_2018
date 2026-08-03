@@ -18,7 +18,7 @@ pw_averages <- party_estimates |>
     average_ate_se = sqrt(1 / sum(1 / std.error^2)),
     .by = c(sample, dv_type, party)
   ) |>
-  arrange(sample, dv_type, party)
+  arrange(sample, dv_type, party, .locale = "en")
 
 write_csv(pw_averages, here::here("maintained", "output", "text_partisan_pw_averages.csv"))
 

@@ -29,6 +29,18 @@ source(here::here("maintained", "text_recontact_rates.R"))
 source(here::here("maintained", "text_partisan_pw_averages.R"))
 source(here::here("maintained", "text_reading_time.R"))
 
+# Ground truth ----
+# The gate over the comparison. It checks the committed ground truth against the
+# extraction of the published article and against a live run of maintained/in_text_claims.R,
+# and stops the pipeline when they disagree.
+source(here::here("ground_truth", "build_ground_truth.R"))
+
+# In-text claims ----
+# Run a second time, this time for a human to read: every number the article prints, beside
+# the sentence that prints it. The gate above ran it under capture.output and counted what
+# it printed; this run is the log.
+source(here::here("maintained", "in_text_claims.R"))
+
 # Deposited archive, again ----
 # The check at the top of this file is a precondition: it says original/ was intact
 # before anything ran. Nothing above writes to original/, and this second pass is what

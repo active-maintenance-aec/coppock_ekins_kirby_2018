@@ -68,3 +68,18 @@ party_ftest <- function(dv, arm, data, se_type) {
   fit_u <- lm_robust(as.formula(paste0(dv, " ~ Z * pid_3_cat")), data = d, se_type = se_type)
   waldtest(fit_r, fit_u, test = "F")$`Pr(>F)`[2]
 }
+
+# Blank a figure PDF's embedded timestamps ----
+# R's pdf() device stamps /CreationDate and /ModDate with the wall clock, so an
+# otherwise deterministic pipeline writes a different file on every run. The epoch
+# string is the same width as what it replaces, which keeps the cross-reference byte
+# offsets valid, and a file with no timestamp is left alone.
+blank_pdf_timestamps <- function(path) {
+  epoch <- charToRaw("D:19700101000000")
+  raw_pdf <- readBin(path, "raw", file.size(path))
+  hits <- grepRaw("D:[0-9]{14}", raw_pdf, all = TRUE)
+  if (length(hits) == 0) return(invisible(path))
+  for (h in hits) raw_pdf[h:(h + length(epoch) - 1L)] <- epoch
+  writeBin(raw_pdf, path)
+  invisible(path)
+}

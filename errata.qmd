@@ -148,34 +148,88 @@ entries <- tribble(
   str_glue("We enrolled [[{count_of('MTurk subjects enrolled')}]] subjects on Amazon's Mechanical Turk (MTurk) in a three-wave panel survey."),
   str_glue(
     "Table 1 gives {count_of('MTurk subjects enrolled')} as its own total, and every column ",
-    "of Tables 3 and 4 reports the same figure as its N.")
+    "of Tables 3 and 4 reports the same figure as its N."),
+
+  7, "bibliographic", "reference_audit", "brief",
+  "Traverso is misspelled, in the reference list and in the text",
+  "published p. 84",
+  "Ciofalo, A. and K. [[Traveso]]. 1994.",
+  "Ciofalo, A. and K. Traverso. 1994.",
+  paste("Crossref, doi 10.1177/073953299401500407: Ciofalo, Andrew, and Kim Traverso.",
+        "The same misspelling appears in the two in-text citations, on pp. 61 and 63."),
+
+  8, "bibliographic", "reference_audit", "brief",
+  "Calavita and Krumholz (2003) is printed as one author, filed under his given name",
+  "published p. 86",
+  "[[Nico Calavita, N. K.]] 2003.",
+  "Calavita, N. and N. Krumholz. 2003.",
+  paste("Crossref, doi 10.1177/0739456x03022004006: Calavita, Nico, and Norman Krumholz.",
+        "The first author's given name was taken as part of his surname and the second",
+        "author's initials were folded onto it, leaving one author where there are two.",
+        "The in-text citation on p. 60 reads \"Nico Calavita, 2003\" and should read",
+        "\"Calavita and Krumholz, 2003\"."),
+
+  9, "bibliographic", "reference_audit", "brief",
+  "Two authors of Page, Shapiro and Dempsey (1987) are given by their given names",
+  "published p. 86",
+  "Page, B. I., [[Y. S. Robert, and D. Glenn]]. 1987. \"What Moves Public Opinion?\" American Political Science Review [[81]].",
+  "Page, B. I., R. Y. Shapiro, and G. R. Dempsey. 1987. \"What Moves Public Opinion?\" American Political Science Review 81(1): 23--43.",
+  paste("Crossref, doi 10.2307/1960777: Page, Benjamin I., Robert Y. Shapiro and Glenn R.",
+        "Dempsey, American Political Science Review 81(1): 23--43. Robert Shapiro's and",
+        "Glenn Dempsey's given names were taken for their surnames, and the entry breaks",
+        "off after the volume number. The in-text citation on p. 63 gives \"Page et al.",
+        "(1987)\" correctly.")
 ) |>
   mutate(across(c(title, published, corrected, note), as.character))
 
 stopifnot(nrow(entries) == max(entries$entry), !anyDuplicated(entries$entry))
 
-# The prose below counts the entries in words, as the note has always done.
-n_entries_word <- c("one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
-                    "ten", "eleven", "twelve")[nrow(entries)]
+# The prose below counts the entries in words, as the note has always done. The two groups
+# are counted separately because they are different kinds of error: the first are sentences
+# the article's own tables contradict, the last are entries in the reference list.
+spell <- function(n) {
+  words <- c("one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+             "ten", "eleven", "twelve")
+  stopifnot(n >= 1, n <= length(words))
+  words[n]
+}
+prose_entries <- entries |> filter(source == "pipeline")
+reference_entries <- entries |> filter(source == "reference_audit")
+n_entries_word <- spell(nrow(entries))
+n_prose_word <- spell(nrow(prose_entries))
+n_reference_word <- spell(nrow(reference_entries))
 
 # The spine's markup, resolved for this document.
 bold <- function(x) str_replace_all(x, "\\[\\[(.*?)\\]\\]", "**\\1**")
 plain <- function(x) str_remove_all(x, "\\[\\[|\\]\\]")
 ```
 
-This note lists `r n_entries_word` corrections to "The Long-lasting Effects of Newspaper Op-Eds on Public Opinion," published in the *Quarterly Journal of Political Science* 13(1), doi [10.1561/100.00016112](https://doi.org/10.1561/100.00016112). **None of them changes a conclusion of the paper.** Every one is a sentence in the body text that disagrees with a table the same article prints, and in each case the table is right and the sentence is not. The tables themselves, and the findings they carry, are unaffected.
+This note lists `r n_entries_word` corrections to "The Long-lasting Effects of Newspaper Op-Eds on Public Opinion," published in the *Quarterly Journal of Political Science* 13(1), doi [10.1561/100.00016112](https://doi.org/10.1561/100.00016112). **None of them changes a conclusion of the paper.** The first `r n_prose_word` are sentences in the body text that disagree with a table the same article prints, and in each case the table is right and the sentence is not. The last `r n_reference_word` are errors in the reference list. The tables themselves, and the findings they carry, are unaffected.
 
 Every number in a corrected sentence below is computed from the deposited replication archive ([10.7910/DVN/3KBCJF](https://doi.org/10.7910/DVN/3KBCJF)) at the time this document is rendered, including the numbers that were not wrong. The code and output supporting each correction are at [github.com/active-maintenance-aec/coppock_ekins_kirby_2018](https://github.com/active-maintenance-aec/coppock_ekins_kirby_2018).
 
-**Bold marks what changed.** The first three entries are substantive: a comparison that reverses direction on one of four op-eds, a significance level overstated by an order of magnitude, and a miscount of the cells of a table. The last three are undercounted sample sizes, each of which the adjacent table gives correctly.
+**Bold marks what changed.** The first three entries are substantive: a comparison that reverses direction on one of four op-eds, a significance level overstated by an order of magnitude, and a miscount of the cells of a table. Entries 4 through `r nrow(prose_entries)` are undercounted sample sizes, each of which the adjacent table gives correctly.
 
 ```{r render-entries, results="asis"}
 # A heading is only a heading when a blank line precedes it, so every emitted entry opens
 # with one.
-walk(seq_len(nrow(entries)), function(i) {
-  e <- entries[i, ]
+walk(prose_entries$entry, function(n) {
+  e <- entries |> filter(entry == n)
   cat("\n\n## ", e$entry, ". ", e$title, "\n\n> ", plain(e$published),
       "\n\nCorrected:\n\n> ", bold(e$corrected), "\n\n", e$note, "\n", sep = "")
+})
+```
+
+# The reference list
+
+The `r n_reference_word` entries below correct the article's reference list. Each was found by an audit that sends every printed entry whole to Crossref and checks the authoritative record back into it, and each is verified against the record named in its note. No cited work is missing and no citation in the text points at the wrong work: what is wrong is how the reference list prints the authors. In these `r n_reference_word` entries bold marks the wrong reading as printed, since a reference entry has no surrounding sentence to locate it in.
+
+```{r render-reference-entries, results="asis"}
+walk(reference_entries$entry, function(n) {
+  e <- entries |> filter(entry == n)
+  cat("\n\n## ", e$entry, ". ", e$title, "\n\nPublished, ",
+      str_remove(e$location, "^published "), ":\n\n> ", bold(e$published),
+      "\n\nCorrected:\n\n> ", e$corrected, "\n\n", e$note, "\n", sep = "")
 })
 ```
 

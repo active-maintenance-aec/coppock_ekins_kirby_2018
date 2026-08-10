@@ -25,6 +25,13 @@ library(kableExtra)
 
 here::i_am("README.qmd")
 
+# The errata spine, defined once in errata.qmd and written out by it. This report reads it
+# rather than keeping its own count, so the two cannot disagree about how many entries there
+# are.
+spine <- read_csv(here("errata_entries.csv"), show_col_types = FALSE)
+n_errata_word <- c("one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+                   "ten", "eleven", "twelve")[nrow(spine)]
+
 # kableExtra styling is LaTeX-only; the GitHub README build takes plain pipe tables.
 latex_out <- knitr::is_latex_output()
 
@@ -100,7 +107,7 @@ The remaining `r n_text_fail` failures are not the archive's fault at all. The a
 
 Yes, on every published table cell, and on the prose except where the prose disagrees with the tables. Every one of the `r n_float_cells` cells of Tables 1, 3, 4, 5, 6, 7, 8, 9 and 11 reproduces to the precision the article prints, including all eighteen Table 9 p-values, which the rewrite reaches by reporting the classical F test alongside the HC2 one rather than by choosing between them silently.
 
-`r n_rewrite_fail` claims are recorded as failures and every one of them is in the prose. Seven are errors in the article, gathered as six corrections in `coppock_ekins_kirby_2018_errata.pdf`; the other two are one Discussion sentence whose referent is ambiguous, recorded as unresolved rather than guessed at. `r n_unverifiable` further quantities are claims about shape that the article states without a number, so they carry the evidence rather than a verdict.
+`r n_rewrite_fail` claims are recorded as failures and every one of them is in the prose. Seven are errors in the article, gathered as `r n_errata_word` corrections in `coppock_ekins_kirby_2018_errata.pdf`; the other two are one Discussion sentence whose referent is ambiguous, recorded as unresolved rather than guessed at. `r n_unverifiable` further quantities are claims about shape that the article states without a number, so they carry the evidence rather than a verdict.
 
 # Paper overview
 
@@ -226,7 +233,7 @@ gt |>
 
 One of those rows is a significance level rather than a quantity, so its computed entry is an indicator: the article names p < 0.001, and the 0 records that the three effects it names do not all clear that level.
 
-Those seven rows are six sentences, since the two reading-time rows are the two ends of one published range. They are set out as six numbered corrections in `errata.qmd`, rendered to `coppock_ekins_kirby_2018_errata.pdf` at the repository root, where each entry quotes the published sentence, gives the corrected sentence with the changed token in bold, and computes every number in the corrected sentence from the deposit at render time. Three of the six are counts of subjects that the prose undercounts. The other three are new here: a reading-time comparison that reverses direction on one of the four op-eds, a significance level stated as p < 0.001 for an effect the article's own table stars at p < 0.01, and a miscount of the non-target cells of Table 7 as sixteen when the table has twelve.
+Those seven rows are six sentences, since the two reading-time rows are the two ends of one published range. They are set out as `r n_errata_word` numbered corrections in `errata.qmd`, rendered to `coppock_ekins_kirby_2018_errata.pdf` at the repository root, where each entry quotes the published sentence, gives the corrected sentence with the changed token in bold, and computes every number in the corrected sentence from the deposit at render time. Three of the `r n_errata_word` are counts of subjects that the prose undercounts. The other three are new here: a reading-time comparison that reverses direction on one of the four op-eds, a significance level stated as p < 0.001 for an effect the article's own table stars at p < 0.01, and a miscount of the non-target cells of Table 7 as sixteen when the table has twelve.
 
 Two further rows carry `defect_locus = unresolved`. The Discussion says the treatment effects run "between 0.30 and 0.50 standard deviations", and the nine on-target composite-scale effects run from 0.104 to 0.698 with sample means of 0.522 and 0.283, so no reading of the sentence fits. It is not in the errata because the sentence does not say which average it means, and a correction would have to invent one.
 

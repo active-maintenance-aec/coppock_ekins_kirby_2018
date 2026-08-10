@@ -65,68 +65,122 @@ t3_off <- nrow(off_target(t3))
 t3_total <- nrow(on_target(t3)) + t3_off
 ```
 
-This note lists six corrections to "The Long-lasting Effects of Newspaper Op-Eds on Public Opinion," published in the *Quarterly Journal of Political Science* 13(1), doi [10.1561/100.00016112](https://doi.org/10.1561/100.00016112). **None of them changes a conclusion of the paper.** Every one is a sentence in the body text that disagrees with a table the same article prints, and in each case the table is right and the sentence is not. The tables themselves, and the findings they carry, are unaffected.
+```{r entries}
+# THE ERRATA SPINE. Every entry is defined once, here, and rendered from this tibble into
+# this document and into the machine-readable errata_entries.csv written at the bottom of
+# the file, which is what any other document carrying these corrections reads. Before the
+# spine existed an entry was written out in prose wherever it was needed, and the copies
+# had already diverged.
+#
+# [[...]] marks the span that changes. Each renderer supplies its own markup for it. This
+# document bolds it in the corrected sentence and sets it plain in the published one, because
+# what it marks in the published sentence is the wrong reading, not the correction; nothing
+# else in a field is markup, so the same string can be set either way.
+#
+# Numbering is the published note's and is APPEND-ONLY: entry 4 can already have been cited,
+# so a later finding is added at the end and never interleaved.
+#
+# A published or corrected value that the pipeline computes stays computed: the field is
+# built with str_glue() so the number is produced when this document renders, not typed.
+entries <- tribble(
+  ~entry, ~class, ~source, ~form, ~title, ~location, ~published, ~corrected, ~note,
+
+  1, "quantity", "pipeline", "full",
+  "The elite sample did not read for 25 to 45 seconds less",
+  "published p. 72",
+  "On average, our elite sample spent [[25–45]] seconds less time reading our treatment articles than the MTurk sample.",
+  str_glue("On average, our elite sample spent [[{secs(mean_gap)}]] seconds less time reading our treatment articles than the MTurk sample."),
+  str_glue(
+    "Across the four op-eds both samples saw, the elite deficit in trimmed mean reading time ",
+    "is {secs(gap_named$mturk_minus_elite_seconds[1])} seconds on the {gap_named$label[1]} ",
+    "piece, {secs(gap_named$mturk_minus_elite_seconds[2])} seconds on the ",
+    "{gap_named$label[2]} piece and {secs(gap_named$mturk_minus_elite_seconds[3])} seconds on ",
+    "the {gap_named$label[3]} piece, and on the {reversed$label} piece the elite sample spent ",
+    "{secs(abs(reversed$mturk_minus_elite_seconds))} seconds **more**, not less. The ",
+    "published range brackets the two arms the deposit's `opeds_compliance.R` computes, the ",
+    "Amtrak and flat tax pieces; the two it does not compute are the ones that break the ",
+    "range."),
+
+  2, "quantity", "pipeline", "full",
+  "The elite main-effect significance level",
+  "published p. 73",
+  "Turning first to main dependent variables, we found statistically significant treatment effects for three of the four treatments (Amtrak, Flat Tax, Wall Street) at p < [[0.001]], but did not for the Veterans op-ed treatment.",
+  str_glue("Turning first to main dependent variables, we found statistically significant treatment effects for three of the four treatments (Amtrak, Flat Tax, Wall Street) at p < [[{format(strongest, scientific = FALSE)}]], but did not for the Veterans op-ed treatment."),
+  str_glue(
+    "The flat tax effect on its main dependent variable has p = ",
+    "{sprintf('%.4f', flat_tax_p)}. Table 6 prints it as `0.411***` under a legend whose ",
+    "strongest level is p < 0.01, so the table and the sentence disagree about the same ",
+    "estimate. The Amtrak and Wall Street effects are significant at 0.001; the flat tax ",
+    "effect is not."),
+
+  3, "quantity", "pipeline", "full",
+  "Table 7 has twelve non-target cells, not sixteen",
+  "published p. 74",
+  "Of the [[16]] treatment effects on non-target issues, only one is statistically significant (Amtrak op-ed on Veterans outcome).",
+  str_glue("Of the [[{t7_off}]] treatment effects on non-target issues, only one is statistically significant (Amtrak op-ed on Veterans outcome)."),
+  str_glue(
+    "Table 7 estimates four op-ed effects on each of four composite scales, so it holds ",
+    "{t7_total} coefficients, of which four are on target and {t7_off} are not. The parallel ",
+    "sentence about Table 3 counts correctly: five op-eds by five outcomes is {t3_total} ",
+    "coefficients and {t3_off} non-target ones."),
+
+  4, "quantity", "pipeline", "full",
+  "The number of elite subjects who completed the survey",
+  "published p. 72",
+  "This procedure yielded [[2,169]] subjects who completed our survey.",
+  str_glue("This procedure yielded [[{count_of('Elite subjects enrolled')}]] subjects who completed our survey."),
+  str_glue(
+    "Table 5, at the top of the same page, gives {count_of('Elite subjects enrolled')} as its ",
+    "own total, and that is the number of rows in the deposited elite data. Tables 6 and 7 ",
+    "report the same figure as their N."),
+
+  5, "quantity", "pipeline", "full",
+  "The number of elite subjects who responded in Wave 2",
+  "published p. 72",
+  "As in the MTurk study, we asked subjects to participate in a follow-up survey after 10 days; after two reminders, we obtained [[1,349]] complete responses.",
+  str_glue("As in the MTurk study, we asked subjects to participate in a follow-up survey after 10 days; after two reminders, we obtained [[{count_of('Elite responded in Wave 2')}]] complete responses."),
+  str_glue("Table 5's Responded row totals {count_of('Elite responded in Wave 2')}."),
+
+  6, "quantity", "pipeline", "full",
+  "The number of subjects enrolled on Mechanical Turk",
+  "published p. 66",
+  "We enrolled [[3,567]] subjects on Amazon's Mechanical Turk (MTurk) in a three-wave panel survey.",
+  str_glue("We enrolled [[{count_of('MTurk subjects enrolled')}]] subjects on Amazon's Mechanical Turk (MTurk) in a three-wave panel survey."),
+  str_glue(
+    "Table 1 gives {count_of('MTurk subjects enrolled')} as its own total, and every column ",
+    "of Tables 3 and 4 reports the same figure as its N.")
+) |>
+  mutate(across(c(title, published, corrected, note), as.character))
+
+stopifnot(nrow(entries) == max(entries$entry), !anyDuplicated(entries$entry))
+
+# The prose below counts the entries in words, as the note has always done.
+n_entries_word <- c("one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+                    "ten", "eleven", "twelve")[nrow(entries)]
+
+# The spine's markup, resolved for this document.
+bold <- function(x) str_replace_all(x, "\\[\\[(.*?)\\]\\]", "**\\1**")
+plain <- function(x) str_remove_all(x, "\\[\\[|\\]\\]")
+```
+
+This note lists `r n_entries_word` corrections to "The Long-lasting Effects of Newspaper Op-Eds on Public Opinion," published in the *Quarterly Journal of Political Science* 13(1), doi [10.1561/100.00016112](https://doi.org/10.1561/100.00016112). **None of them changes a conclusion of the paper.** Every one is a sentence in the body text that disagrees with a table the same article prints, and in each case the table is right and the sentence is not. The tables themselves, and the findings they carry, are unaffected.
 
 Every number in a corrected sentence below is computed from the deposited replication archive ([10.7910/DVN/3KBCJF](https://doi.org/10.7910/DVN/3KBCJF)) at the time this document is rendered, including the numbers that were not wrong. The code and output supporting each correction are at [github.com/active-maintenance-aec/coppock_ekins_kirby_2018](https://github.com/active-maintenance-aec/coppock_ekins_kirby_2018).
 
 **Bold marks what changed.** The first three entries are substantive: a comparison that reverses direction on one of four op-eds, a significance level overstated by an order of magnitude, and a miscount of the cells of a table. The last three are undercounted sample sizes, each of which the adjacent table gives correctly.
 
-## 1. The elite sample did not read for 25 to 45 seconds less
+```{r render-entries, results="asis"}
+# A heading is only a heading when a blank line precedes it, so every emitted entry opens
+# with one.
+walk(seq_len(nrow(entries)), function(i) {
+  e <- entries[i, ]
+  cat("\n\n## ", e$entry, ". ", e$title, "\n\n> ", plain(e$published),
+      "\n\nCorrected:\n\n> ", bold(e$corrected), "\n\n", e$note, "\n", sep = "")
+})
+```
 
-> On average, our elite sample spent 25–45 seconds less time reading our treatment articles than the MTurk sample.
-
-Corrected:
-
-> On average, our elite sample spent **`r secs(mean_gap)`** seconds less time reading our treatment articles than the MTurk sample.
-
-Across the four op-eds both samples saw, the elite deficit in trimmed mean reading time is `r secs(gap_named$mturk_minus_elite_seconds[1])` seconds on the `r gap_named$label[1]` piece, `r secs(gap_named$mturk_minus_elite_seconds[2])` seconds on the `r gap_named$label[2]` piece and `r secs(gap_named$mturk_minus_elite_seconds[3])` seconds on the `r gap_named$label[3]` piece, and on the `r reversed$label` piece the elite sample spent `r secs(abs(reversed$mturk_minus_elite_seconds))` seconds **more**, not less. The published range brackets the two arms the deposit's `opeds_compliance.R` computes, the Amtrak and flat tax pieces; the two it does not compute are the ones that break the range.
-
-## 2. The elite main-effect significance level
-
-> Turning first to main dependent variables, we found statistically significant treatment effects for three of the four treatments (Amtrak, Flat Tax, Wall Street) at p < 0.001, but did not for the Veterans op-ed treatment.
-
-Corrected:
-
-> Turning first to main dependent variables, we found statistically significant treatment effects for three of the four treatments (Amtrak, Flat Tax, Wall Street) at p < **`r format(strongest, scientific = FALSE)`**, but did not for the Veterans op-ed treatment.
-
-The flat tax effect on its main dependent variable has p = `r sprintf("%.4f", flat_tax_p)`. Table 6 prints it as `0.411***` under a legend whose strongest level is p < 0.01, so the table and the sentence disagree about the same estimate. The Amtrak and Wall Street effects are significant at 0.001; the flat tax effect is not.
-
-## 3. Table 7 has twelve non-target cells, not sixteen
-
-> Of the 16 treatment effects on non-target issues, only one is statistically significant (Amtrak op-ed on Veterans outcome).
-
-Corrected:
-
-> Of the **`r t7_off`** treatment effects on non-target issues, only one is statistically significant (Amtrak op-ed on Veterans outcome).
-
-Table 7 estimates four op-ed effects on each of four composite scales, so it holds `r t7_total` coefficients, of which four are on target and `r t7_off` are not. The parallel sentence about Table 3 counts correctly: five op-eds by five outcomes is `r t3_total` coefficients and `r t3_off` non-target ones.
-
-## 4. The number of elite subjects who completed the survey
-
-> This procedure yielded 2,169 subjects who completed our survey.
-
-Corrected:
-
-> This procedure yielded **`r count_of("Elite subjects enrolled")`** subjects who completed our survey.
-
-Table 5, at the top of the same page, gives `r count_of("Elite subjects enrolled")` as its own total, and that is the number of rows in the deposited elite data. Tables 6 and 7 report the same figure as their N.
-
-## 5. The number of elite subjects who responded in Wave 2
-
-> As in the MTurk study, we asked subjects to participate in a follow-up survey after 10 days; after two reminders, we obtained 1,349 complete responses.
-
-Corrected:
-
-> As in the MTurk study, we asked subjects to participate in a follow-up survey after 10 days; after two reminders, we obtained **`r count_of("Elite responded in Wave 2")`** complete responses.
-
-Table 5's Responded row totals `r count_of("Elite responded in Wave 2")`.
-
-## 6. The number of subjects enrolled on Mechanical Turk
-
-> We enrolled 3,567 subjects on Amazon's Mechanical Turk (MTurk) in a three-wave panel survey.
-
-Corrected:
-
-> We enrolled **`r count_of("MTurk subjects enrolled")`** subjects on Amazon's Mechanical Turk (MTurk) in a three-wave panel survey.
-
-Table 1 gives `r count_of("MTurk subjects enrolled")` as its own total, and every column of Tables 3 and 4 reports the same figure as its N.
+```{r emit-spine}
+# The machine-readable spine, written wherever this document is rendered. Anything else that
+# carries these corrections reads it rather than keeping its own copy, so the two cannot drift.
+write_csv(entries, here("errata_entries.csv"))
+```

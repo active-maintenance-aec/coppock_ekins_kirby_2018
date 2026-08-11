@@ -82,8 +82,14 @@ t3_total <- nrow(on_target(t3)) + t3_off
 #
 # A published or corrected value that the pipeline computes stays computed: the field is
 # built with str_glue() so the number is produced when this document renders, not typed.
+#
+# claim_ids is the semicolon-separated list of ground-truth claim_id values the entry
+# corrects, and it is what makes "is this finding published?" a query rather than a reading
+# of every note. It is empty where an entry has no ground-truth row, which is normal for a
+# bibliographic or structural entry. ground_truth/build_ground_truth.R refuses to build if
+# any id here is absent from the ground truth.
 entries <- tribble(
-  ~entry, ~class, ~source, ~form, ~title, ~location, ~published, ~corrected, ~note,
+  ~entry, ~class, ~source, ~form, ~title, ~location, ~published, ~corrected, ~note, ~claim_ids,
 
   1, "quantity", "pipeline", "full",
   "The elite sample did not read for 25 to 45 seconds less",
@@ -100,6 +106,7 @@ entries <- tribble(
     "published range brackets the two arms the deposit's `opeds_compliance.R` computes, the ",
     "Amtrak and flat tax pieces; the two it does not compute are the ones that break the ",
     "range."),
+  "s2_reading_gap_low;s2_reading_gap_high",
 
   2, "quantity", "pipeline", "full",
   "The elite main-effect significance level",
@@ -112,6 +119,7 @@ entries <- tribble(
     "strongest level is p < 0.01, so the table and the sentence disagree about the same ",
     "estimate. The Amtrak and Wall Street effects are significant at 0.001; the flat tax ",
     "effect is not."),
+  "s2_main_sig_p",
 
   3, "quantity", "pipeline", "full",
   "Table 7 has twelve non-target cells, not sixteen",
@@ -123,6 +131,7 @@ entries <- tribble(
     "{t7_total} coefficients, of which four are on target and {t7_off} are not. The parallel ",
     "sentence about Table 3 counts correctly: five op-eds by five outcomes is {t3_total} ",
     "coefficients and {t3_off} non-target ones."),
+  "s2_nontarget_cells",
 
   4, "quantity", "pipeline", "full",
   "The number of elite subjects who completed the survey",
@@ -133,6 +142,7 @@ entries <- tribble(
     "Table 5, at the top of the same page, gives {count_of('Elite subjects enrolled')} as its ",
     "own total, and that is the number of rows in the deposited elite data. Tables 6 and 7 ",
     "report the same figure as their N."),
+  "s2_completed",
 
   5, "quantity", "pipeline", "full",
   "The number of elite subjects who responded in Wave 2",
@@ -140,6 +150,7 @@ entries <- tribble(
   "As in the MTurk study, we asked subjects to participate in a follow-up survey after 10 days; after two reminders, we obtained [[1,349]] complete responses.",
   str_glue("As in the MTurk study, we asked subjects to participate in a follow-up survey after 10 days; after two reminders, we obtained [[{count_of('Elite responded in Wave 2')}]] complete responses."),
   str_glue("Table 5's Responded row totals {count_of('Elite responded in Wave 2')}."),
+  "s2_w2_complete",
 
   6, "quantity", "pipeline", "full",
   "The number of subjects enrolled on Mechanical Turk",
@@ -149,6 +160,7 @@ entries <- tribble(
   str_glue(
     "Table 1 gives {count_of('MTurk subjects enrolled')} as its own total, and every column ",
     "of Tables 3 and 4 reports the same figure as its N."),
+  "s1_enrolled",
 
   7, "bibliographic", "reference_audit", "brief",
   "Traverso is misspelled, in the reference list and in the text",
@@ -157,6 +169,7 @@ entries <- tribble(
   "Ciofalo, A. and K. Traverso. 1994.",
   paste("Crossref, doi 10.1177/073953299401500407: Ciofalo, Andrew, and Kim Traverso.",
         "The same misspelling appears in the two in-text citations, on pp. 61 and 63."),
+  "",
 
   8, "bibliographic", "reference_audit", "brief",
   "Calavita and Krumholz (2003) is printed as one author, filed under his given name",
@@ -168,6 +181,7 @@ entries <- tribble(
         "author's initials were folded onto it, leaving one author where there are two.",
         "The in-text citation on p. 60 reads \"Nico Calavita, 2003\" and should read",
         "\"Calavita and Krumholz, 2003\"."),
+  "",
 
   9, "bibliographic", "reference_audit", "brief",
   "Two authors of Page, Shapiro and Dempsey (1987) are given by their given names",
@@ -178,11 +192,24 @@ entries <- tribble(
         "Dempsey, American Political Science Review 81(1): 23--43. Robert Shapiro's and",
         "Glenn Dempsey's given names were taken for their surnames, and the entry breaks",
         "off after the volume number. The in-text citation on p. 63 gives \"Page et al.",
-        "(1987)\" correctly.")
+        "(1987)\" correctly."),
+  ""
 ) |>
   mutate(across(c(title, published, corrected, note), as.character))
 
 stopifnot(nrow(entries) == max(entries$entry), !anyDuplicated(entries$entry))
+
+# Every id an entry claims to correct must be a real ground-truth claim. The build gate in
+# ground_truth/build_ground_truth.R checks the same property from the other side; checking it
+# here too means a dangling id cannot survive a render.
+gt_ids <- read_csv(here("ground_truth", "coppock_ekins_kirby_2018_ground_truth.csv"),
+                   show_col_types = FALSE)$claim_id
+cited_ids <- entries$claim_ids |>
+  str_split(";") |>
+  unlist() |>
+  str_trim() |>
+  discard(\(x) is.na(x) | x == "")
+stopifnot(all(cited_ids %in% gt_ids))
 
 # The prose below counts the entries in words, as the note has always done. The two groups
 # are counted separately because they are different kinds of error: the first are sentences

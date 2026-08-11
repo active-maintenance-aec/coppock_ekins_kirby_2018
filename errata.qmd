@@ -23,6 +23,7 @@ out <- function(f) read_csv(here("maintained", "output", f), show_col_types = FA
 recontact <- out("text_recontact_rates.csv")
 gaps <- out("text_reading_time_differences.csv")
 t3 <- out("table_3_mturk_main_dv.csv")
+t4 <- out("table_4_mturk_scale_dv.csv")
 t6 <- out("table_6_elite_main_dv.csv")
 t7 <- out("table_7_elite_scale_dv.csv")
 
@@ -59,6 +60,13 @@ thresholds <- c(0.001, 0.01, 0.05, 0.1)
 strongest <- min(thresholds[map_lgl(thresholds, \(p) all(named_elite$p.value < p))])
 flat_tax_p <- named_elite$p.value[named_elite$dv == "Flat Tax"]
 
+# The Discussion pairs one figure with each study, so the two numbers it prints are the
+# two study-level means over the on-target composite-scale effects, not the endpoints of a
+# range over all nine.
+elite_scale_mean <- mean(on_target(t7)$estimate)
+mturk_scale_mean <- mean(on_target(t4)$estimate)
+all_scale_effects <- sort(c(on_target(t7)$estimate, on_target(t4)$estimate))
+
 t7_off <- nrow(off_target(t7))
 t7_total <- nrow(on_target(t7)) + t7_off
 t3_off <- nrow(off_target(t3))
@@ -77,8 +85,11 @@ t3_total <- nrow(on_target(t3)) + t3_off
 # what it marks in the published sentence is the wrong reading, not the correction; nothing
 # else in a field is markup, so the same string can be set either way.
 #
-# Numbering is the published note's and is APPEND-ONLY: entry 4 can already have been cited,
-# so a later finding is added at the end and never interleaved.
+# Numbering orders entries by kind and by severity, and MAY be changed. Append-only was the
+# earlier rule, on the theory that a published entry number could already have been cited;
+# reversed 2026-08-10, since these notes are not so widely circulated that a renumber costs
+# anything. Discover first, order last. A renumber may change `entry`; it must never change
+# which claim_ids an entry claims.
 #
 # A published or corrected value that the pipeline computes stays computed: the field is
 # built with str_glue() so the number is produced when this document renders, not typed.
@@ -162,7 +173,29 @@ entries <- tribble(
     "of Tables 3 and 4 reports the same figure as its N."),
   "s1_enrolled",
 
-  7, "bibliographic", "reference_audit", "brief",
+  7, "quantity", "pipeline", "full",
+  "The range of average treatment effects reported in the Discussion",
+  "published p. 82",
+  str_glue(
+    "In both studies of the mass public and elites, we find large, statistically ",
+    "significant average treatment effects of op-eds between [[0.30 and 0.50]] standard ",
+    "deviations on policy attitudes."),
+  str_glue(
+    "In both studies of the mass public and elites, we find large, statistically ",
+    "significant average treatment effects of op-eds between ",
+    "[[{sprintf('%.2f', elite_scale_mean)} and {sprintf('%.2f', mturk_scale_mean)}]] ",
+    "standard deviations on policy attitudes."),
+  str_glue(
+    "The sentence pairs one figure with each study, so the two numbers are the study-level ",
+    "means over the on-target composite scales: {sprintf('%.3f', elite_scale_mean)} across ",
+    "the {nrow(on_target(t7))} elite op-eds and {sprintf('%.3f', mturk_scale_mean)} across ",
+    "the {nrow(on_target(t4))} on Mechanical Turk. Neither figure is hedged, so the interval ",
+    "is asserted as printed, and both means fall outside it. The individual effects run ",
+    "wider still, from {sprintf('%.3f', min(all_scale_effects))} to ",
+    "{sprintf('%.3f', max(all_scale_effects))}."),
+  "disc_effect_low;disc_effect_high",
+
+  8, "bibliographic", "reference_audit", "brief",
   "Traverso is misspelled, in the reference list and in the text",
   "published p. 84",
   "Ciofalo, A. and K. [[Traveso]]. 1994.",
@@ -171,7 +204,7 @@ entries <- tribble(
         "The same misspelling appears in the two in-text citations, on pp. 61 and 63."),
   "",
 
-  8, "bibliographic", "reference_audit", "brief",
+  9, "bibliographic", "reference_audit", "brief",
   "Calavita and Krumholz (2003) is printed as one author, filed under his given name",
   "published p. 86",
   "[[Nico Calavita, N. K.]] 2003.",
@@ -183,7 +216,7 @@ entries <- tribble(
         "\"Calavita and Krumholz, 2003\"."),
   "",
 
-  9, "bibliographic", "reference_audit", "brief",
+  10, "bibliographic", "reference_audit", "brief",
   "Two authors of Page, Shapiro and Dempsey (1987) are given by their given names",
   "published p. 86",
   "Page, B. I., [[Y. S. Robert, and D. Glenn]]. 1987. \"What Moves Public Opinion?\" American Political Science Review [[81]].",

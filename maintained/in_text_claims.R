@@ -695,22 +695,23 @@ report(
 # average treatment effects of op-eds between 0.30 and 0.50 standard deviations on policy
 # attitudes."
 # covers: disc_effect_low, disc_effect_high
-# Read as a range over the on-target composite-scale effects, which are the estimates in
-# standard deviations. The two sample means are printed beside them because the sentence
-# does not say which of the two it means, and no verdict is drawn.
+# "In both studies" pairs one figure with each study, so the two numbers are the two
+# study-level mean on-target composite-scale effects, not the endpoints of a range over
+# all nine. The nine individual effects are printed beside them so the wider spread the
+# sentence does not claim stays visible.
 discussion_scale <- bind_rows(t4_target, t7_target)
 report(
-  "disc_effect_low", min(discussion_scale$estimate),
+  "disc_effect_low", mean(t7_target$estimate),
   str_glue(
-    "smallest of the {nrow(discussion_scale)} on-target composite-scale effects; MTurk ",
-    "mean {sprintf('%.3f', mean(t4_target$estimate))}, elite mean ",
-    "{sprintf('%.3f', mean(t7_target$estimate))}"
+    "elite-sample mean of {nrow(t7_target)} on-target composite-scale effects; ",
+    "MTurk mean {sprintf('%.3f', mean(t4_target$estimate))}"
   )
 )
 report(
-  "disc_effect_high", max(discussion_scale$estimate),
+  "disc_effect_high", mean(t4_target$estimate),
   str_glue(
-    "largest of the {nrow(discussion_scale)} on-target composite-scale effects; all nine: ",
+    "MTurk-sample mean of {nrow(t4_target)} on-target composite-scale effects; all nine ",
+    "individual effects: ",
     "{str_c(sprintf('%.3f', sort(discussion_scale$estimate)), collapse = ', ')}"
   )
 )

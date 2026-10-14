@@ -47,17 +47,21 @@ gg_df <- estimates |>
   mutate(
     party = factor(party, levels = parties),
     sample = factor(sample, levels = c("Mechanical Turk", "Elites")),
-    issue = factor(issue, levels = rev(c("Amtrak", "Climate", "Flat Tax",
-                                         "Veterans", "Wall Street")))
+    issue = factor(issue, levels = c("Amtrak", "Climate", "Flat Tax",
+                                     "Veterans", "Wall Street"))
   )
 
 g <- ggplot(gg_df, aes(y = issue, x = estimate, color = party, shape = party)) +
   geom_vline(xintercept = 0, linetype = "dashed") +
-  geom_linerange(aes(xmin = conf.low, xmax = conf.high),
+  # The published intervals are estimate +/- 1.96 SE (all 106 visible endpoints
+  # agree to 1e-4), not estimatr's t intervals in conf.low/conf.high.
+  geom_linerange(aes(xmin = estimate - qnorm(0.975) * std.error,
+                     xmax = estimate + qnorm(0.975) * std.error),
                  position = position_dodge(width = 0.5)) +
   geom_point(position = position_dodge(width = 0.5), size = 2) +
-  scale_color_manual(values = c(Democrat = "blue", Independent = "purple",
-                                Republican = "red")) +
+  # The published figure's colours, read off its vector marks.
+  scale_color_manual(values = c(Democrat = "#3A51A3", Independent = "#7F50A0",
+                                Republican = "#EE2E29")) +
   coord_cartesian(xlim = c(-0.1, 1.5)) +
   facet_grid(sample ~ dv_type, scales = "free_y", space = "free_y") +
   theme_bw() +

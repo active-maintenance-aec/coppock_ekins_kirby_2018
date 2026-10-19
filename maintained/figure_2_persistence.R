@@ -57,7 +57,6 @@ g <- ggplot(gg_df, aes(x = days, y = estimate, group = Z, color = Z, fill = Z, s
   geom_line(alpha = 0.1) +
   geom_point(size = 4) +
   facet_grid(dv ~ study) +
-  scale_x_continuous(breaks = c(0, 10, 30)) +
   theme_bw() +
   ylab("Composite Attitude Scale") +
   xlab("Days Since Treatment") +

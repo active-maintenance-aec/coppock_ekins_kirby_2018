@@ -71,6 +71,17 @@ t7_off <- nrow(off_target(t7))
 t7_total <- nrow(on_target(t7)) + t7_off
 t3_off <- nrow(off_target(t3))
 t3_total <- nrow(on_target(t3)) + t3_off
+
+# What each corrected cell is the warrant for (R11). H3 is tested by Table 8's
+# interactions, so the elite flat tax main-DV p-value is checked against that test and
+# against the same effect on its composite scale.
+t8 <- out("table_8_compare_samples.csv")
+flat_tax_scale <- filter(on_target(t7), dv == "Flat Tax")
+flat_tax_gap <- filter(t8, dv == "Flat Tax", term == "Z_matchflat:experimental_sampleelite")
+t7_off_expected <- 0.05 * t7_off
+t7_off_any <- 1 - 0.95^t7_off
+mturk_shared <- filter(on_target(t4), dv %in% on_target(t7)$dv)
+pct <- function(x) sprintf("%.0f", 100 * x)
 ```
 
 ```{r entries}
@@ -129,7 +140,15 @@ entries <- tribble(
     "{sprintf('%.4f', flat_tax_p)}. Table 6 prints it as `0.411***` under a legend whose ",
     "strongest level is p < 0.01, so the table and the sentence disagree about the same ",
     "estimate. The Amtrak and Wall Street effects are significant at 0.001; the flat tax ",
-    "effect is not."),
+    "effect is not. The cell is also the article's only significant evidence of a flat tax ",
+    "effect among elites: on its composite scale (Table 7) the effect is ",
+    "{sprintf('%.3f', flat_tax_scale$estimate)} with p = {sprintf('%.3f', flat_tax_scale$p.value)}, ",
+    "as p. 74 says. It clears 0.01, so the sentence's count stands, and so does p. 73's claim ",
+    "of significant effects for each of the four op-eds, each on at least one of its two ",
+    "target measures. H3's expectation of smaller effects among elites does not rest on this ",
+    "cell: Table 8 tests it on the composite scales, where the flat tax interaction is ",
+    "{str_replace(sprintf('%.3f', flat_tax_gap$estimate), '^-', '–')} ",
+    "({if (flat_tax_gap$p.value < 0.001) 'p < 0.001' else sprintf('p = %.3f', flat_tax_gap$p.value)})."),
   "s2_main_sig_p",
 
   3, "quantity", "pipeline", "full",
@@ -141,7 +160,11 @@ entries <- tribble(
     "Table 7 estimates four op-ed effects on each of four composite scales, so it holds ",
     "{t7_total} coefficients, of which four are on target and {t7_off} are not. The parallel ",
     "sentence about Table 3 counts correctly: five op-eds by five outcomes is {t3_total} ",
-    "coefficients and {t3_off} non-target ones."),
+    "coefficients and {t3_off} non-target ones. One significant effect in {t7_off} rather ",
+    "than one in 16 is still what chance gives: {t7_off} null effects tested at 0.05 produce ",
+    "{sprintf('%.1f', t7_off_expected)} significant ones in expectation, and at least one ",
+    "with probability {sprintf('%.2f', t7_off_any)} if they are independent, so the ",
+    "preceding sentence's \"all close to zero\" stands."),
   "s2_nontarget_cells",
 
   4, "quantity", "pipeline", "full",
@@ -192,7 +215,16 @@ entries <- tribble(
     "the {nrow(on_target(t4))} on Mechanical Turk. Neither figure is hedged, so the interval ",
     "is asserted as printed, and both means fall outside it. The individual effects run ",
     "wider still, from {sprintf('%.3f', min(all_scale_effects))} to ",
-    "{sprintf('%.3f', max(all_scale_effects))}."),
+    "{sprintf('%.3f', max(all_scale_effects))}. The correction widens the gap H3 predicts: ",
+    "the elite mean is {pct(elite_scale_mean / mturk_scale_mean)} percent of the Mechanical ",
+    "Turk mean, where the printed endpoints give {pct(0.30 / 0.50)}, and over the ",
+    "{nrow(mturk_shared)} op-eds both samples saw the Mechanical Turk mean is ",
+    "{sprintf('%.3f', mean(mturk_shared$estimate))}, so like for like the elite effect is ",
+    "{pct(elite_scale_mean / mean(mturk_shared$estimate))} percent of it. The abstract's ",
+    "\"marginally more persuasive among the mass public\" understates either range, and ",
+    "Table 8's interactions are the article's test of the comparison. One of the four ",
+    "elite effects in the mean, flat tax, is not significant on its own ",
+    "(p = {sprintf('%.3f', flat_tax_scale$p.value)})."),
   "disc_effect_low;disc_effect_high",
 
   8, "bibliographic", "reference_audit", "brief",

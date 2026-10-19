@@ -115,7 +115,7 @@ reaches by reporting the classical F test alongside the HC2 one rather
 than by choosing between them silently.
 
 9 claims are recorded as failures and every one of them is in the prose.
-Seven are errors in the article, gathered as seven of the ten
+Seven are errors in the article, gathered as seven of the eighteen
 corrections in `coppock_ekins_kirby_2018_errata.pdf`; the other two are
 one Discussion sentence whose referent is ambiguous, recorded as
 unresolved rather than guessed at. 9 further quantities are claims about
@@ -270,7 +270,7 @@ correct in the code. What there is to correct is in the article: seven
 ground truth rows carry `defect_locus = paper_internal`, meaning a
 sentence in the body text disagrees with a table the same article
 prints. In every case the table is right. A separate audit of the
-reference list found three more, described at the end of this section.
+reference list found five more, described at the end of this section.
 
 | Claim | In the text | In the data |
 |:---|:---|:---|
@@ -292,7 +292,7 @@ records that the three effects it names do not all clear that level.
 
 Those seven rows are six sentences, since the two reading-time rows are
 the two ends of one published range. They are set out as the first seven
-of the ten numbered corrections in `errata.qmd`, rendered to
+of the eighteen numbered corrections in `errata.qmd`, rendered to
 `coppock_ekins_kirby_2018_errata.pdf` at the repository root, where each
 entry quotes the published sentence, gives the corrected sentence with
 the changed token in bold, and computes every number in the corrected
@@ -303,16 +303,23 @@ op-eds, a significance level stated as p \< 0.001 for an effect the
 article’s own table stars at p \< 0.01, and a miscount of the non-target
 cells of Table 7 as sixteen when the table has twelve.
 
-The remaining three corrections are in the reference list, and no ground
-truth row reaches them: every printed entry was sent whole to Crossref
-and the authoritative record checked back into it. Kim Traverso’s
-surname is printed “Traveso” in the entry and in both in-text citations;
-Calavita and Krumholz (2003) is printed as a single author with his
-given name folded into his surname, in the entry and in the in-text
-citation; and Robert Shapiro and Glenn Dempsey are filed under their
-given names in the entry for Page, Shapiro and Dempsey (1987), which
-also breaks off after the volume number. No citation in the text points
-at the wrong work.
+The next five corrections are to the references, and no ground truth row
+reaches them: every printed entry was sent whole to Crossref and the
+authoritative record checked back into it, and re-typesetting the
+article found two more. Kim Traverso’s surname is printed “Traveso” in
+the entry and in both in-text citations; Calavita and Krumholz (2003) is
+printed as a single author with his given name folded into his surname,
+in the entry and in the in-text citation; Robert Shapiro and Glenn
+Dempsey are filed under their given names in the entry for Page, Shapiro
+and Dempsey (1987), which also breaks off after the volume number; Lynn
+Vavreck’s single-authored 2007 article is cited and listed as “Vavreck
+et al.”; and W. Russell Neuman’s surname is printed “Neumann” in the
+text and in the entry. No citation in the text points at the wrong work.
+
+The last six are misprints the re-typesetting found, none of which
+touches an estimate: a doubled “the”, “op-ends” for “op-eds”, two
+disagreements of number, Table 5’s unlabelled Wave 2 rows, and the
+intercept row of five regression tables labelled “Constant (Constant)”.
 
 Two further rows carry `defect_locus = unresolved`. The Discussion says
 the treatment effects run “between 0.30 and 0.50 standard deviations”,

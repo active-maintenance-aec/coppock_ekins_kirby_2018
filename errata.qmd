@@ -197,23 +197,22 @@ entries <- tribble(
 
   8, "bibliographic", "reference_audit", "brief",
   "Traverso is misspelled, in the reference list and in the text",
-  "published p. 84",
-  "Ciofalo, A. and K. [[Traveso]]. 1994.",
-  "Ciofalo, A. and K. Traverso. 1994.",
+  "published pp. 61, 63 and 84",
+  "(Ciofalo and [[Traveso]], 1994)\n\nAs Ciofalo and [[Traveso]] (1994) note\n\nCiofalo, A. and K. [[Traveso]]. 1994.",
+  "(Ciofalo and [[Traverso]], 1994)\n\nAs Ciofalo and [[Traverso]] (1994) note\n\nCiofalo, A. and K. [[Traverso]]. 1994.",
   paste("Crossref, doi 10.1177/073953299401500407: Ciofalo, Andrew, and Kim Traverso.",
-        "The same misspelling appears in the two in-text citations, on pp. 61 and 63."),
+        "The misspelling is in both in-text citations, on pp. 61 and 63, and in the entry."),
   "",
 
   9, "bibliographic", "reference_audit", "brief",
   "Calavita and Krumholz (2003) is printed as one author, filed under his given name",
-  "published p. 86",
-  "[[Nico Calavita, N. K.]] 2003.",
-  "Calavita, N. and N. Krumholz. 2003.",
+  "published pp. 60 and 86",
+  "(Alexander, 2004; Golan, 2013; [[Nico Calavita]], 2003; Rosenfeld, 2000\n\n[[Nico Calavita, N. K.]] 2003.",
+  "(Alexander, 2004; Golan, 2013; [[Calavita and Krumholz]], 2003; Rosenfeld, 2000\n\n[[Calavita, N. and N. Krumholz.]] 2003.",
   paste("Crossref, doi 10.1177/0739456x03022004006: Calavita, Nico, and Norman Krumholz.",
         "The first author's given name was taken as part of his surname and the second",
-        "author's initials were folded onto it, leaving one author where there are two.",
-        "The in-text citation on p. 60 reads \"Nico Calavita, 2003\" and should read",
-        "\"Calavita and Krumholz, 2003\"."),
+        "author's initials were folded onto it, leaving one author where there are two,",
+        "in the entry and in the in-text citation on p. 60."),
   "",
 
   10, "bibliographic", "reference_audit", "brief",
@@ -226,6 +225,77 @@ entries <- tribble(
         "Glenn Dempsey's given names were taken for their surnames, and the entry breaks",
         "off after the volume number. The in-text citation on p. 63 gives \"Page et al.",
         "(1987)\" correctly."),
+  "",
+
+  11, "bibliographic", "remaster", "brief",
+  "Vavreck (2007) is single-authored and is cited as \"Vavreck et al.\"",
+  "published pp. 63 and 87",
+  "(Vavreck [[et al.]], 2007)\n\n[[Vavreck et al., L.]] 2007.",
+  "(Vavreck, 2007)\n\n[[Vavreck, L.]] 2007.",
+  paste("Crossref, doi 10.1561/100.00006005: Vavreck, Lynn, \"The Exaggerated Effects of",
+        "Advertising on Turnout: The Dangers of Self-Reports,\" Quarterly Journal of Political",
+        "Science 2(4): 325--343. Lynn Vavreck is the sole author."),
+  "",
+
+  12, "bibliographic", "remaster", "brief",
+  "W. Russell Neuman's surname is misspelled, in the text and in the reference list",
+  "published pp. 64 and 86",
+  "In their book, [[Neumann]] et al. (1992)\n\n[[Neumann]], W. R., M. R. Just, and A. N. Crigler. 1992.",
+  "In their book, [[Neuman]] et al. (1992)\n\n[[Neuman]], W. R., M. R. Just, and A. N. Crigler. 1992.",
+  paste("Crossref, doi 10.7208/chicago/9780226161174.001.0001: Neuman, W. Russell, Marion R.",
+        "Just and Ann N. Crigler, Common Knowledge: News and the Construction of Political",
+        "Meaning (University of Chicago Press, 1992)."),
+  "",
+
+  13, "spelling", "remaster", "brief",
+  "A doubled \"the\"",
+  "published p. 60",
+  "while avoiding the [[the]] inaccessibilities of elitism",
+  "while avoiding the inaccessibilities of elitism",
+  "The article sets the word twice.",
+  "",
+
+  14, "spelling", "remaster", "brief",
+  "\"Op-eds\" is misspelled \"op-ends\"",
+  "published p. 78",
+  "To measure the lasting effects of newspaper [[op-ends]], we measured outcomes",
+  "To measure the lasting effects of newspaper [[op-eds]], we measured outcomes",
+  "The article spells the word op-eds everywhere else.",
+  "",
+
+  15, "wording", "remaster", "brief",
+  "A singular article with a plural noun in footnote 10",
+  "published p. 78, footnote 10",
+  "appear to experience a similar [[patterns]] of decay.",
+  "appear to experience a similar [[pattern]] of decay.",
+  "The article reads \"a similar patterns\".",
+  "",
+
+  16, "wording", "remaster", "brief",
+  "A plural noun with a singular verb in the description of Table 10",
+  "published p. 80",
+  "The first [[columns]] shows the total circulation",
+  "The first [[column]] shows the total circulation",
+  "The sentence describes one column of Table 10, and the next sentence describes the second.",
+  "",
+
+  17, "float", "remaster", "brief",
+  "Table 5 does not label its Wave 2 rows",
+  "published p. 72, Table 5",
+  "Table 5: Distraction | No distraction | Responded | Did not respond",
+  "Table 5: [[Wave 2]] | Distraction | No distraction | Responded | Did not respond",
+  paste("Table 5 sets its four recontact rows directly under the Wave 1 header row, with no",
+        "label and no indent, so they read as Wave 1 counts. Table 1 labels the same rows",
+        "\"Wave 2\" for the Mechanical Turk study and indents them. The counts are right;",
+        "the label is restored."),
+  "",
+
+  18, "label", "remaster", "brief",
+  "The intercept row of five regression tables is labelled \"Constant (Constant)\"",
+  "published pp. 70, 71, 73, 74 and 75, Tables 3, 4, 6, 7 and 8",
+  "[[Constant (Constant)]]",
+  "[[Constant]]",
+  "The label is doubled in all five tables. No estimate is affected.",
   ""
 ) |>
   mutate(across(c(title, published, corrected, note), as.character))
@@ -249,22 +319,28 @@ stopifnot(all(cited_ids %in% gt_ids))
 # the article's own tables contradict, the last are entries in the reference list.
 spell <- function(n) {
   words <- c("one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
-             "ten", "eleven", "twelve")
+             "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen",
+             "seventeen", "eighteen", "nineteen", "twenty")
   stopifnot(n >= 1, n <= length(words))
   words[n]
 }
 prose_entries <- entries |> filter(source == "pipeline")
-reference_entries <- entries |> filter(source == "reference_audit")
+reference_entries <- entries |> filter(class == "bibliographic")
+misprint_entries <- entries |> filter(source == "remaster", class != "bibliographic")
 n_entries_word <- spell(nrow(entries))
 n_prose_word <- spell(nrow(prose_entries))
 n_reference_word <- spell(nrow(reference_entries))
+n_misprint_word <- spell(nrow(misprint_entries))
 
 # The spine's markup, resolved for this document.
 bold <- function(x) str_replace_all(x, "\\[\\[(.*?)\\]\\]", "**\\1**")
 plain <- function(x) str_remove_all(x, "\\[\\[|\\]\\]")
+# An entry that corrects one error in several places carries one block per place, and each
+# block stays inside the quotation.
+quote <- function(x) str_replace_all(x, "\n\n", "\n>\n> ")
 ```
 
-This note lists `r n_entries_word` corrections to "The Long-lasting Effects of Newspaper Op-Eds on Public Opinion," published in the *Quarterly Journal of Political Science* 13(1), doi [10.1561/100.00016112](https://doi.org/10.1561/100.00016112). **None of them changes a conclusion of the paper.** The first `r n_prose_word` are sentences in the body text that disagree with a table the same article prints, and in each case the table is right and the sentence is not. The last `r n_reference_word` are errors in the reference list. The tables themselves, and the findings they carry, are unaffected.
+This note lists `r n_entries_word` corrections to "The Long-lasting Effects of Newspaper Op-Eds on Public Opinion," published in the *Quarterly Journal of Political Science* 13(1), doi [10.1561/100.00016112](https://doi.org/10.1561/100.00016112). **None of them changes a conclusion of the paper.** The first `r n_prose_word` are sentences in the body text that disagree with a table the same article prints, and in each case the table is right and the sentence is not. The next `r n_reference_word` are errors in how the article cites and lists its references, and the last `r n_misprint_word` are misprints found when the article was re-typeset. The tables' estimates, and the findings they carry, are unaffected.
 
 Every number in a corrected sentence below is computed from the deposited replication archive ([10.7910/DVN/3KBCJF](https://doi.org/10.7910/DVN/3KBCJF)) at the time this document is rendered, including the numbers that were not wrong. The code and output supporting each correction are at [github.com/active-maintenance-aec/coppock_ekins_kirby_2018](https://github.com/active-maintenance-aec/coppock_ekins_kirby_2018).
 
@@ -282,14 +358,27 @@ walk(prose_entries$entry, function(n) {
 
 # The reference list
 
-The `r n_reference_word` entries below correct the article's reference list. Each was found by an audit that sends every printed entry whole to Crossref and checks the authoritative record back into it, and each is verified against the record named in its note. No cited work is missing and no citation in the text points at the wrong work: what is wrong is how the reference list prints the authors. In these `r n_reference_word` entries bold marks the wrong reading as printed, since a reference entry has no surrounding sentence to locate it in.
+The `r n_reference_word` entries below correct the article's reference list and the in-text citations that repeat its errors. Entries 8 to 10 were found by an audit that sends every printed entry whole to Crossref and checks the authoritative record back into it, and entries 11 and 12 when the article was re-typeset; each is verified against the record named in its note. No cited work is missing and no citation in the text points at the wrong work: what is wrong is how the article prints the authors. Bold marks what changed, and an error repeated in several places is quoted in each of them.
 
 ```{r render-reference-entries, results="asis"}
 walk(reference_entries$entry, function(n) {
   e <- entries |> filter(entry == n)
   cat("\n\n## ", e$entry, ". ", e$title, "\n\nPublished, ",
-      str_remove(e$location, "^published "), ":\n\n> ", bold(e$published),
-      "\n\nCorrected:\n\n> ", e$corrected, "\n\n", e$note, "\n", sep = "")
+      str_remove(e$location, "^published "), ":\n\n> ", quote(bold(e$published)),
+      "\n\nCorrected:\n\n> ", quote(bold(e$corrected)), "\n\n", e$note, "\n", sep = "")
+})
+```
+
+# Misprints
+
+The `r n_misprint_word` entries below were found when the article was re-typeset, a pass that reads every word of the published page against the text carried across. They are a doubled word, a misspelling, two disagreements of number, a table that does not label a block of its rows, and a doubled row label. None affects an estimate. Bold marks what changed.
+
+```{r render-misprint-entries, results="asis"}
+walk(misprint_entries$entry, function(n) {
+  e <- entries |> filter(entry == n)
+  cat("\n\n## ", e$entry, ". ", e$title, "\n\nPublished, ",
+      str_remove(e$location, "^published "), ":\n\n> ", quote(bold(e$published)),
+      "\n\nCorrected:\n\n> ", quote(bold(e$corrected)), "\n\n", e$note, "\n", sep = "")
 })
 ```
 

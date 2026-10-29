@@ -328,6 +328,25 @@ entries <- tribble(
   "[[Constant (Constant)]]",
   "[[Constant]]",
   "The label is doubled in all five tables. No estimate is affected.",
+  "",
+
+  19, "bibliographic", "reference_audit", "brief",
+  "The Chong and Druckman chapter's page range ends one page early",
+  "published p. 84",
+  "Ed. H. Semetko and M. Scammell. Los Angeles, CA: Sage Publications, [[307--23]].",
+  "Ed. H. Semetko and M. Scammell. Los Angeles, CA: Sage Publications, [[307--24]].",
+  paste("Crossref, doi 10.4135/9781446201015.n25, gives the chapter's pages as 307 to 324.",
+        "The corrected range keeps the reference list's own style, which drops the leading",
+        "digits a last page shares with the first."),
+  "",
+
+  20, "bibliographic", "reference_audit", "brief",
+  "The Norris and Sanders reference prints a first page in place of a page range",
+  "published p. 86",
+  "Political Communication 20(3): [[233]].",
+  "Political Communication 20(3): [[233--62]].",
+  paste("Crossref, doi 10.1080/10584600390218878, gives the article's pages as 233 to 262.",
+        "The corrected range keeps the reference list's own style."),
   ""
 ) |>
   mutate(across(c(title, published, corrected, note), as.character))
@@ -390,7 +409,7 @@ walk(prose_entries$entry, function(n) {
 
 # The reference list
 
-The `r n_reference_word` entries below correct the article's reference list and the in-text citations that repeat its errors. Entries 8 to 10 were found by an audit that sends every printed entry whole to Crossref and checks the authoritative record back into it, and entries 11 and 12 when the article was re-typeset; each is verified against the record named in its note. No cited work is missing and no citation in the text points at the wrong work: what is wrong is how the article prints the authors. Bold marks what changed, and an error repeated in several places is quoted in each of them.
+The `r n_reference_word` entries below correct the article's reference list and the in-text citations that repeat its errors. Entries 8 to 10, 19, and 20 were found by an audit that sends every printed entry whole to Crossref and checks the authoritative record back into it, and entries 11 and 12 when the article was re-typeset; each is verified against the record named in its note. No cited work is missing and no citation in the text points at the wrong work: what is wrong is how the article prints the authors of five works and the pages of two. Bold marks what changed, and an error repeated in several places is quoted in each of them.
 
 ```{r render-reference-entries, results="asis"}
 walk(reference_entries$entry, function(n) {

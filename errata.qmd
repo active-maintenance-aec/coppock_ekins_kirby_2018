@@ -110,8 +110,23 @@ pct <- function(x) sprintf("%.0f", 100 * x)
 # of every note. It is empty where an entry has no ground-truth row, which is normal for a
 # bibliographic or structural entry. ground_truth/build_ground_truth.R refuses to build if
 # any id here is absent from the ground truth.
+#
+# corrected_values runs parallel to claim_ids, one value per id in the same order, carrying
+# the corrected quantity as a number rather than as a sentence. Each value is built from the
+# same expression that builds the marked span of the corrected sentence, so the two cannot be
+# written apart, and the gate below re-checks that each one is still inside its span. An
+# entry that changes no quantity carries NA, as does entry 1: its two ids (the low and high
+# ends of a range) are not two numbers in its corrected sentence, which prints one mean gap.
+cv_strongest <- format(strongest, scientific = FALSE)
+cv_t7_off    <- as.character(t7_off)
+cv_enrolled_elite <- count_of('Elite subjects enrolled')
+cv_w2_elite       <- count_of('Elite responded in Wave 2')
+cv_enrolled_mturk <- count_of('MTurk subjects enrolled')
+cv_scale_elite <- sprintf('%.2f', elite_scale_mean)
+cv_scale_mturk <- sprintf('%.2f', mturk_scale_mean)
+
 entries <- tribble(
-  ~entry, ~class, ~source, ~form, ~title, ~location, ~published, ~corrected, ~note, ~claim_ids,
+  ~entry, ~class, ~source, ~form, ~title, ~location, ~published, ~corrected, ~note, ~claim_ids, ~corrected_values,
 
   1, "quantity", "pipeline", "full",
   "The elite sample did not read for 25 to 45 seconds less",
@@ -129,12 +144,13 @@ entries <- tribble(
     "Amtrak and flat tax pieces; the two it does not compute are the ones that break the ",
     "range."),
   "s2_reading_gap_low;s2_reading_gap_high",
+  NA_character_,
 
   2, "quantity", "pipeline", "full",
   "The elite main-effect significance level",
   "published p. 73",
   "Turning first to main dependent variables, we found statistically significant treatment effects for three of the four treatments (Amtrak, Flat Tax, Wall Street) at p < [[0.001]], but did not for the Veterans op-ed treatment.",
-  str_glue("Turning first to main dependent variables, we found statistically significant treatment effects for three of the four treatments (Amtrak, Flat Tax, Wall Street) at p < [[{format(strongest, scientific = FALSE)}]], but did not for the Veterans op-ed treatment."),
+  str_glue("Turning first to main dependent variables, we found statistically significant treatment effects for three of the four treatments (Amtrak, Flat Tax, Wall Street) at p < [[{cv_strongest}]], but did not for the Veterans op-ed treatment."),
   str_glue(
     "The flat tax effect on its main dependent variable has p = ",
     "{sprintf('%.4f', flat_tax_p)}. Table 6 prints it as `0.411***` under a legend whose ",
@@ -150,12 +166,13 @@ entries <- tribble(
     "{str_replace(sprintf('%.3f', flat_tax_gap$estimate), '^-', '–')} ",
     "({if (flat_tax_gap$p.value < 0.001) 'p < 0.001' else sprintf('p = %.3f', flat_tax_gap$p.value)})."),
   "s2_main_sig_p",
+  cv_strongest,
 
   3, "quantity", "pipeline", "full",
   "Table 7 has twelve non-target cells, not sixteen",
   "published p. 74",
   "Of the [[16]] treatment effects on non-target issues, only one is statistically significant (Amtrak op-ed on Veterans outcome).",
-  str_glue("Of the [[{t7_off}]] treatment effects on non-target issues, only one is statistically significant (Amtrak op-ed on Veterans outcome)."),
+  str_glue("Of the [[{cv_t7_off}]] treatment effects on non-target issues, only one is statistically significant (Amtrak op-ed on Veterans outcome)."),
   str_glue(
     "Table 7 estimates four op-ed effects on each of four composite scales, so it holds ",
     "{t7_total} coefficients, of which four are on target and {t7_off} are not. The parallel ",
@@ -166,35 +183,39 @@ entries <- tribble(
     "with probability {sprintf('%.2f', t7_off_any)} if they are independent, so the ",
     "preceding sentence's \"all close to zero\" stands."),
   "s2_nontarget_cells",
+  cv_t7_off,
 
   4, "quantity", "pipeline", "full",
   "The number of elite subjects who completed the survey",
   "published p. 72",
   "This procedure yielded [[2,169]] subjects who completed our survey.",
-  str_glue("This procedure yielded [[{count_of('Elite subjects enrolled')}]] subjects who completed our survey."),
+  str_glue("This procedure yielded [[{cv_enrolled_elite}]] subjects who completed our survey."),
   str_glue(
     "Table 5, at the top of the same page, gives {count_of('Elite subjects enrolled')} as its ",
     "own total, and that is the number of rows in the deposited elite data. Tables 6 and 7 ",
     "report the same figure as their N."),
   "s2_completed",
+  cv_enrolled_elite,
 
   5, "quantity", "pipeline", "full",
   "The number of elite subjects who responded in Wave 2",
   "published p. 72",
   "As in the MTurk study, we asked subjects to participate in a follow-up survey after 10 days; after two reminders, we obtained [[1,349]] complete responses.",
-  str_glue("As in the MTurk study, we asked subjects to participate in a follow-up survey after 10 days; after two reminders, we obtained [[{count_of('Elite responded in Wave 2')}]] complete responses."),
+  str_glue("As in the MTurk study, we asked subjects to participate in a follow-up survey after 10 days; after two reminders, we obtained [[{cv_w2_elite}]] complete responses."),
   str_glue("Table 5's Responded row totals {count_of('Elite responded in Wave 2')}."),
   "s2_w2_complete",
+  cv_w2_elite,
 
   6, "quantity", "pipeline", "full",
   "The number of subjects enrolled on Mechanical Turk",
   "published p. 66",
   "We enrolled [[3,567]] subjects on Amazon's Mechanical Turk (MTurk) in a three-wave panel survey.",
-  str_glue("We enrolled [[{count_of('MTurk subjects enrolled')}]] subjects on Amazon's Mechanical Turk (MTurk) in a three-wave panel survey."),
+  str_glue("We enrolled [[{cv_enrolled_mturk}]] subjects on Amazon's Mechanical Turk (MTurk) in a three-wave panel survey."),
   str_glue(
     "Table 1 gives {count_of('MTurk subjects enrolled')} as its own total, and every column ",
     "of Tables 3 and 4 reports the same figure as its N."),
   "s1_enrolled",
+  cv_enrolled_mturk,
 
   7, "quantity", "pipeline", "full",
   "The range of average treatment effects reported in the Discussion",
@@ -206,7 +227,7 @@ entries <- tribble(
   str_glue(
     "In both studies of the mass public and elites, we find large, statistically ",
     "significant average treatment effects of op-eds between ",
-    "[[{sprintf('%.2f', elite_scale_mean)} and {sprintf('%.2f', mturk_scale_mean)}]] ",
+    "[[{cv_scale_elite} and {cv_scale_mturk}]] ",
     "standard deviations on policy attitudes."),
   str_glue(
     "The sentence pairs one figure with each study, so the two numbers are the study-level ",
@@ -226,6 +247,7 @@ entries <- tribble(
     "elite effects in the mean, flat tax, is not significant on its own ",
     "(p = {sprintf('%.3f', flat_tax_scale$p.value)})."),
   "disc_effect_low;disc_effect_high",
+  str_c(cv_scale_elite, ";", cv_scale_mturk),
 
   8, "bibliographic", "reference_audit", "brief",
   "Traverso is misspelled, in the reference list and in the text",
@@ -235,6 +257,7 @@ entries <- tribble(
   paste("Crossref, doi 10.1177/073953299401500407: Ciofalo, Andrew, and Kim Traverso.",
         "The misspelling is in both in-text citations, on pp. 61 and 63, and in the entry."),
   "",
+  NA_character_,
 
   9, "bibliographic", "reference_audit", "brief",
   "Calavita and Krumholz (2003) is printed as one author, filed under his given name",
@@ -246,6 +269,7 @@ entries <- tribble(
         "author's initials were folded onto it, leaving one author where there are two,",
         "in the entry and in the in-text citation on p. 60."),
   "",
+  NA_character_,
 
   10, "bibliographic", "reference_audit", "brief",
   "Two authors of Page, Shapiro and Dempsey (1987) are given by their given names",
@@ -258,6 +282,7 @@ entries <- tribble(
         "off after the volume number. The in-text citation on p. 63 gives \"Page et al.",
         "(1987)\" correctly."),
   "",
+  NA_character_,
 
   11, "bibliographic", "remaster", "brief",
   "Vavreck (2007) is single-authored and is cited as \"Vavreck et al.\"",
@@ -268,6 +293,7 @@ entries <- tribble(
         "Advertising on Turnout: The Dangers of Self-Reports,\" Quarterly Journal of Political",
         "Science 2(4): 325--343. Lynn Vavreck is the sole author."),
   "",
+  NA_character_,
 
   12, "bibliographic", "remaster", "brief",
   "W. Russell Neuman's surname is misspelled, in the text and in the reference list",
@@ -278,6 +304,7 @@ entries <- tribble(
         "Just and Ann N. Crigler, Common Knowledge: News and the Construction of Political",
         "Meaning (University of Chicago Press, 1992)."),
   "",
+  NA_character_,
 
   13, "spelling", "remaster", "brief",
   "A doubled \"the\"",
@@ -286,6 +313,7 @@ entries <- tribble(
   "while avoiding the inaccessibilities of elitism",
   "The article sets the word twice.",
   "",
+  NA_character_,
 
   14, "spelling", "remaster", "brief",
   "\"Op-eds\" is misspelled \"op-ends\"",
@@ -294,6 +322,7 @@ entries <- tribble(
   "To measure the lasting effects of newspaper [[op-eds]], we measured outcomes",
   "The article spells the word op-eds everywhere else.",
   "",
+  NA_character_,
 
   15, "wording", "remaster", "brief",
   "A singular article with a plural noun in footnote 10",
@@ -302,6 +331,7 @@ entries <- tribble(
   "appear to experience a similar [[pattern]] of decay.",
   "The article reads \"a similar patterns\".",
   "",
+  NA_character_,
 
   16, "wording", "remaster", "brief",
   "A plural noun with a singular verb in the description of Table 10",
@@ -310,6 +340,7 @@ entries <- tribble(
   "The first [[column]] shows the total circulation",
   "The sentence describes one column of Table 10, and the next sentence describes the second.",
   "",
+  NA_character_,
 
   17, "float", "remaster", "brief",
   "Table 5 does not label its Wave 2 rows",
@@ -321,6 +352,7 @@ entries <- tribble(
         "\"Wave 2\" for the Mechanical Turk study and indents them. The counts are right;",
         "the label is restored."),
   "",
+  NA_character_,
 
   18, "label", "remaster", "brief",
   "The intercept row of five regression tables is labelled \"Constant (Constant)\"",
@@ -329,6 +361,7 @@ entries <- tribble(
   "[[Constant]]",
   "The label is doubled in all five tables. No estimate is affected.",
   "",
+  NA_character_,
 
   19, "bibliographic", "reference_audit", "brief",
   "The Chong and Druckman chapter's page range ends one page early",
@@ -339,6 +372,7 @@ entries <- tribble(
         "The corrected range keeps the reference list's own style, which drops the leading",
         "digits a last page shares with the first."),
   "",
+  NA_character_,
 
   20, "bibliographic", "reference_audit", "brief",
   "The Norris and Sanders reference prints a first page in place of a page range",
@@ -347,11 +381,54 @@ entries <- tribble(
   "Political Communication 20(3): [[233--62]].",
   paste("Crossref, doi 10.1080/10584600390218878, gives the article's pages as 233 to 262.",
         "The corrected range keeps the reference list's own style."),
-  ""
+  "",
+  NA_character_
 ) |>
-  mutate(across(c(title, published, corrected, note), as.character))
+  mutate(across(c(title, published, corrected, note, claim_ids, corrected_values), as.character))
 
 stopifnot(nrow(entries) == max(entries$entry), !anyDuplicated(entries$entry))
+
+# Gate: corrected_values agrees with the sentence it was glued into ----
+# The column and the sentence are written from one expression, so they begin in agreement
+# and this gate exists for the edit that separates them: a value moved from one marked span
+# to another, a span reworded to carry a second number, a claim id appended without its
+# value. Each value has to be inside the span it belongs to, matched by position where the
+# counts line up, and inside SOME span where an entry marks a label as well as a number and
+# its spans outnumber its values.
+marked_spans <- function(x) str_match_all(x, "\\[\\[(.*?)\\]\\]")[[1]][, 2]
+
+quantified <- entries |>
+  filter(!is.na(corrected_values)) |>
+  mutate(ids = str_split(claim_ids, ";"), values = str_split(corrected_values, ";"),
+         spans = map(corrected, marked_spans))
+
+stopifnot(all(lengths(quantified$ids) == lengths(quantified$values)))
+
+value_placed <- pmap_lgl(quantified, function(...) {
+  e <- list(...)
+  if (length(e$values) == length(e$spans)) {
+    all(map2_lgl(e$values, e$spans, \(v, s) str_detect(s, fixed(v))))
+  } else {
+    all(map_lgl(e$values, \(v) any(map_lgl(e$spans, \(s) str_detect(s, fixed(v))))))
+  }
+})
+
+if (!all(value_placed)) {
+  print(quantified |> filter(!value_placed) |> select(entry, title, corrected_values, corrected))
+  stop("An entry's corrected_values are not in the spans of its corrected sentence.")
+}
+
+# A quantity entry that corrects something has to say which quantity, and an entry that
+# corrects none (any other class, or a note) may not carry a value. The class is the
+# declaration and this is where it binds. An empty claim_ids counts as missing. Entry 1 is exempt from the first line: its two ids are not two numbers in its sentence.
+has_ids <- !is.na(entries$claim_ids) & nzchar(entries$claim_ids)
+no_value_ok <- 1
+stopifnot(
+  all(!is.na(entries$corrected_values[entries$class == "quantity" & entries$form != "note" &
+                                        has_ids & !entries$entry %in% no_value_ok])),
+  all(is.na(entries$corrected_values[entries$class != "quantity" | entries$form == "note"])),
+  all(is.na(entries$corrected_values) | has_ids)
+)
 
 # Every id an entry claims to correct must be a real ground-truth claim. The build gate in
 # ground_truth/build_ground_truth.R checks the same property from the other side; checking it

@@ -144,7 +144,7 @@ entries <- tribble(
     "Amtrak and flat tax pieces; the two it does not compute are the ones that break the ",
     "range."),
   "s2_reading_gap_low;s2_reading_gap_high",
-  NA_character_,
+  str_c(sprintf("%.1f", min(gaps$mturk_minus_elite_seconds)), ";", sprintf("%.1f", max(gaps$mturk_minus_elite_seconds))),
 
   2, "quantity", "pipeline", "full",
   "The elite main-effect significance level",
@@ -388,6 +388,18 @@ entries <- tribble(
 
 stopifnot(nrow(entries) == max(entries$entry), !anyDuplicated(entries$entry))
 
+# values_in_spans is FALSE where the claim's scale is not the sentence's, under PROCEDURES'
+# rule that corrected_values is always on the claim's scale. A method row or other id with
+# no number on any scale stores NA in its position. Such an entry's note must say why.
+off_claim_scale <- c(1)
+entries <- entries |>
+  mutate(values_in_spans = case_when(
+    is.na(corrected_values) ~ NA,
+    entry %in% off_claim_scale ~ FALSE,
+    .default = TRUE
+  ))
+stopifnot(all(str_length(entries$note[!replace_na(entries$values_in_spans, TRUE)]) > 0))
+
 # Gate: corrected_values agrees with the sentence it was glued into ----
 # The column and the sentence are written from one expression, so they begin in agreement
 # and this gate exists for the edit that separates them: a value moved from one marked span
@@ -398,7 +410,7 @@ stopifnot(nrow(entries) == max(entries$entry), !anyDuplicated(entries$entry))
 marked_spans <- function(x) str_match_all(x, "\\[\\[(.*?)\\]\\]")[[1]][, 2]
 
 quantified <- entries |>
-  filter(!is.na(corrected_values)) |>
+  filter(!is.na(corrected_values), values_in_spans) |>
   mutate(ids = str_split(claim_ids, ";"), values = str_split(corrected_values, ";"),
          spans = map(corrected, marked_spans))
 
@@ -420,9 +432,9 @@ if (!all(value_placed)) {
 
 # A quantity entry that corrects something has to say which quantity, and an entry that
 # corrects none (any other class, or a note) may not carry a value. The class is the
-# declaration and this is where it binds. An empty claim_ids counts as missing. Entry 1 is exempt from the first line: its two ids are not two numbers in its sentence.
+# declaration and this is where it binds. An empty claim_ids counts as missing.
 has_ids <- !is.na(entries$claim_ids) & nzchar(entries$claim_ids)
-no_value_ok <- 1
+no_value_ok <- integer(0)
 stopifnot(
   all(!is.na(entries$corrected_values[entries$class == "quantity" & entries$form != "note" &
                                         has_ids & !entries$entry %in% no_value_ok])),

@@ -115,11 +115,12 @@ reaches by reporting the classical F test alongside the HC2 one rather
 than by choosing between them silently.
 
 9 claims are recorded as failures and every one of them is in the prose.
-Seven are errors in the article, gathered as seven of the twenty
-corrections in `coppock_ekins_kirby_2018_errata.pdf`; the other two are
-one Discussion sentence whose referent is ambiguous, recorded as
-unresolved rather than guessed at. 9 further quantities are claims about
-shape that the article states without a number, so they carry the
+Seven are sentences the article’s own tables contradict, and the other
+two are the two ends of one Discussion sentence whose referent is
+ambiguous, recorded as unresolved. All nine are gathered as the first
+seven of the twenty corrections in
+`coppock_ekins_kirby_2018_errata.pdf`. 9 further quantities are claims
+about shape that the article states without a number, so they carry the
 evidence rather than a verdict.
 
 # Paper overview
@@ -291,17 +292,19 @@ computed entry is an indicator: the article names p \< 0.001, and the 0
 records that the three effects it names do not all clear that level.
 
 Those seven rows are six sentences, since the two reading-time rows are
-the two ends of one published range. They are set out as the first seven
-of the twenty numbered corrections in `errata.qmd`, rendered to
+the two ends of one published range. With the unresolved Discussion
+sentence described below, they are set out as the first seven of the
+twenty numbered corrections in `errata.qmd`, rendered to
 `coppock_ekins_kirby_2018_errata.pdf` at the repository root, where each
 entry quotes the published sentence, gives the corrected sentence with
 the changed token in bold, and computes every number in the corrected
 sentence from the deposit at render time. Three of the seven are counts
-of subjects that the prose undercounts. The other three are new here: a
+of subjects that the prose undercounts. Three more are new here: a
 reading-time comparison that reverses direction on one of the four
 op-eds, a significance level stated as p \< 0.001 for an effect the
 article’s own table stars at p \< 0.01, and a miscount of the non-target
-cells of Table 7 as sixteen when the table has twelve.
+cells of Table 7 as sixteen when the table has twelve. The last is the
+Discussion’s effect range, described below.
 
 The next seven corrections are to the references, and no ground truth
 row reaches them: every printed entry was sent whole to Crossref and the
@@ -324,9 +327,12 @@ intercept row of five regression tables labelled “Constant (Constant)”.
 Two further rows carry `defect_locus = unresolved`. The Discussion says
 the treatment effects run “between 0.30 and 0.50 standard deviations”,
 and the nine on-target composite-scale effects run from 0.104 to 0.698
-with sample means of 0.522 and 0.283, so no reading of the sentence
-fits. It is not in the errata because the sentence does not say which
-average it means, and a correction would have to invent one.
+with sample means of 0.522 and 0.283, so no reading of the sentence fits
+the individual effects. The sentence pairs one figure with each study,
+so the two endpoints are best read as the study-level means, and neither
+is hedged. It is entry 7 of the errata, which corrects the printed
+interval to 0.28 and 0.52; the two unresolved rows are the two ends of
+that one sentence.
 
 # Ground truth summary
 

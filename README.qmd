@@ -39,7 +39,7 @@ n_errata_word <- spell_errata(nrow(spine))
 # re-typesetting; and the misprints the re-typesetting found.
 n_prose_errata_word <- spell_errata(sum(spine$source == "pipeline"))
 n_reference_errata_word <- spell_errata(sum(spine$class == "bibliographic"))
-n_misprint_errata_word <- spell_errata(sum(spine$source == "remaster" &
+n_misprint_errata_word <- spell_errata(sum(spine$source == "reading" &
                                            spine$class != "bibliographic"))
 
 # kableExtra styling is LaTeX-only; the GitHub README build takes plain pipe tables.

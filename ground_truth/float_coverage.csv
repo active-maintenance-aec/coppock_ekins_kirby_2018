@@ -1,0 +1,14 @@
+float,published_numbers,covered,reproduced_by_rewrite,reproduced_by_archive,plotted,plotted_reproduced,note
+Table 1,49,49,49,49,NA,NA,NA
+Table 2,0,0,0,NA,NA,NA,"Op-ed topics, titles, authors, and outlets; prints no number."
+Table 3,70,70,70,70,NA,NA,NA
+Table 4,70,70,70,70,NA,NA,NA
+Table 5,30,30,30,30,NA,NA,NA
+Table 6,48,48,48,48,NA,NA,NA
+Table 7,48,48,48,48,NA,NA,NA
+Table 8,88,88,88,88,NA,NA,NA
+Table 9,18,18,18,1,NA,NA,NA
+Table 10,17,0,0,NA,NA,NA,Circulation figures from an auditing bureau and two publishers' surveys times an assumed readership share; none is in the deposit.
+Table 11,66,66,66,66,NA,NA,NA
+Figure 1,0,0,0,NA,54,NA,"Prints no number on its face. The article states no count to compare against, so the ground truth carries no verdict on the plotted count."
+Figure 2,0,0,0,NA,130,NA,"Prints no number on its face. The article states no count to compare against, so the ground truth carries no verdict on the plotted count."

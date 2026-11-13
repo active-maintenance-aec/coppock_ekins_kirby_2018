@@ -18,7 +18,10 @@
 - [Checksums](#checksums)
 - [R environment](#r-environment)
 
-**Archived at Zenodo:** [doi:10.5281/zenodo.24168328](https://doi.org/10.5281/zenodo.24168328). This DOI always resolves to the latest release of the maintained version.
+**Archived at Zenodo:**
+[doi:10.5281/zenodo.24168328](https://doi.org/10.5281/zenodo.24168328).
+This DOI always resolves to the latest release of the maintained
+version.
 
 *Drafted by Claude Opus 5 under the supervision of Alex Coppock.*
 
@@ -282,7 +285,7 @@ reference list found seven more, described at the end of this section.
 | Elite complete responses in Wave 2 (p. 72) | 1349 | 1358 |
 | Largest elite reading-time deficit across the four shared op-eds, seconds (p. 72) | 45 | 45.6 |
 | Smallest elite reading-time deficit across the four shared op-eds, seconds (p. 72) | 25 | -30.71 |
-| All three named elite on-target main-DV effects significant at p \< 0.001 (p. 73) | 0.001 | 0 |
+| All three named elite on-target main-DV effects significant at p \< 0.001 (p. 73) | 0.001 | 0.01 |
 | Off-diagonal cells in Table 7 (p. 74) | 16 | 12 |
 | Elite-sample mean on-target composite-scale effect (p. 82) | 0.30 | 0.2827 |
 | MTurk-sample mean on-target composite-scale effect (p. 82) | 0.50 | 0.5216 |
@@ -290,8 +293,9 @@ reference list found seven more, described at the end of this section.
 Sentences in the article that its own tables contradict.
 
 One of those rows is a significance level rather than a quantity, so its
-computed entry is an indicator: the article names p \< 0.001, and the 0
-records that the three effects it names do not all clear that level.
+computed entry is the strongest of the article’s levels that all three
+effects it names clear: the article names p \< 0.001, and the 0.01
+records that the flat tax effect clears only 0.01.
 
 Those seven rows are six sentences, since the two reading-time rows are
 the two ends of one published range. With the unresolved Discussion
@@ -362,16 +366,16 @@ comparison: 548 rows, keyed to the extraction by identifier.
 
 | Table or claim | Claims | Archive matches | Archive fails | Rewrite matches | Rewrite fails | Unverifiable |
 |:---|---:|---:|---:|---:|---:|---:|
-| table_1 | 49 | 49 | 0 | 49 | 0 | 0 |
-| table_3 | 70 | 70 | 0 | 70 | 0 | 0 |
-| table_4 | 70 | 70 | 0 | 70 | 0 | 0 |
-| table_5 | 30 | 30 | 0 | 30 | 0 | 0 |
-| table_6 | 48 | 48 | 0 | 48 | 0 | 0 |
-| table_7 | 48 | 48 | 0 | 48 | 0 | 0 |
-| table_8 | 88 | 88 | 0 | 88 | 0 | 0 |
-| table_9 | 18 | 1 | 17 | 18 | 0 | 0 |
-| table_11 | 66 | 66 | 0 | 66 | 0 | 0 |
-| text | 61 | 12 | 3 | 43 | 9 | 9 |
+| Table 1 | 49 | 49 | 0 | 49 | 0 | 0 |
+| Table 3 | 70 | 70 | 0 | 70 | 0 | 0 |
+| Table 4 | 70 | 70 | 0 | 70 | 0 | 0 |
+| Table 5 | 30 | 30 | 0 | 30 | 0 | 0 |
+| Table 6 | 48 | 48 | 0 | 48 | 0 | 0 |
+| Table 7 | 48 | 48 | 0 | 48 | 0 | 0 |
+| Table 8 | 88 | 88 | 0 | 88 | 0 | 0 |
+| Table 9 | 18 | 1 | 17 | 18 | 0 | 0 |
+| Table 11 | 66 | 66 | 0 | 66 | 0 | 0 |
+| Text | 61 | 12 | 3 | 43 | 9 | 9 |
 
 Ground truth coverage by published table.
 
@@ -537,16 +541,16 @@ nothing in it drifted in the eight years since deposit.
 
 # R environment
 
-| Component    | Version    |
-|:-------------|:-----------|
-| R            | 4.6.1      |
-| tidyverse    | 2.0.0      |
-| estimatr     | 2.0.1.9000 |
-| lmtest       | 0.9.40     |
-| modelsummary | 2.6.0      |
-| knitr        | 1.51       |
-| kableExtra   | 1.4.0      |
-| here         | 1.0.2      |
+| Component    | Version |
+|:-------------|:--------|
+| R            | 4.6.2   |
+| tidyverse    | 2.0.0   |
+| estimatr     | 2.0.1   |
+| lmtest       | 0.9.40  |
+| modelsummary | 2.6.0   |
+| knitr        | 1.52    |
+| kableExtra   | 1.4.1   |
+| here         | 1.0.2   |
 
 Environment this report was rendered in.
 

@@ -51,8 +51,13 @@ latex_only <- function(k, f) if (latex_out) f(k) else k
 
 # value_paper is a string on purpose: guessed as a double it becomes 0.09 where the
 # article prints 0.090, and the printed precision is what the comparison matches against.
+# section groups the rows by the float a location names, with every other location (the
+# prose, and the plotted counts of the two figures) under Text.
 gt <- read_csv(here::here("ground_truth", "coppock_ekins_kirby_2018_ground_truth.csv"),
-               col_types = cols(.default = col_character()))
+               col_types = cols(.default = col_character(), match = col_logical(),
+                                match_rewrite = col_logical(), holds = col_logical())) |>
+  mutate(section = if_else(str_starts(location, "Table "),
+                           str_remove(location, " \\(p\\. \\d+\\)$"), "Text"))
 
 published_claims <- read_csv(
   here::here("ground_truth", "published_claims.csv"),
@@ -91,14 +96,14 @@ That fetches the deposit, verifies its 20 files, and produces every table and fi
 ```{r summary_setup, include=FALSE}
 n_claims <- nrow(gt)
 n_verifiable <- sum(!is.na(gt$match))
-n_archive_match <- sum(gt$match == 1, na.rm = TRUE)
-n_archive_fail <- sum(gt$match == 0, na.rm = TRUE)
-n_rewrite_match <- sum(gt$match_rewrite == 1, na.rm = TRUE)
-n_rewrite_fail <- sum(gt$match_rewrite == 0, na.rm = TRUE)
+n_archive_match <- sum(gt$match, na.rm = TRUE)
+n_archive_fail <- sum(!gt$match, na.rm = TRUE)
+n_rewrite_match <- sum(gt$match_rewrite, na.rm = TRUE)
+n_rewrite_fail <- sum(!gt$match_rewrite, na.rm = TRUE)
 n_unverifiable <- sum(is.na(gt$match_rewrite))
-n_table9_fail <- sum(gt$table_figure == "table_9" & gt$match == 0, na.rm = TRUE)
-n_text_fail <- sum(gt$table_figure == "text" & gt$match == 0, na.rm = TRUE)
-n_float_cells <- sum(gt$table_figure != "text")
+n_table9_fail <- sum(gt$section == "Table 9" & !gt$match, na.rm = TRUE)
+n_text_fail <- sum(gt$section == "Text" & !gt$match, na.rm = TRUE)
+n_float_cells <- sum(gt$section != "Text")
 n_extracted <- nrow(published_claims)
 n_blocks <- sum(published_claims$needs_block)
 ```
@@ -208,7 +213,7 @@ anova_fit <- waldtest(fit_r, fit_u, test = "F")
 ```{r table9}
 t9 <- out("table_9_het_fx_ftests.csv")
 pub <- gt |>
-  filter(table_figure == "table_9") |>
+  filter(section == "Table 9") |>
   transmute(key = str_remove(claim, " / F test p"), value_paper)
 
 t9 |>
@@ -243,7 +248,7 @@ gt |>
                                 font_size = 8))
 ```
 
-One of those rows is a significance level rather than a quantity, so its computed entry is an indicator: the article names p < 0.001, and the 0 records that the three effects it names do not all clear that level.
+One of those rows is a significance level rather than a quantity, so its computed entry is the strongest of the article's levels that all three effects it names clear: the article names p < 0.001, and the 0.01 records that the flat tax effect clears only 0.01.
 
 Those seven rows are six sentences, since the two reading-time rows are the two ends of one published range. With the unresolved Discussion sentence described below, they are set out as the first `r n_prose_errata_word` of the `r n_errata_word` numbered corrections in `errata.qmd`, rendered to `coppock_ekins_kirby_2018_errata.pdf` at the repository root, where each entry quotes the published sentence, gives the corrected sentence with the changed token in bold, and computes every number in the corrected sentence from the deposit at render time. Three of the `r n_prose_errata_word` are counts of subjects that the prose undercounts. Three more are new here: a reading-time comparison that reverses direction on one of the four op-eds, a significance level stated as p < 0.001 for an effect the article's own table stars at p < 0.01, and a miscount of the non-target cells of Table 7 as sixteen when the table has twelve. The last is the Discussion's effect range, described below.
 
@@ -265,17 +270,17 @@ Two files, and they do different jobs.
 gt |>
   summarise(
     Claims = n(),
-    `Archive matches` = sum(match == 1, na.rm = TRUE),
-    `Archive fails` = sum(match == 0, na.rm = TRUE),
-    `Rewrite matches` = sum(match_rewrite == 1, na.rm = TRUE),
-    `Rewrite fails` = sum(match_rewrite == 0, na.rm = TRUE),
+    `Archive matches` = sum(match, na.rm = TRUE),
+    `Archive fails` = sum(!match, na.rm = TRUE),
+    `Rewrite matches` = sum(match_rewrite, na.rm = TRUE),
+    `Rewrite fails` = sum(!match_rewrite, na.rm = TRUE),
     Unverifiable = sum(is.na(match_rewrite)),
-    .by = table_figure
+    .by = section
   ) |>
-  rename(`Table or claim` = table_figure) |>
+  rename(`Table or claim` = section) |>
   arrange(match(`Table or claim`,
-                c("table_1", "table_3", "table_4", "table_5", "table_6",
-                  "table_7", "table_8", "table_9", "table_11", "text"))) |>
+                c("Table 1", "Table 3", "Table 4", "Table 5", "Table 6",
+                  "Table 7", "Table 8", "Table 9", "Table 11", "Text"))) |>
   kable(booktabs = TRUE, caption = "Ground truth coverage by published table.") |>
   latex_only(\(k) kable_styling(k, latex_options = c("striped", "hold_position")))
 ```

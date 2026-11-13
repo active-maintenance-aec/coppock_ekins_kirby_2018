@@ -15,7 +15,9 @@
 #   precision a comparison has to match.
 #
 #   This file is run once and its output is the committed artifact. Nothing downstream
-#   reads it.
+#   reads it. It writes the original five columns; the committed published_claims.csv has
+#   since been moved to the canonical extraction schema, with claim, digits, comparison,
+#   expect, and notes added, so the CSV is maintained directly and this file is not rerun.
 
 library(here)
 library(tidyverse)

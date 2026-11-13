@@ -1,0 +1,31 @@
+pass,script,role,exit_status,outcome,stopped_at
+stripped,opeds_agreement.R,analysis,0,clean,NA
+stripped,opeds_appendix_attrition.R,analysis,1,error,"Error: `starprep()` was removed in estimatr 2.0. It prepared fits for stargazer, which is no longer maintained. Use modelsummary, which reads `tidy()` and `glance()` and so works on every estimator in this package: mo..."
+stripped,opeds_appendix_demographics.R,analysis,0,clean,NA
+stripped,opeds_appendix_distractor.R,analysis,0,clean,NA
+stripped,opeds_appendix_heatmaps.R,analysis,0,clean,NA
+stripped,opeds_appendix_mj.R,analysis,0,clean,NA
+stripped,opeds_compare_samples.R,analysis,1,error,"Error: `starprep()` was removed in estimatr 2.0. It prepared fits for stargazer, which is no longer maintained. Use modelsummary, which reads `tidy()` and `glance()` and so works on every estimator in this package: mo..."
+stripped,opeds_compliance.R,analysis,0,clean,NA
+stripped,opeds_het_fx_age_analysis.R,analysis,0,clean,NA
+stripped,opeds_het_fx_analysis.R,analysis,1,error,"Error in waldtest(fit_r, fit_u, test = ""F"") : could not find function ""waldtest"" Calls: source -> withVisible -> eval -> eval In addition: Warning message:"
+stripped,opeds_main_analysis.R,analysis,1,error,"Error: `starprep()` was removed in estimatr 2.0. It prepared fits for stargazer, which is no longer maintained. Use modelsummary, which reads `tidy()` and `glance()` and so works on every estimator in this package: mo..."
+stripped,opeds_monkey.R,other,0,clean,NA
+stripped,opeds_persistence_pid.R,analysis,0,clean,NA
+stripped,opeds_persistence.R,analysis,0,clean,NA
+stripped,opeds_recontact_rates.R,analysis,0,clean,NA
+as_shipped,opeds_agreement.R,analysis,0,clean,NA
+as_shipped,opeds_appendix_attrition.R,analysis,1,error,"Error: `starprep()` was removed in estimatr 2.0. It prepared fits for stargazer, which is no longer maintained. Use modelsummary, which reads `tidy()` and `glance()` and so works on every estimator in this package: mo..."
+as_shipped,opeds_appendix_demographics.R,analysis,0,clean,NA
+as_shipped,opeds_appendix_distractor.R,analysis,0,clean,NA
+as_shipped,opeds_appendix_heatmaps.R,analysis,0,clean,NA
+as_shipped,opeds_appendix_mj.R,analysis,0,clean,NA
+as_shipped,opeds_compare_samples.R,analysis,1,error,"Error: `starprep()` was removed in estimatr 2.0. It prepared fits for stargazer, which is no longer maintained. Use modelsummary, which reads `tidy()` and `glance()` and so works on every estimator in this package: mo..."
+as_shipped,opeds_compliance.R,analysis,0,clean,NA
+as_shipped,opeds_het_fx_age_analysis.R,analysis,0,clean,NA
+as_shipped,opeds_het_fx_analysis.R,analysis,1,error,"Error in waldtest(fit_r, fit_u, test = ""F"") : could not find function ""waldtest"" Calls: source -> withVisible -> eval -> eval In addition: Warning message:"
+as_shipped,opeds_main_analysis.R,analysis,1,error,"Error: `starprep()` was removed in estimatr 2.0. It prepared fits for stargazer, which is no longer maintained. Use modelsummary, which reads `tidy()` and `glance()` and so works on every estimator in this package: mo..."
+as_shipped,opeds_monkey.R,other,0,clean,NA
+as_shipped,opeds_persistence_pid.R,analysis,0,clean,NA
+as_shipped,opeds_persistence.R,analysis,0,clean,NA
+as_shipped,opeds_recontact_rates.R,analysis,0,clean,NA
